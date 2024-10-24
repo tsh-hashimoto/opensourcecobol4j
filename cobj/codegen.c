@@ -762,7 +762,7 @@ static int joutput_field_storage(struct cb_field *f, struct cb_field *top) {
     free(base_name);
     return flag_call_parameter;
   } else if (cb_flag_short_variable) {
-    joutput("b_");
+    joutput(CB_PREFIX_BASE);
     for (p = f->name; *p != '\0'; ++p) {
       if (*p == '-') {
         joutput("_");
@@ -770,8 +770,11 @@ static int joutput_field_storage(struct cb_field *f, struct cb_field *top) {
         joutput("%c", *p);
       }
     }
+  } else if (cb_flag_serial_variable) {
+    char *base_name = get_java_identifier_base(f);
+    joutput(base_name);
   } else {
-    joutput("b_");
+    joutput(CB_PREFIX_BASE);
     struct cb_field *field = f;
     int flag_first_iteration = 1;
     while (field) {
@@ -1979,7 +1982,7 @@ static void joutput_cond(cb_tree x, int save_flag) {
     joutput_indent("public int run(){");
     joutput_indent_level += 2;
     for (; x; x = CB_CHAIN(x)) {
-      //最後の文ならreturn文を書く
+      // 最後の文ならreturn文を書く
       if (!CB_CHAIN(x)) {
         joutput_indent("return ");
       }
@@ -6236,20 +6239,20 @@ void codegen(struct cb_program *prog, const int nested, char **program_id_list,
 
   /* Program local stuff */
 
-  //コンストラクタの実装コードを出力
-  //メンバ変数の初期化を行う
+  // コンストラクタの実装コードを出力
+  // メンバ変数の初期化を行う
   joutput_line("public %s()", prog->program_id);
   joutput_line("{");
   joutput_line("  init();");
   joutput_line("}");
   joutput_newline();
 
-  //メンバ変数の初期化メソッドを出力
+  // メンバ変数の初期化メソッドを出力
   create_sorted_data_storage_cache();
   joutput_init_method(prog);
   joutput_newline();
 
-  //メンバ変数の出力
+  // メンバ変数の出力
   joutput_declare_member_variables(prog, prog->parameter_list);
   joutput("\n");
 
