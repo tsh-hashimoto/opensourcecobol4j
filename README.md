@@ -210,6 +210,17 @@ rw            4        0     4     0      0    0       0       0     0   REPORT 
 total        21        0    21     0      0    0       0       0     0
 ```
 
+## cobjrun
+
+Using `cobjrun`, you can execute a Java module based on the specified program ID.
+
+```sh
+Usage: cobjrun [--include=PATH] PROGRAM-ID
+ --include=PATH   Specify the directory path containing jar files
+ --help           Display this message
+ --version        Display runtime version
+```
+
 ## cobj-idx
 `cobj-idx`, a utility for indexed files, is also installed when installing opensource COBOL 4J.
 
