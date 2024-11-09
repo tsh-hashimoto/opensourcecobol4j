@@ -306,6 +306,18 @@ setup_use_file (struct cb_file *fileptr)
 	}
 }
 
+static int 
+is_key_in_rhs(cb_tree expr) 
+{
+	struct cb_binary_op *p = CB_BINARY_OP(expr);
+	
+	if (p && p->op == '=' && CB_REFERENCE_P(p->y) && CB_FIELD_P(cb_ref(p->y))) {
+		return 1;
+	}
+
+	return 0;
+}
+
 %}
 
 %token TOKEN_EOF 0 "end of file"
@@ -5545,6 +5557,11 @@ search_body:
 | ALL table_name search_at_end WHEN expr
   {
 	check_unreached = 0;
+
+		if (is_key_in_rhs($5)) {
+			cb_allow_search_key_in_rhs = 1;
+		}
+
   }
   statement_list
   {
