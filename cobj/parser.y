@@ -309,12 +309,19 @@ setup_use_file (struct cb_file *fileptr)
 static int 
 is_key_in_rhs(cb_tree expr) 
 {
-	struct cb_binary_op *p = CB_BINARY_OP(expr);
-	
-	if (p && p->op == '=' && CB_REFERENCE_P(p->y) && CB_FIELD_P(cb_ref(p->y))) {
-		return 1;
-	}
+	struct cb_binary_op *p;
 
+	if (!expr) {
+		return 0;
+	}
+	
+	p = CB_BINARY_OP(expr);
+	if (p) {
+		if (p->op == '=' && CB_REFERENCE_P(p->y) && CB_FIELD_P(cb_ref(p->y))) {
+			return 1;
+		}
+		return is_key_in_rhs(p->x) || is_key_in_rhs(p->y);
+	}
 	return 0;
 }
 
@@ -5557,15 +5564,12 @@ search_body:
 | ALL table_name search_at_end WHEN expr
   {
 	check_unreached = 0;
-
-		if (is_key_in_rhs($5)) {
-			cb_allow_search_key_in_rhs = 1;
-		}
-
+  cb_allow_search_key_in_rhs = is_key_in_rhs($5);
   }
   statement_list
   {
 	cb_emit_search_all ($2, $3, $5, $7);
+	cb_allow_search_key_in_rhs = 0;
   }
 ;
 
