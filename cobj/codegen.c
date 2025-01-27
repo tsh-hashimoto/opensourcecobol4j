@@ -3487,15 +3487,14 @@ static void joutput_ferror_stmt(struct cb_statement *p, int code) {
   }
 }
 
-// static void
-// joutput_cobol_comment_before_identification_division(struct comment_info *p)
-// {
-//   joutput_line("// %s:%d: %s", p->file, p->line - 1, p->comment);
-// }
-//
-// static void joutput_cobol_comment(struct comment_info *p) {
-//   joutput_line("// %s:%d: %s", p->file, p->line, p->comment);
-// }
+static void
+joutput_cobol_comment_before_identification_division(struct comment_info *p) {
+  joutput_line("// %s:%d: %s", p->file, p->line - 1, p->comment);
+}
+
+static void joutput_cobol_comment(struct comment_info *p) {
+  joutput_line("// %s:%d: %s", p->file, p->line, p->comment);
+}
 
 static void joutput_switch(struct cb_switch *sw,
                            enum joutput_stmt_type output_type) {
@@ -3565,7 +3564,7 @@ static void joutput_stmt(cb_tree x, enum joutput_stmt_type output_type) {
     /* Output source location as a comment */
     if (p->name) {
       /* Output comments in a COBOL source file */
-      /*if (!cb_flag_no_cobol_comment &&
+      if (!cb_flag_no_cobol_comment &&
           strcmp((char *)x->source_file, translating_source_file) == 0) {
         char *file_name_of_last_comment = NULL;
         for (; comment_info_cursor;
@@ -3592,7 +3591,7 @@ static void joutput_stmt(cb_tree x, enum joutput_stmt_type output_type) {
           joutput_cobol_comment(comment_info_cursor);
           file_name_of_last_comment = comment_info_cursor->file;
         }
-      }*/
+      }
       joutput_line("/* %s:%d: %s */", x->source_file, x->source_line, p->name);
     }
     /* Output source location as a code */
@@ -5085,7 +5084,7 @@ static void joutput_init_method(struct cb_program *prog) {
         joutput("/* PROGRAM-ID : %s */\n", prevprog);
       }
 
-      /*if (!cb_flag_no_cobol_comment && k->f->definition_source_file &&
+      if (!cb_flag_no_cobol_comment && k->f->definition_source_file &&
           strcmp(k->f->definition_source_file, translating_source_file) == 0) {
         char *file_name_of_last_comment = NULL;
         for (; working_storage_comment_info_cursor;
@@ -5121,7 +5120,7 @@ static void joutput_init_method(struct cb_program *prog) {
           joutput_cobol_comment(working_storage_comment_info_cursor);
           file_name_of_last_comment = working_storage_comment_info_cursor->file;
         }
-      }*/
+      }
 
       joutput_prefix();
       char *field_name = get_java_identifier_field(k->f);
@@ -6089,7 +6088,7 @@ void codegen(struct cb_program *prog, const int nested, char **program_id_list,
   joutput_line("import java.lang.IndexOutOfBoundsException;");
   joutput("\n");
 
-  /*if (!cb_flag_no_cobol_comment) {
+  if (!cb_flag_no_cobol_comment) {
     for (; comment_info_cursor;
          comment_info_cursor = comment_info_cursor->next) {
       if (comment_info_cursor->is_base_cobol_file &&
@@ -6100,7 +6099,7 @@ void codegen(struct cb_program *prog, const int nested, char **program_id_list,
         break;
       }
     }
-  }*/
+  }
 
   if (edit_code_command_is_set) {
     joutput_edit_code_command("main-class-annotation");
@@ -6172,7 +6171,7 @@ void codegen(struct cb_program *prog, const int nested, char **program_id_list,
 
   joutput_execution_list(prog);
   // Output rest COBOL comments
-  /*if (!cb_flag_no_cobol_comment) {
+  if (!cb_flag_no_cobol_comment) {
     for (; comment_info_cursor;
          comment_info_cursor = comment_info_cursor->next) {
       if (!comment_info_cursor->is_base_cobol_file) {
@@ -6180,7 +6179,7 @@ void codegen(struct cb_program *prog, const int nested, char **program_id_list,
       }
       joutput_cobol_comment(comment_info_cursor);
     }
-  }*/
+  }
   joutput_execution_entry_func();
 
   if (has_external) {
