@@ -194,14 +194,10 @@ int cb_verify(const enum cb_support tag, const char *feature) {
   case CB_WARNING:
     return 1;
   case CB_ARCHAIC:
-    if (cb_warn_archaic) {
-      cb_warning(_("%s is archaic in %s"), feature, cb_config_name);
-    }
+    cb_warning(_("%s is archaic in %s"), feature, cb_config_name);
     return 1;
   case CB_OBSOLETE:
-    if (cb_warn_obsolete) {
-      cb_warning(_("%s is obsolete in %s"), feature, cb_config_name);
-    }
+    cb_warning(_("%s is obsolete in %s"), feature, cb_config_name);
     return 1;
   case CB_SKIP:
     return 0;
