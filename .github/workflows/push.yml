@@ -58,6 +58,8 @@ jobs:
           - "run"
           - "syntax"
           - "cobj-idx"
+          - "file-lock"
+          - "file-lock2"
           - "misc"
         os: ["ubuntu:24.04"]
     uses: ./.github/workflows/test-other.yml
@@ -79,6 +81,7 @@ jobs:
           - "run"
           - "syntax"
           - "cobj-idx"
+          - "file-lock2"
           #- "misc"
         os: ["ubuntu:24.04"]
     uses: ./.github/workflows/test-other.yml
@@ -165,3 +168,7 @@ jobs:
   static-analysis:
     needs: check-workflows
     uses: ./.github/workflows/static-analysis.yml
+
+  check-dev-container:
+    needs: check-workflows
+    uses: ./.github/workflows/check-dev-container.yml

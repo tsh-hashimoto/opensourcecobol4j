@@ -145,10 +145,14 @@ int cb_flag_main = 0;
 
 int cb_default_byte_specified = 0;
 unsigned char cb_default_byte = 0;
+
+int cb_default_select_lock_mode = COB_LOCK_MANUAL;
+
 #define OPTION_ID_DEFAULT_BYTE (1024)
 #define OPTION_ID_SINGLE_JAR (1025)
 #define OPTION_ID_JAR (1026)
 #define OPTION_ID_INFO_JSON (1027)
+#define OPTION_ID_LOCK_MODE_AUTOMATIC (1028)
 
 int external_flg = 0;
 int errorcount = 0;
@@ -311,6 +315,7 @@ static const struct option long_options[] = {
     {"reference_check", no_argument, NULL, 'K'},
     {"constant", optional_argument, NULL, '3'},
     {"fdefaultbyte", required_argument, NULL, OPTION_ID_DEFAULT_BYTE},
+    {"lock-mode-automatic", no_argument, NULL, OPTION_ID_LOCK_MODE_AUTOMATIC},
 #undef CB_FLAG
 #define CB_FLAG(var, name, doc)                                                \
   {"f" name, no_argument, &var, 1}, {"fno-" name, no_argument, &var, 0},
@@ -901,13 +906,15 @@ static void cobc_print_usage(void) {
          "representing a character"));
   puts(_("                                    * octodecimal 00..0377 "
          "representing a character"));
+  puts(_("  -lock-mode-automatic              Set the default lock mode of "
+         "select clauses to AUTOMATIC"));
   puts(_("  -info-json-dir=<dir>              Specify the directory path of "
          "JSON files that hold information of COBOL programs"));
   puts(_("  -java-package(=<package name>)    Specify the package name of the "
          "generated source code"));
   puts(_("  -m, -jar                          Create <PROGRAM-ID>.jar and "
          "remove class files"));
-  puts(_("  -single-jar=<JAR file name>       Create <JAR file name>.jar and "
+  puts(_("  -single-jar=<JAR file name>       Create <JAR file name> and "
          "remove class files"));
   puts(_("                                    The JAR file contains all class "
          "files of all specified COBOL programs"));
@@ -1041,12 +1048,28 @@ static int process_command_line(const int argc, char *argv[]) {
     case 'o':
       /* -o : the directory where class files are stored */
       /* -class-file-dir : the directory where class files are stored */
+      if (optarg == NULL || *optarg == '\0') {
+        fprintf(stderr, "Error: Missing directory path argument\n");
+        exit(1);
+      }
+      if (stat(optarg, &st) != 0 || !(S_ISDIR(st.st_mode))) {
+        fprintf(stderr, "Error: '%s' is not a valid directory\n", optarg);
+        exit(1);
+      }
       output_name = strdup(optarg);
       break;
 
     case 'j':
       /* -j : the directory where java files are stored */
       /* -java-source-dir : the directory where java files are stored */
+      if (optarg == NULL || *optarg == '\0') {
+        fprintf(stderr, "Error: Missing directory path argument\n");
+        exit(1);
+      }
+      if (stat(optarg, &st) != 0 || !(S_ISDIR(st.st_mode))) {
+        fprintf(stderr, "Error: '%s' is not a valid directory\n", optarg);
+        exit(1);
+      }
       java_source_dir = strdup(optarg);
       break;
 
@@ -1154,6 +1177,10 @@ static int process_command_line(const int argc, char *argv[]) {
       }
       fprintf(stderr, "Warning - '%s' is an invalid 1-byte value\n", optarg);
       fflush(stderr);
+      break;
+
+    case OPTION_ID_LOCK_MODE_AUTOMATIC:
+      cb_default_select_lock_mode = COB_LOCK_AUTOMATIC;
       break;
 
     case '3': /* --constant */
@@ -1752,6 +1779,14 @@ static int process_translate(struct filename *fn) {
   if (ret) {
     return ret;
   }
+
+  /* Validate duplicate labels in the same section */
+  for (q = current_program; q; q = q->next_program) {
+    if (cb_validate_labels(q)) {
+      return -1;
+    }
+  }
+
   if (cb_flag_syntax_only || current_program->entry_list == NULL) {
     return 0;
   }

@@ -137,6 +137,38 @@ class IndexedFileUtilMain {
                 System.err.println("error: " + e.getMessage());
                 System.exit(1);
             }
+        } else if ("migrate".equals(subCommand)) {
+            if (unrecognizedArgs.length < 2) {
+                System.err.println("error: no indexed file is specified.");
+                System.exit(1);
+            }
+            boolean hasError = false;
+            for (int i = 1; i < unrecognizedArgs.length; i++) {
+                String indexedFilePath = unrecognizedArgs[i];
+                try {
+                    migrateIndexedFile(indexedFilePath);
+                } catch (Exception e) {
+                    System.err.println("error: " + e.getMessage());
+                    hasError = true;
+                }
+            }
+            System.exit(hasError ? 1 : 0);
+        } else if ("unlock".equals(subCommand)) {
+            if (unrecognizedArgs.length < 2) {
+                System.err.println("error: no indexed file is specified.");
+                System.exit(1);
+            }
+            boolean hasError = false;
+            for (int i = 1; i < unrecognizedArgs.length; i++) {
+                String indexedFilePath = unrecognizedArgs[i];
+                try {
+                    unlockIndexedFile(indexedFilePath);
+                } catch (Exception e) {
+                    System.err.println("error: " + e.getMessage());
+                    hasError = true;
+                }
+            }
+            System.exit(hasError ? 1 : 0);
         } else if ("load".equals(subCommand)) {
             if (unrecognizedArgs.length < 2 || unrecognizedArgs.length > 3) {
                 if (unrecognizedArgs.length < 2) {
@@ -225,6 +257,14 @@ class IndexedFileUtilMain {
         System.out.println(
                 "    Write the records stored in the indexed file into the output file.");
         System.out.println("    The default format of the output data is SEQUENTIAL of COBOL.");
+        System.out.println();
+        System.out.println("cobj-idx migrate <indexed file> [<indexed file>...]");
+        System.out.println(
+                "    Migrate the indexed file whose version is older than 1.1.12 to the latest"
+                        + " version.");
+        System.out.println();
+        System.out.println("cobj-idx unlock <indexed file> [<indexed file>...]");
+        System.out.println("    Unlock all locks of the indexed file.");
         System.out.println();
         System.out.println("Options:");
         System.out.println();
@@ -410,6 +450,60 @@ class IndexedFileUtilMain {
             return 0;
         } catch (SQLException e) {
             return ErrorLib.errorInvalidIndexedFile(indexedFilePath);
+        }
+    }
+
+    private static void migrateIndexedFile(String indexedFilePath) throws Exception {
+        try (Connection conn = DriverManager.getConnection("jdbc:sqlite:" + indexedFilePath);
+                Statement st = conn.createStatement()) {
+            String createTableSql =
+                    "CREATE TABLE IF NOT EXISTS file_lock (locked_by text primary key,process_id"
+                            + " text,locked_at timestamp,open_mode text CONSTRAINT check_open_mode"
+                            + " CHECK (open_mode IN ('INPUT', 'OUTPUT', 'I-O', 'EXTEND')))";
+            st.executeUpdate(createTableSql);
+
+            boolean lockedByColumnExists = false;
+            boolean processIdColumnExists = false;
+            boolean lockedAtColumnExists = false;
+            try (ResultSet rs = st.executeQuery("PRAGMA table_info('table0')")) {
+                while (rs.next()) {
+                    String columnName = rs.getString("name");
+                    if ("locked_by".equals(columnName)) {
+                        lockedByColumnExists = true;
+                    } else if ("process_id".equals(columnName)) {
+                        processIdColumnExists = true;
+                    } else if ("locked_at".equals(columnName)) {
+                        lockedAtColumnExists = true;
+                    }
+                    if (lockedByColumnExists && processIdColumnExists && lockedAtColumnExists) {
+                        break;
+                    }
+                }
+            }
+            if (!lockedByColumnExists) {
+                st.executeUpdate("ALTER TABLE table0 ADD COLUMN locked_by text");
+            }
+            if (!processIdColumnExists) {
+                st.executeUpdate("ALTER TABLE table0 ADD COLUMN process_id text");
+            }
+            if (!lockedAtColumnExists) {
+                st.executeUpdate("ALTER TABLE table0 ADD COLUMN locked_at timestamp");
+            }
+        } catch (SQLException e) {
+            throw new Exception(
+                    String.format("failed to connect to the indexed file: %s", indexedFilePath), e);
+        }
+    }
+
+    private static void unlockIndexedFile(String indexedFilePath) throws Exception {
+        try (Connection conn = DriverManager.getConnection("jdbc:sqlite:" + indexedFilePath);
+                Statement st = conn.createStatement()) {
+            st.executeUpdate("DELETE FROM file_lock");
+            st.executeUpdate(
+                    "UPDATE table0 SET locked_by = NULL, process_id = NULL, locked_at = NULL");
+        } catch (SQLException e) {
+            throw new Exception(
+                    String.format("failed to connect to the indexed file: %s", indexedFilePath), e);
         }
     }
 

@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps: 
-      - uses: actions/setup-java@v4
+      - uses: actions/setup-java@v5
         with:
           distribution: 'temurin'
           java-version: '21'
@@ -26,7 +26,7 @@ jobs:
           sudo apt-get install -y build-essential gettext autoconf bison flex gcovr
 
       - name: Checkout opensource COBOL 4J
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
       
       - name: Install opensource COBOL 4J
         run: |
@@ -41,7 +41,7 @@ jobs:
       - name: Run other tests
         working-directory: tests
         run: |
-          tests=("command-line-options" "data-rep" "i18n_sjis" "jp-compat" "run" "syntax" "cobj-idx" "misc")
+          tests=("command-line-options" "data-rep" "i18n_sjis" "jp-compat" "run" "syntax" "cobj-idx" "file-lock" "file-lock2" "misc")
           for test in "${tests[@]}"; do
             ./"$test" || true
           done
@@ -59,7 +59,7 @@ jobs:
           cp ./*.html coverage-report
 
       - name: Archive a coverage report
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: code-coverage-report
           path: cobj/coverage-report/

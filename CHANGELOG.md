@@ -4,6 +4,87 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## [1.1.16] - 2025-12-25
+
+### New Features
+
+* Implementation of CANCEL ALL (#748)
+* Improve readability of generated code
+  * Rename some variables to more descriptive names (#775)
+  * Replace magic numbers with constants or calculations between constants (#768)
+
+### Fixed
+
+* Fix `-j` option and `-o` option (#754)
+* Fix cobj-idx installation issues (#769)
+* Fix configuration items related to maximum size of PIC N items (#770)
+* Fix cobj command to detect duplicate labels (#774)
+* Fix `doc/converted_Java_file_JP.md` (#759)
+
+### Miscellaneous
+
+* Remove unused code from libcobj.jar (runtime library) (#756)
+* Remove unnecessary code from generated Java code to improve readability (#760)
+* Improve Dev Container configuration (#761)
+
+## [1.1.15] - 2025-11-27
+### Fixed
+* Fix a bug related to EXTERNAL items
+
+### Miscellaneous
+* Slightly improve the readability of generated Java code for GO TO statements
+
+## [1.1.14] - 2025-10-31
+### Improved
+* `cobj` now preserves string concatenation structure in the generated Java code. (#731)
+
+### Fixed
+* Fix the implementation of `PROGRAM STATUS`. (#735)
+
+### Miscellaneous
+* For Windows support, tests are now run on Windows Server 2025. (#732)
+
+## [1.1.13] - 2025-09-29
+
+### Fixed
+
+* Fix file locking of SEQUENTIAL, LINE SEQUENTIAL and RELATIVE file types. (#714)
+* Fix reading process for variable length SEQUENTIAL files. (#722)
+
+## Miscellaneous
+
+* `cobj-idx unlock` and `cobj-idx migrate` can handle multiple files at once. (#708)
+
+## [1.1.12] - 2025-08-28
+
+### Add
+
+* Implemented new file locking and record locking for INDEXED files.
+* Add a new sub command `migrate` for `cobj-idx`.
+  * With this command, you can convert an old version of an INDEXED file to a new version compatible with the latest opensource COBOL 4J.
+* Add a new sub command `unlock` for `cobj-idx`.
+  * With this command, you can unlock all record locks and file locks on an INDEXED file.
+* Add documentation of locking for INDEXED files.
+
+## [1.1.11] - 2025-07-25
+
+### Fix
+
+* Fix OPEN operation for indexed files. (#676)
+  * The runtime library now correctly sets the file status to 30 when attempting to open indexed files with invalid or corrupted file formats.
+
+## [1.1.10] - 2025-06-30
+
+### Add
+
+* Add a manual for the compiler configuration file (#665)
+* Add a built-in subroutine
+  * C$SLEEP (#669)
+  
+### Miscellaneous
+
+* Improve the test coverage slightly (#667, #664)
+
 ## [1.1.9] - 2025-05-30
 
 ### Add

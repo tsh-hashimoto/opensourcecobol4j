@@ -88,7 +88,6 @@ AT_CLEANUP
 
 
 AT_SETUP([EXTERNAL data item])
-AT_CHECK([${SKIP_TEST}])
 
 AT_DATA([callee.cob], [
        IDENTIFICATION   DIVISION.
@@ -122,7 +121,7 @@ AT_DATA([caller.cob], [
 
 AT_CHECK([${COMPILE_MODULE} callee.cob])
 AT_CHECK([${COMPILE} caller.cob])
-AT_CHECK([java prog], [0],
+AT_CHECK([${RUN_MODULE} caller], [0],
 [Hello
 World
 ])
@@ -131,7 +130,6 @@ AT_CLEANUP
 
 
 AT_SETUP([EXTERNAL AS data item])
-AT_CHECK([${SKIP_TEST}])
 
 AT_DATA([callee.cob], [
        IDENTIFICATION   DIVISION.
@@ -168,10 +166,77 @@ AT_DATA([caller.cob], [
 
 AT_CHECK([${COMPILE_MODULE} callee.cob])
 AT_CHECK([${COMPILE} caller.cob])
-AT_CHECK([java prog], [0],
+AT_CHECK([${RUN_MODULE} caller], [0],
 [Extrn
 Hello
 World
+])
+
+AT_CLEANUP
+
+AT_SETUP([EXTERNAL group data item])
+
+AT_DATA([prog.cbl], [
+        IDENTIFICATION  DIVISION. 
+        PROGRAM-ID.     prog.
+        DATA DIVISION.
+        WORKING-STORAGE SECTION.
+        01 A            EXTERNAL.
+           03 A1        PIC X(5).
+           03 A2        PIC X(3).
+           03 A3.
+             05 A3-1    PIC 9(1).
+             05 A3-2    PIC 9(1).
+        PROCEDURE DIVISION.
+            MOVE "HELLO" TO A1.
+            MOVE "ABC"   TO A2.
+            MOVE 12      TO A3.
+
+            DISPLAY A.
+            DISPLAY A1.
+            DISPLAY A2.
+            DISPLAY A3.
+
+            MOVE "DEF"   TO A2.
+            DISPLAY A.
+
+            CALL "sub".
+
+            MOVE 5       TO A3-2.
+
+            DISPLAY A.
+
+            STOP RUN.
+])
+
+AT_DATA([sub.cbl], [
+        IDENTIFICATION  DIVISION.
+        PROGRAM-ID.     sub.
+        DATA DIVISION.
+        WORKING-STORAGE SECTION.
+        01 A            EXTERNAL.
+           03 A1        PIC X(5).
+           03 A2        PIC X(3).
+           03 A3.
+             05 A3-1    PIC 9(1).
+             05 A3-2    PIC 9(1).
+        PROCEDURE DIVISION.
+            DISPLAY A.
+            MOVE 34      TO A3.
+            MOVE "WORLD" TO A1.
+            GOBACK.
+])
+
+AT_CHECK([${COBJ} prog.cbl])
+AT_CHECK([${COBJ} sub.cbl])
+AT_CHECK([java prog], [0], 
+[HELLOABC12
+HELLO
+ABC
+12
+HELLODEF12
+HELLODEF12
+WORLDDEF35
 ])
 
 AT_CLEANUP
@@ -545,8 +610,7 @@ AT_CHECK([java caller], [0],
 
 AT_CLEANUP
 
-AT_SETUP([CANCEL ALL])
-AT_CHECK([${SKIP_TEST}])
+AT_SETUP([CANCEL ALL (1)])
 
 AT_DATA([prog.cob], [
        IDENTIFICATION   DIVISION.
@@ -585,12 +649,275 @@ AT_DATA([call02.cob], [
            GOBACK.
 ])
 
-AT_CHECK([${COMPILE} prog.cob])
-AT_CHECK([${COMPILE_MODULE} call01.cob])
-AT_CHECK([${COMPILE_MODULE} call02.cob])
+AT_CHECK([${COBJ} prog.cob])
+AT_CHECK([${COBJ} call01.cob])
+AT_CHECK([${COBJ} call02.cob])
 AT_CHECK([java prog], [0],
 [1
 1
+])
+
+AT_CLEANUP
+
+AT_SETUP([CANCEL ALL (2)])
+
+AT_DATA([prog.cob], [
+       IDENTIFICATION   DIVISION.
+       PROGRAM-ID.      prog.
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       PROCEDURE        DIVISION.
+           CALL "child".
+           CALL "sister".
+           DISPLAY "CALL1END".
+           CALL "child".
+           CALL "sister".
+           DISPLAY "CALL2END".
+           CANCEL ALL.
+           CALL "child".
+           CALL "sister".
+           DISPLAY "CALL3END".
+           STOP RUN.
+])
+
+AT_DATA([child.cob], [
+       IDENTIFICATION   DIVISION.
+       PROGRAM-ID.      child.
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       77  VAR          PIC 9(01) value 1.
+       PROCEDURE        DIVISION.
+           DISPLAY VAR NO ADVANCING.
+           ADD  1 TO VAR.
+           CALL "grandchild1".
+           GOBACK.
+])
+
+AT_DATA([sister.cob], [
+       IDENTIFICATION   DIVISION.
+       PROGRAM-ID.      sister.
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       77  VAR          PIC 9(01) value 2.
+       PROCEDURE        DIVISION.
+           DISPLAY VAR NO ADVANCING.
+           ADD  1 TO VAR.
+           CALL "grandchild2".
+           CALL "grandchild3".
+           GOBACK.
+])
+
+AT_DATA([grandchild1.cob], [
+       IDENTIFICATION   DIVISION.
+       PROGRAM-ID.      grandchild1.
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       77  VAR          PIC 9(01) value 3.
+       PROCEDURE        DIVISION.
+           DISPLAY VAR NO ADVANCING.
+           ADD  1 TO VAR.
+           GOBACK.
+])
+
+AT_DATA([grandchild2.cob], [
+       IDENTIFICATION   DIVISION.
+       PROGRAM-ID.      grandchild2.
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       77  VAR          PIC 9(01) value 4.
+       PROCEDURE        DIVISION.
+           DISPLAY VAR NO ADVANCING.
+           ADD  1 TO VAR.
+           GOBACK.
+])
+
+AT_DATA([grandchild3.cob], [
+       IDENTIFICATION   DIVISION.
+       PROGRAM-ID.      grandchild3.
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       77  VAR          PIC 9(01) value 5.
+       PROCEDURE        DIVISION.
+           DISPLAY VAR NO ADVANCING.
+           ADD  1 TO VAR.
+           GOBACK.
+])
+
+AT_CHECK([${COBJ} prog.cob], [0])
+AT_CHECK([${COBJ} child.cob], [0])
+AT_CHECK([${COBJ} sister.cob], [0])
+AT_CHECK([${COBJ} grandchild1.cob], [0])
+AT_CHECK([${COBJ} grandchild2.cob], [0])
+AT_CHECK([${COBJ} grandchild3.cob], [0])
+AT_CHECK([java prog], [0], 
+[13245CALL1END
+24356CALL2END
+13245CALL3END
+])
+
+AT_CLEANUP
+
+AT_SETUP([CANCEL ALL (3)])
+
+AT_DATA([prog.cbl], [
+        IDENTIFICATION           DIVISION.
+        PROGRAM-ID.              prog.
+        DATA                     DIVISION.
+        WORKING-STORAGE          SECTION.
+        01  WS-COUNTER           PIC 9(3) VALUE 0.
+        01  WS-MESSAGE           PIC X(50).
+        01  P-NAME               PIC X(17) VALUE "prog".
+        PROCEDURE                DIVISION.
+            ADD 1 TO WS-COUNTER.
+            DISPLAY "@<:@" P-NAME "@:>@ WS-COUNTER    = " WS-COUNTER.
+
+            CALL "child".
+
+            ADD 1 TO WS-COUNTER.
+            DISPLAY "@<:@" P-NAME "@:>@ WS-COUNTER    = " WS-COUNTER.
+
+            CALL "child".
+
+            ADD 1 TO WS-COUNTER.
+            DISPLAY "@<:@" P-NAME "@:>@ WS-COUNTER    = " WS-COUNTER.
+
+            STOP RUN.
+])
+
+AT_DATA([child.cbl], [
+        IDENTIFICATION           DIVISION.
+        PROGRAM-ID.              child.
+        DATA                     DIVISION.
+        WORKING-STORAGE          SECTION.
+        01  WS-CALL-COUNT        PIC 9(3) VALUE 0.
+        01  P-NAME               PIC X(17) VALUE "child".
+        PROCEDURE                DIVISION.
+            ADD 1 TO WS-CALL-COUNT.
+            DISPLAY "@<:@" P-NAME "@:>@ WS-CALL-COUNT = " WS-CALL-COUNT.
+
+            CALL "grandchild01".
+
+            DISPLAY "@<:@" P-NAME "@:>@ WS-CALL-COUNT = " WS-CALL-COUNT.
+
+            CALL "grandchild02".
+
+            GOBACK.
+])
+
+AT_DATA([grandchild01.cbl], [
+        IDENTIFICATION           DIVISION.
+        PROGRAM-ID.              grandchild01.
+        DATA                     DIVISION.
+        WORKING-STORAGE          SECTION.
+        01  WS-COUNTER           PIC 9(3) VALUE 0.
+        01  P-NAME               PIC X(17) VALUE "grandchild01".
+        PROCEDURE                DIVISION.
+            ADD 1 TO WS-COUNTER.
+            DISPLAY "@<:@" P-NAME "@:>@ WS-COUNTER    = " WS-COUNTER.
+
+            CALL "greatgrandchild01".
+            CALL "greatgrandchild02".
+
+            DISPLAY "@<:@" P-NAME "@:>@ *** CANCEL  ALL ***".
+            CANCEL ALL.
+
+            CALL "greatgrandchild01".
+            CALL "greatgrandchild02".
+
+            DISPLAY "@<:@" P-NAME "@:>@ WS-COUNTER    = " WS-COUNTER.
+            GOBACK.
+])
+
+AT_DATA([grandchild02.cbl], [
+        IDENTIFICATION           DIVISION.
+        PROGRAM-ID.              grandchild02.
+        DATA                     DIVISION.
+        WORKING-STORAGE          SECTION.
+        01  WS-COUNTER           PIC 9(3) VALUE 0.
+        01  P-NAME               PIC X(17) VALUE "grandchild02".
+        PROCEDURE                DIVISION.
+            ADD 1 TO WS-COUNTER.
+            DISPLAY "@<:@" P-NAME "@:>@ WS-COUNTER    = " WS-COUNTER.
+
+            IF WS-COUNTER = 1 THEN
+                DISPLAY "@<:@" P-NAME "@:>@ FIRST CALL"
+            END-IF.
+
+            GOBACK.
+])
+
+AT_DATA([greatgrandchild01.cbl], [
+        IDENTIFICATION           DIVISION.
+        PROGRAM-ID.              greatgrandchild01.
+        DATA                     DIVISION.
+        WORKING-STORAGE          SECTION.
+        01  WS-COUNTER           PIC 9(3) VALUE 0.
+        01  P-NAME               PIC X(17) VALUE "greatgrandchild01".
+        PROCEDURE                DIVISION.
+            ADD 1 TO WS-COUNTER.
+            DISPLAY "@<:@" P-NAME "@:>@ WS-COUNTER    = " WS-COUNTER.
+
+            IF WS-COUNTER = 1 THEN
+                DISPLAY "@<:@" P-NAME "@:>@ FIRST CALL"
+            END-IF.
+            GOBACK.
+])
+
+AT_DATA([greatgrandchild02.cbl], [
+        IDENTIFICATION           DIVISION.
+        PROGRAM-ID.              greatgrandchild02.
+        DATA                     DIVISION.
+        WORKING-STORAGE          SECTION.
+        01  WS-COUNTER           PIC 9(3) VALUE 0.
+        01  P-NAME               PIC X(17) VALUE "greatgrandchild02".
+        PROCEDURE                DIVISION.
+            ADD 1 TO WS-COUNTER.
+            DISPLAY "@<:@" P-NAME "@:>@ WS-COUNTER    = " WS-COUNTER.
+
+            IF WS-COUNTER = 1 THEN
+                DISPLAY "@<:@" P-NAME "@:>@ FIRST CALL"
+            END-IF.
+            GOBACK.
+])
+
+AT_CHECK([${COBJ} prog.cbl], [0])
+AT_CHECK([${COBJ} child.cbl], [0])
+AT_CHECK([${COBJ} grandchild01.cbl], [0])
+AT_CHECK([${COBJ} grandchild02.cbl], [0])
+AT_CHECK([${COBJ} greatgrandchild01.cbl], [0])
+AT_CHECK([${COBJ} greatgrandchild02.cbl], [0])
+
+AT_CHECK([java prog], [0], 
+[@<:@prog             @:>@ WS-COUNTER    = 001
+@<:@child            @:>@ WS-CALL-COUNT = 001
+@<:@grandchild01     @:>@ WS-COUNTER    = 001
+@<:@greatgrandchild01@:>@ WS-COUNTER    = 001
+@<:@greatgrandchild01@:>@ FIRST CALL
+@<:@greatgrandchild02@:>@ WS-COUNTER    = 001
+@<:@greatgrandchild02@:>@ FIRST CALL
+@<:@grandchild01     @:>@ *** CANCEL  ALL ***
+@<:@greatgrandchild01@:>@ WS-COUNTER    = 001
+@<:@greatgrandchild01@:>@ FIRST CALL
+@<:@greatgrandchild02@:>@ WS-COUNTER    = 001
+@<:@greatgrandchild02@:>@ FIRST CALL
+@<:@grandchild01     @:>@ WS-COUNTER    = 001
+@<:@child            @:>@ WS-CALL-COUNT = 001
+@<:@grandchild02     @:>@ WS-COUNTER    = 001
+@<:@grandchild02     @:>@ FIRST CALL
+@<:@prog             @:>@ WS-COUNTER    = 002
+@<:@child            @:>@ WS-CALL-COUNT = 002
+@<:@grandchild01     @:>@ WS-COUNTER    = 002
+@<:@greatgrandchild01@:>@ WS-COUNTER    = 002
+@<:@greatgrandchild02@:>@ WS-COUNTER    = 002
+@<:@grandchild01     @:>@ *** CANCEL  ALL ***
+@<:@greatgrandchild01@:>@ WS-COUNTER    = 001
+@<:@greatgrandchild01@:>@ FIRST CALL
+@<:@greatgrandchild02@:>@ WS-COUNTER    = 001
+@<:@greatgrandchild02@:>@ FIRST CALL
+@<:@grandchild01     @:>@ WS-COUNTER    = 002
+@<:@child            @:>@ WS-CALL-COUNT = 002
+@<:@grandchild02     @:>@ WS-COUNTER    = 002
+@<:@prog             @:>@ WS-COUNTER    = 003
 ])
 
 AT_CLEANUP
@@ -2094,4 +2421,84 @@ AT_CHECK([java prog], [1], [],
 [libcobj: 'X-ABC' not numeric: 'abc'
 ])
 
+AT_CLEANUP
+
+AT_SETUP([Open an invalid formatted indexed file])
+
+AT_CHECK([echo invalid-data > invalid-formatted-file])
+
+AT_DATA([prog.cbl],
+[
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. prog.
+
+       ENVIRONMENT DIVISION.
+       INPUT-OUTPUT SECTION.
+       FILE-CONTROL.
+           SELECT F ASSIGN TO "invalid-formatted-file"
+               ORGANIZATION IS INDEXED
+               ACCESS MODE IS DYNAMIC
+               RECORD KEY IS REC-KEY
+               FILE STATUS IS FILE-STATUS.
+
+       DATA DIVISION.
+       FILE SECTION.
+       FD  f.
+       01  REC.
+         05  REC-KEY      PIC X(5).
+
+       WORKING-STORAGE SECTION.
+       01  FILE-STATUS      PIC XX.
+       PROCEDURE DIVISION.
+       MAIN-PROCEDURE.
+
+       OPEN INPUT f.
+       DISPLAY FILE-STATUS.
+       CLOSE f.
+])
+
+AT_CHECK([${COMPILE} prog.cbl])
+AT_CHECK([java prog], [0], 
+[30
+])
+AT_CLEANUP
+
+AT_SETUP([Open an invalid formatted indexed file])
+
+AT_CHECK([echo invalid-data > invalid-formatted-file])
+
+AT_DATA([prog.cbl],
+[
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. prog.
+
+       ENVIRONMENT DIVISION.
+       INPUT-OUTPUT SECTION.
+       FILE-CONTROL.
+           SELECT F ASSIGN TO "invalid-formatted-file"
+               ORGANIZATION IS INDEXED
+               ACCESS MODE IS DYNAMIC
+               RECORD KEY IS REC-KEY
+               FILE STATUS IS FILE-STATUS.
+
+       DATA DIVISION.
+       FILE SECTION.
+       FD  f.
+       01  REC.
+         05  REC-KEY      PIC X(5).
+
+       WORKING-STORAGE SECTION.
+       01  FILE-STATUS      PIC XX.
+       PROCEDURE DIVISION.
+       MAIN-PROCEDURE.
+
+       OPEN INPUT f.
+       DISPLAY FILE-STATUS.
+       CLOSE f.
+])
+
+AT_CHECK([${COMPILE} prog.cbl])
+AT_CHECK([java prog], [0], 
+[30
+])
 AT_CLEANUP

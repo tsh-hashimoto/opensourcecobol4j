@@ -570,6 +570,8 @@ SUBDIRS = cobol85
 @I18N_UTF8_FALSE@	jp-compat \
 @I18N_UTF8_FALSE@	command-line-options \
 @I18N_UTF8_FALSE@	cobj-idx \
+@I18N_UTF8_FALSE@	file-lock \
+@I18N_UTF8_FALSE@	file-lock2 \
 @I18N_UTF8_FALSE@	misc
 
 @I18N_UTF8_TRUE@TESTS = syntax \
@@ -581,6 +583,8 @@ SUBDIRS = cobol85
 @I18N_UTF8_TRUE@	jp-compat \
 @I18N_UTF8_TRUE@	command-line-options \
 @I18N_UTF8_TRUE@	cobj-idx \
+@I18N_UTF8_TRUE@	file-lock \
+@I18N_UTF8_TRUE@	file-lock2 \
 @I18N_UTF8_TRUE@	misc
 
 syntax_DEPENDENCIES = \
@@ -612,7 +616,8 @@ run_DEPENDENCIES = \
 	run.src/subscripts.at \
 	run.src/extensions.at \
 	run.src/return-code.at \
-	run.src/functions.at
+	run.src/functions.at \
+	run.src/system-routines.at
 
 data_rep_DEPENDENCIES = \
 	data-rep.at \
@@ -740,7 +745,26 @@ cobj_idx_DEPENDENCIES = \
 	cobj-idx.src/info.at \
 	cobj-idx.src/load.at \
 	cobj-idx.src/unload.at \
+	cobj-idx.src/migrate.at \
+	cobj-idx.src/unlock.at \
 	cobj-idx.src/misc.at
+
+indexed_lock_DEPENDENCIES = \
+	file-lock.at \
+	file-lock.src/lock-file.at \
+	file-lock.src/access-same-record.at \
+	file-lock.src/access-different-record.at
+
+indexed_lock2_DEPENDENCIES = \
+	file-lock2.at \
+	file-lock2.src/input-mode.at \
+	file-lock2.src/same-process.at \
+	file-lock2.src/open-start-write-rewrite.at \
+	file-lock2.src/release-lock.at \
+	file-lock2.src/open-input.at \
+	file-lock2.src/lock-mode-clause.at \
+	file-lock2.src/old-file.at \
+	file-lock2.src/lock-mode-automatic.at
 
 misc_DEPENDENCIES = \
 	misc.src/signed-comp3.at \
@@ -781,7 +805,9 @@ misc_DEPENDENCIES = \
 	misc.src/fix-subtract.at \
 	misc.src/display-numeric-NUMERIC-class.at \
 	misc.src/display-inspect-sign.at \
-	misc.src/comp1-comp2.at
+	misc.src/comp1-comp2.at \
+	misc.src/variable-length-file.at \
+	misc.src/convert-string-concat.at
 
 EXTRA_DIST = $(srcdir)/package.m4 \
 	$(TESTS) \
@@ -1140,6 +1166,20 @@ cobj-idx.log: cobj-idx
 	--log-file $$b.log --trs-file $$b.trs \
 	$(am__common_driver_flags) $(AM_LOG_DRIVER_FLAGS) $(LOG_DRIVER_FLAGS) -- $(LOG_COMPILE) \
 	"$$tst" $(AM_TESTS_FD_REDIRECT)
+file-lock.log: file-lock
+	@p='file-lock'; \
+	b='file-lock'; \
+	$(am__check_pre) $(LOG_DRIVER) --test-name "$$f" \
+	--log-file $$b.log --trs-file $$b.trs \
+	$(am__common_driver_flags) $(AM_LOG_DRIVER_FLAGS) $(LOG_DRIVER_FLAGS) -- $(LOG_COMPILE) \
+	"$$tst" $(AM_TESTS_FD_REDIRECT)
+file-lock2.log: file-lock2
+	@p='file-lock2'; \
+	b='file-lock2'; \
+	$(am__check_pre) $(LOG_DRIVER) --test-name "$$f" \
+	--log-file $$b.log --trs-file $$b.trs \
+	$(am__common_driver_flags) $(AM_LOG_DRIVER_FLAGS) $(LOG_DRIVER_FLAGS) -- $(LOG_COMPILE) \
+	"$$tst" $(AM_TESTS_FD_REDIRECT)
 misc.log: misc
 	@p='misc'; \
 	b='misc'; \
@@ -1381,6 +1421,8 @@ $(srcdir)/i18n_sjis: $(i18n_sjis_DEPENDENCIES)
 $(srcdir)/jp-compat: $(jp_compat_DEPENDENCIES)
 $(srcdir)/command-line-options: $(command_line_options_DEPENDENCIES)
 $(srcdir)/cobj-idx: $(cobj_idx_DEPENDENCIES)
+$(srcdir)/file-lock: $(indexed_lock_DEPENDENCIES)
+$(srcdir)/file-lock2: $(indexed_lock2_DEPENDENCIES)
 $(srcdir)/misc: $(misc_DEPENDENCIES)
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.

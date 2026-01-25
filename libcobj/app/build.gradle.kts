@@ -3,11 +3,11 @@ import com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar
 plugins {
     application
     id("com.github.johnrengelman.shadow") version "8.1.1"
-    id("com.diffplug.spotless") version "7.0.4"
+    id("com.diffplug.spotless") version "7.2.1"
     id("java")
     id("maven-publish")
     pmd
-    id("com.github.spotbugs") version "6.2.0"
+    id("com.github.spotbugs") version "6.4.5"
 }
 
 repositories {
@@ -31,10 +31,10 @@ tasks {
 }
 
 dependencies {
-    implementation("com.google.guava:guava:33.4.8-jre")
-    implementation("org.xerial:sqlite-jdbc:3.50.1.0")
-    implementation("commons-cli:commons-cli:1.9.0")
-    testImplementation("org.junit.jupiter:junit-jupiter:5.13.1")
+    implementation("com.google.guava:guava:33.5.0-jre")
+    implementation("org.xerial:sqlite-jdbc:3.51.0.0")
+    implementation("commons-cli:commons-cli:1.10.0")
+    testImplementation("org.junit.jupiter:junit-jupiter:5.13.4")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
     implementation("org.json:json:20250517")
     spotbugs("com.github.spotbugs:spotbugs:4.8.6")
@@ -44,9 +44,8 @@ dependencies {
 }
 
 java {
-    toolchain {
-        languageVersion.set(JavaLanguageVersion.of(8))
-    }
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
 }
 
 pmd {
@@ -80,7 +79,7 @@ publishing {
         register<MavenPublication>("gpr") {
             groupId = "jp.osscons.opensourcecobol"
             artifactId = "libcobj"
-            version = "1.1.9"
+            version = "1.1.16"
             from(components["java"])
         }
     }
