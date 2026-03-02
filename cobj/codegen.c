@@ -2240,6 +2240,11 @@ static void joutput_initialize_literal(cb_tree x, struct cb_field *f,
   }
 }
 
+/*
+ * FIXME:
+ * COMP-1とCOMP-2を使用したときにこの関数が実行されるが、C言語のコードが出力される。
+ * parserでエラーが出るようにしているが、COMP-1とCOMP-2の実装時にはここを修正する。
+ */
 static void joutput_initialize_fp(cb_tree x, struct cb_field *f) {
   joutput_prefix();
   if (f->usage == CB_USAGE_FLOAT) {
