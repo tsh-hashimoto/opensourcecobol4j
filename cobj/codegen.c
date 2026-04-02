@@ -3251,16 +3251,17 @@ static void joutput_call(struct cb_call *p) {
       }
     }
   }
-  joutput("));\n");
-  if (p->returning) {
-    if (!retptr) {
-      /* suppress warnings */
-      suppress_warn = 1;
-      joutput_stmt(cb_build_move(current_prog->cb_return_code, p->returning),
-                   JOUTPUT_STMT_DEFAULT);
-      suppress_warn = 0;
+  /* Pass RETURNING storage as an additional argument */
+  if (p->returning && !retptr) {
+    if (p->args) {
+      joutput(", ");
     }
+    int tmp_param_wrap_string_flag = param_wrap_string_flag;
+    param_wrap_string_flag = 1;
+    joutput_data(p->returning);
+    param_wrap_string_flag = tmp_param_wrap_string_flag;
   }
+  joutput("));\n");
   if (p->stmt2) {
     joutput_stmt(p->stmt2, JOUTPUT_STMT_DEFAULT);
   }
@@ -4534,6 +4535,15 @@ static void joutput_internal_function(struct cb_program *prog,
           base_name, k, k);
       free(base_name);
       parmnum++;
+    }
+    /* Assign RETURNING field storage from additional argument */
+    if (prog->returning) {
+      struct cb_field *ret_field = cb_field(prog->returning);
+      char *base_name = get_java_identifier_base(ret_field);
+      joutput_line(
+          "this.%s = %d < argStorages.length ? argStorages[%d] : new CobolDataStorage(%d);",
+          base_name, parmnum, parmnum, ret_field->memory_size);
+      free(base_name);
     }
   }
   joutput_line("return this.run_module(entry);");
