@@ -3268,10 +3268,10 @@ static void joutput_call(struct cb_call *p) {
                  JOUTPUT_STMT_DEFAULT);
     suppress_warn = 0;
   }
-  /* For non-system CALL RETURNING: check if callee had PROCEDURE DIVISION RETURNING */
+  /* For non-system CALL RETURNING: check if callee had PROCEDURE DIVISION
+   * RETURNING */
   if (p->returning && !retptr && !system_call) {
-    joutput_line(
-        "if (!CobolModule.isLastCallProcedureDivisionReturning()) {");
+    joutput_line("if (!CobolModule.isLastCallProcedureDivisionReturning()) {");
     joutput_indent_level += 2;
     suppress_warn = 1;
     joutput_stmt(cb_build_move(current_prog->cb_return_code, p->returning),
@@ -5067,11 +5067,9 @@ static void joutput_internal_function(struct cb_program *prog,
 
   joutput_line("/* Program return */");
   if (current_prog->returning) {
-    joutput_line(
-        "CobolModule.setLastCallProcedureDivisionReturning(true);");
+    joutput_line("CobolModule.setLastCallProcedureDivisionReturning(true);");
   } else {
-    joutput_line(
-        "CobolModule.setLastCallProcedureDivisionReturning(false);");
+    joutput_line("CobolModule.setLastCallProcedureDivisionReturning(false);");
   }
   joutput_prefix();
   joutput("return ");
@@ -5569,8 +5567,9 @@ static void joutput_init_method(struct cb_program *prog) {
     if (l == NULL) {
       if (!seen) {
         seen = 1;
-        joutput(
-            "\n/* LINKAGE SECTION (Items not referenced by USING clause) */\n");
+        joutput("\n");
+        joutput_line(
+            "/* LINKAGE SECTION (Items not referenced by USING clause) */");
       }
       char *base_name = get_java_identifier_base(f);
       joutput_line("%s = null;  /* %s */", base_name, f->name);
@@ -5928,8 +5927,9 @@ static void joutput_declare_member_variables(struct cb_program *prog,
     if (l == NULL) {
       if (!seen) {
         seen = 1;
-        joutput(
-            "\n/* LINKAGE SECTION (Items not referenced by USING clause) */\n");
+        joutput("\n");
+        joutput_line(
+            "/* LINKAGE SECTION (Items not referenced by USING clause) */");
       }
       char *base_name = get_java_identifier_base(f);
       joutput_line("private CobolDataStorage %s;  /* %s */", base_name,
