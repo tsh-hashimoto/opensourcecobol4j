@@ -3268,6 +3268,23 @@ static void joutput_call(struct cb_call *p) {
                  JOUTPUT_STMT_DEFAULT);
     suppress_warn = 0;
   }
+  /* For non-system CALL RETURNING: check if callee had PROCEDURE DIVISION RETURNING */
+  if (p->returning && !retptr && !system_call) {
+    joutput_line(
+        "if (!CobolModule.isLastCallProcedureDivisionReturning()) {");
+    joutput_indent_level += 2;
+    suppress_warn = 1;
+    joutput_stmt(cb_build_move(current_prog->cb_return_code, p->returning),
+                 JOUTPUT_STMT_DEFAULT);
+    suppress_warn = 0;
+    joutput_indent_level -= 2;
+    joutput_line("}");
+    /* Reset RETURN-CODE to 0 */
+    suppress_warn = 1;
+    joutput_stmt(cb_build_move(cb_zero, current_prog->cb_return_code),
+                 JOUTPUT_STMT_DEFAULT);
+    suppress_warn = 0;
+  }
   if (p->stmt2) {
     joutput_stmt(p->stmt2, JOUTPUT_STMT_DEFAULT);
   }
@@ -5049,6 +5066,13 @@ static void joutput_internal_function(struct cb_program *prog,
 #endif
 
   joutput_line("/* Program return */");
+  if (current_prog->returning) {
+    joutput_line(
+        "CobolModule.setLastCallProcedureDivisionReturning(true);");
+  } else {
+    joutput_line(
+        "CobolModule.setLastCallProcedureDivisionReturning(false);");
+  }
   joutput_prefix();
   joutput("return ");
   joutput_integer(current_prog->cb_return_code);

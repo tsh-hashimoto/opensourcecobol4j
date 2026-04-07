@@ -2723,3 +2723,464 @@ AT_CHECK([java caller], [0],
 ])
 
 AT_CLEANUP
+
+
+AT_SETUP([CALL RETURNING with PROCEDURE DIVISION RETURNING])
+
+AT_DATA([callee.cob], [
+       IDENTIFICATION   DIVISION.
+       PROGRAM-ID.      callee.
+       DATA             DIVISION.
+       LINKAGE          SECTION.
+       01 LS-RESULT     PIC 9(2).
+       PROCEDURE        DIVISION RETURNING LS-RESULT.
+           MOVE 42 TO LS-RESULT.
+           EXIT PROGRAM.
+])
+
+AT_DATA([caller.cob], [
+       IDENTIFICATION   DIVISION.
+       PROGRAM-ID.      caller.
+       DATA             DIVISION.
+       WORKING-STORAGE  SECTION.
+       01 WS-NUM        PIC 9(2).
+       PROCEDURE        DIVISION.
+           CALL "callee" RETURNING WS-NUM
+           END-CALL.
+           DISPLAY WS-NUM END-DISPLAY.
+           STOP RUN.
+])
+
+AT_CHECK([${COMPILE} caller.cob])
+AT_CHECK([${COMPILE_MODULE} callee.cob])
+AT_CHECK([java caller], [0],
+[42
+])
+
+AT_CLEANUP
+
+
+AT_SETUP([CALL USING and RETURNING with PROCEDURE DIVISION USING and RETURNING])
+
+AT_DATA([callee.cob], [
+       IDENTIFICATION   DIVISION.
+       PROGRAM-ID.      callee.
+       DATA             DIVISION.
+       LINKAGE          SECTION.
+       01 LS-A          PIC 9(2).
+       01 LS-B          PIC 9(2).
+       01 LS-RESULT     PIC 9(2).
+       PROCEDURE        DIVISION USING LS-A, LS-B
+                                  RETURNING LS-RESULT.
+           ADD LS-A TO LS-B GIVING LS-RESULT.
+           EXIT PROGRAM.
+])
+
+AT_DATA([caller.cob], [
+       IDENTIFICATION   DIVISION.
+       PROGRAM-ID.      caller.
+       DATA             DIVISION.
+       WORKING-STORAGE  SECTION.
+       01 WS-A          PIC 9(2) VALUE 10.
+       01 WS-B          PIC 9(2) VALUE 25.
+       01 WS-RESULT     PIC 9(2).
+       PROCEDURE        DIVISION.
+           CALL "callee" USING WS-A, WS-B
+                         RETURNING WS-RESULT
+           END-CALL.
+           DISPLAY WS-RESULT END-DISPLAY.
+           STOP RUN.
+])
+
+AT_CHECK([${COMPILE} caller.cob])
+AT_CHECK([${COMPILE_MODULE} callee.cob])
+AT_CHECK([java caller], [0],
+[35
+])
+
+AT_CLEANUP
+
+
+AT_SETUP([CALL RETURNING without PROCEDURE DIVISION RETURNING])
+
+AT_DATA([callee.cob], [
+       IDENTIFICATION   DIVISION.
+       PROGRAM-ID.      callee.
+       PROCEDURE        DIVISION.
+           MOVE 43 TO RETURN-CODE.
+           EXIT PROGRAM.
+])
+
+AT_DATA([caller.cob], [
+       IDENTIFICATION   DIVISION.
+       PROGRAM-ID.      caller.
+       DATA             DIVISION.
+       WORKING-STORAGE  SECTION.
+       01 WS-NUM        PIC 9(2).
+       PROCEDURE        DIVISION.
+           CALL "callee" RETURNING WS-NUM
+           END-CALL.
+           DISPLAY WS-NUM END-DISPLAY.
+           STOP RUN.
+])
+
+AT_CHECK([${COMPILE} caller.cob])
+AT_CHECK([${COMPILE_MODULE} callee.cob])
+AT_CHECK([java caller], [0],
+[43
+])
+
+AT_CLEANUP
+
+
+AT_SETUP([PROCEDURE DIVISION RETURNING without USING])
+
+AT_DATA([callee.cob], [
+       IDENTIFICATION   DIVISION.
+       PROGRAM-ID.      callee.
+       DATA             DIVISION.
+       LINKAGE          SECTION.
+       01 LS-RESULT     PIC 9(2).
+       PROCEDURE        DIVISION RETURNING LS-RESULT.
+           MOVE 99 TO LS-RESULT.
+           EXIT PROGRAM.
+])
+
+AT_DATA([caller.cob], [
+       IDENTIFICATION   DIVISION.
+       PROGRAM-ID.      caller.
+       DATA             DIVISION.
+       WORKING-STORAGE  SECTION.
+       01 WS-NUM        PIC 9(2).
+       PROCEDURE        DIVISION.
+           CALL "callee" RETURNING WS-NUM
+           END-CALL.
+           DISPLAY WS-NUM END-DISPLAY.
+           STOP RUN.
+])
+
+AT_CHECK([${COMPILE} caller.cob])
+AT_CHECK([${COMPILE_MODULE} callee.cob])
+AT_CHECK([java caller], [0],
+[99
+])
+
+AT_CLEANUP
+
+
+AT_SETUP([CALL RETURNING with signed numeric field])
+
+AT_DATA([callee.cob], [
+       IDENTIFICATION   DIVISION.
+       PROGRAM-ID.      callee.
+       DATA             DIVISION.
+       LINKAGE          SECTION.
+       01 LS-RESULT     PIC S9(4).
+       PROCEDURE        DIVISION RETURNING LS-RESULT.
+           MOVE -1234 TO LS-RESULT.
+           EXIT PROGRAM.
+])
+
+AT_DATA([caller.cob], [
+       IDENTIFICATION   DIVISION.
+       PROGRAM-ID.      caller.
+       DATA             DIVISION.
+       WORKING-STORAGE  SECTION.
+       01 WS-NUM        PIC S9(4).
+       PROCEDURE        DIVISION.
+           CALL "callee" RETURNING WS-NUM
+           END-CALL.
+           DISPLAY WS-NUM END-DISPLAY.
+           STOP RUN.
+])
+
+AT_CHECK([${COMPILE} caller.cob])
+AT_CHECK([${COMPILE_MODULE} callee.cob])
+AT_CHECK([java caller], [0],
+[-1234
+])
+
+AT_CLEANUP
+
+
+AT_SETUP([CALL RETURNING with COMP field])
+
+AT_DATA([callee.cob], [
+       IDENTIFICATION   DIVISION.
+       PROGRAM-ID.      callee.
+       DATA             DIVISION.
+       LINKAGE          SECTION.
+       01 LS-RESULT     PIC 9(8) COMP.
+       PROCEDURE        DIVISION RETURNING LS-RESULT.
+           MOVE 12345678 TO LS-RESULT.
+           EXIT PROGRAM.
+])
+
+AT_DATA([caller.cob], [
+       IDENTIFICATION   DIVISION.
+       PROGRAM-ID.      caller.
+       DATA             DIVISION.
+       WORKING-STORAGE  SECTION.
+       01 WS-NUM        PIC 9(8) COMP.
+       PROCEDURE        DIVISION.
+           CALL "callee" RETURNING WS-NUM
+           END-CALL.
+           DISPLAY WS-NUM END-DISPLAY.
+           STOP RUN.
+])
+
+AT_CHECK([${COMPILE} caller.cob])
+AT_CHECK([${COMPILE_MODULE} callee.cob])
+AT_CHECK([java caller], [0],
+[12345678
+])
+
+AT_CLEANUP
+
+
+AT_SETUP([CALL RETURNING with COMP-3 field])
+
+AT_DATA([callee.cob], [
+       IDENTIFICATION   DIVISION.
+       PROGRAM-ID.      callee.
+       DATA             DIVISION.
+       LINKAGE          SECTION.
+       01 LS-RESULT     PIC 9(6) COMP-3.
+       PROCEDURE        DIVISION RETURNING LS-RESULT.
+           MOVE 123456 TO LS-RESULT.
+           EXIT PROGRAM.
+])
+
+AT_DATA([caller.cob], [
+       IDENTIFICATION   DIVISION.
+       PROGRAM-ID.      caller.
+       DATA             DIVISION.
+       WORKING-STORAGE  SECTION.
+       01 WS-NUM        PIC 9(6) COMP-3.
+       PROCEDURE        DIVISION.
+           CALL "callee" RETURNING WS-NUM
+           END-CALL.
+           DISPLAY WS-NUM END-DISPLAY.
+           STOP RUN.
+])
+
+AT_CHECK([${COMPILE} caller.cob])
+AT_CHECK([${COMPILE_MODULE} callee.cob])
+AT_CHECK([java caller], [0],
+[123456
+])
+
+AT_CLEANUP
+
+
+AT_SETUP([CALL RETURNING with large numeric field])
+
+AT_DATA([callee.cob], [
+       IDENTIFICATION   DIVISION.
+       PROGRAM-ID.      callee.
+       DATA             DIVISION.
+       LINKAGE          SECTION.
+       01 LS-A          PIC S9(15).
+       01 LS-B          PIC S9(15).
+       01 LS-RESULT     PIC S9(15).
+       PROCEDURE        DIVISION USING LS-A, LS-B
+                                  RETURNING LS-RESULT.
+           ADD LS-A TO LS-B GIVING LS-RESULT.
+           EXIT PROGRAM.
+])
+
+AT_DATA([caller.cob], [
+       IDENTIFICATION   DIVISION.
+       PROGRAM-ID.      caller.
+       DATA             DIVISION.
+       WORKING-STORAGE  SECTION.
+       01 WS-A          PIC S9(15) VALUE 100000000000000.
+       01 WS-B          PIC S9(15) VALUE 200000000000000.
+       01 WS-RESULT     PIC S9(15).
+       PROCEDURE        DIVISION.
+           CALL "callee" USING WS-A, WS-B
+                         RETURNING WS-RESULT
+           END-CALL.
+           DISPLAY WS-RESULT END-DISPLAY.
+           STOP RUN.
+])
+
+AT_CHECK([${COMPILE} caller.cob])
+AT_CHECK([${COMPILE_MODULE} callee.cob])
+AT_CHECK([java caller], [0],
+[+300000000000000
+])
+
+AT_CLEANUP
+
+
+AT_SETUP([CALL system routine with RETURNING])
+
+AT_DATA([prog.cob], [
+       IDENTIFICATION   DIVISION.
+       PROGRAM-ID.      prog.
+       DATA             DIVISION.
+       WORKING-STORAGE  SECTION.
+       01 WS-STATUS     PIC 9(4).
+       01 WS-CMD        PIC X(6) VALUE "exit 0".
+       PROCEDURE        DIVISION.
+           CALL "SYSTEM" USING WS-CMD
+                         RETURNING WS-STATUS
+           END-CALL.
+           DISPLAY WS-STATUS END-DISPLAY.
+           STOP RUN.
+])
+
+AT_CHECK([${COMPILE} prog.cob])
+AT_CHECK([java prog], [0],
+[0000
+])
+
+AT_CLEANUP
+
+
+AT_SETUP([CALL system routine with GIVING])
+
+AT_DATA([prog.cob], [
+       IDENTIFICATION   DIVISION.
+       PROGRAM-ID.      prog.
+       DATA             DIVISION.
+       WORKING-STORAGE  SECTION.
+       01 WS-STATUS     PIC 9(4).
+       01 WS-CMD        PIC X(6) VALUE "exit 0".
+       PROCEDURE        DIVISION.
+           CALL "SYSTEM" USING WS-CMD
+                         GIVING WS-STATUS
+           END-CALL.
+           DISPLAY WS-STATUS END-DISPLAY.
+           STOP RUN.
+])
+
+AT_CHECK([${COMPILE} prog.cob])
+AT_CHECK([java prog], [0],
+[0000
+])
+
+AT_CLEANUP
+
+
+AT_SETUP([CALL RETURNING without receiving the value])
+
+AT_DATA([callee.cob], [
+       IDENTIFICATION   DIVISION.
+       PROGRAM-ID.      callee.
+       DATA             DIVISION.
+       LINKAGE          SECTION.
+       01 LS-RESULT     PIC 9(2).
+       PROCEDURE        DIVISION RETURNING LS-RESULT.
+           MOVE 42 TO LS-RESULT.
+           EXIT PROGRAM.
+])
+
+AT_DATA([caller.cob], [
+       IDENTIFICATION   DIVISION.
+       PROGRAM-ID.      caller.
+       DATA             DIVISION.
+       WORKING-STORAGE  SECTION.
+       01 WS-NUM        PIC 9(2).
+       PROCEDURE        DIVISION.
+           CALL "callee" RETURNING WS-NUM
+           END-CALL.
+           DISPLAY "DONE" END-DISPLAY.
+           STOP RUN.
+])
+
+AT_CHECK([${COMPILE} caller.cob])
+AT_CHECK([${COMPILE_MODULE} callee.cob])
+AT_CHECK([java caller], [0],
+[DONE
+])
+
+AT_CLEANUP
+
+
+AT_SETUP([Multiple CALLs with RETURNING to the same variable])
+
+AT_DATA([sub1.cob], [
+       IDENTIFICATION   DIVISION.
+       PROGRAM-ID.      sub1.
+       DATA             DIVISION.
+       LINKAGE          SECTION.
+       01 LS-RESULT     PIC 9(2).
+       PROCEDURE        DIVISION RETURNING LS-RESULT.
+           MOVE 10 TO LS-RESULT.
+           EXIT PROGRAM.
+])
+
+AT_DATA([sub2.cob], [
+       IDENTIFICATION   DIVISION.
+       PROGRAM-ID.      sub2.
+       DATA             DIVISION.
+       LINKAGE          SECTION.
+       01 LS-RESULT     PIC 9(2).
+       PROCEDURE        DIVISION RETURNING LS-RESULT.
+           MOVE 20 TO LS-RESULT.
+           EXIT PROGRAM.
+])
+
+AT_DATA([caller.cob], [
+       IDENTIFICATION   DIVISION.
+       PROGRAM-ID.      caller.
+       DATA             DIVISION.
+       WORKING-STORAGE  SECTION.
+       01 WS-NUM        PIC 9(2).
+       PROCEDURE        DIVISION.
+           CALL "sub1" RETURNING WS-NUM
+           END-CALL.
+           DISPLAY WS-NUM END-DISPLAY.
+           CALL "sub2" RETURNING WS-NUM
+           END-CALL.
+           DISPLAY WS-NUM END-DISPLAY.
+           STOP RUN.
+])
+
+AT_CHECK([${COMPILE} caller.cob])
+AT_CHECK([${COMPILE_MODULE} sub1.cob])
+AT_CHECK([${COMPILE_MODULE} sub2.cob])
+AT_CHECK([java caller], [0],
+[10
+20
+])
+
+AT_CLEANUP
+
+
+AT_SETUP([CALL RETURNING with PROCEDURE DIVISION RETURNING and RETURN-CODE])
+
+AT_DATA([callee.cob], [
+       IDENTIFICATION   DIVISION.
+       PROGRAM-ID.      callee.
+       DATA             DIVISION.
+       LINKAGE          SECTION.
+       01 LS-RESULT     PIC 9(2).
+       PROCEDURE        DIVISION RETURNING LS-RESULT.
+           MOVE 42 TO LS-RESULT.
+           MOVE 99 TO RETURN-CODE.
+           EXIT PROGRAM.
+])
+
+AT_DATA([caller.cob], [
+       IDENTIFICATION   DIVISION.
+       PROGRAM-ID.      caller.
+       DATA             DIVISION.
+       WORKING-STORAGE  SECTION.
+       01 WS-NUM        PIC 9(2).
+       PROCEDURE        DIVISION.
+           CALL "callee" RETURNING WS-NUM
+           END-CALL.
+           DISPLAY WS-NUM END-DISPLAY.
+           STOP RUN.
+])
+
+AT_CHECK([${COMPILE} caller.cob])
+AT_CHECK([${COMPILE_MODULE} callee.cob])
+AT_CHECK([java caller], [0],
+[42
+])
+
+AT_CLEANUP

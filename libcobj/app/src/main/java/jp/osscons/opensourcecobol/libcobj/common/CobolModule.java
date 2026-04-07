@@ -28,6 +28,7 @@ public class CobolModule {
 
     private static List<CobolModule> moduleStack = new ArrayList<CobolModule>();
     private static CobolModule currentModule;
+    private static boolean lastCallProcedureDivisionReturning = false;
 
     /**
      * TODO: 準備中
@@ -205,5 +206,23 @@ public class CobolModule {
      */
     public static int getDecimalPoint() {
         return currentModule.decimal_point;
+    }
+
+    /**
+     * TODO: 準備中
+     *
+     * @return TODO: 準備中
+     */
+    public static boolean isLastCallProcedureDivisionReturning() {
+        return lastCallProcedureDivisionReturning;
+    }
+
+    /**
+     * TODO: 準備中
+     *
+     * @param flag TODO: 準備中
+     */
+    public static void setLastCallProcedureDivisionReturning(boolean flag) {
+        lastCallProcedureDivisionReturning = flag;
     }
 }
