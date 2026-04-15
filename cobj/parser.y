@@ -3676,6 +3676,7 @@ procedure_returning:
   }
 | RETURNING WORD
   {
+	cb_error (_("RETURNING clause of PROCEDURE DIVISION is not supported"));
 	if (cb_ref ($2) != cb_error_node) {
 		current_program->returning = $2;
 		if (cb_field ($2)->storage != CB_STORAGE_LINKAGE) {
@@ -4255,8 +4256,16 @@ call_type:
 
 call_returning:
   /* empty */			{ $$ = NULL; }
-| RETURNING identifier		{ $$ = $2; }
-| GIVING identifier		{ $$ = $2; }
+| RETURNING identifier 
+  {
+	cb_error (_("RETURNING clause of CALL is not supported"));
+	$$ = $2;
+  }
+| GIVING identifier
+  {
+	cb_error (_("GIVING clause of CALL is not supported"));
+	$$ = $2;
+  }
 ;
 
 call_on_exception:
