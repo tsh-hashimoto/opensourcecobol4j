@@ -2031,86 +2031,86 @@ static const yytype_int16 yyrline[] =
     4113,  4119,  4123,  4127,  4133,  4134,  4138,  4139,  4148,  4148,
     4153,  4157,  4164,  4165,  4174,  4180,  4181,  4185,  4185,  4193,
     4193,  4203,  4205,  4204,  4213,  4214,  4219,  4226,  4233,  4235,
-    4239,  4247,  4258,  4259,  4264,  4273,  4277,  4276,  4288,  4292,
-    4291,  4302,  4303,  4312,  4312,  4316,  4317,  4321,  4333,  4333,
-    4337,  4338,  4349,  4350,  4351,  4352,  4353,  4356,  4356,  4364,
-    4364,  4370,  4377,  4378,  4381,  4381,  4388,  4401,  4414,  4414,
-    4425,  4426,  4435,  4435,  4455,  4454,  4467,  4471,  4475,  4479,
-    4483,  4487,  4491,  4496,  4500,  4507,  4508,  4509,  4513,  4514,
-    4519,  4520,  4521,  4522,  4523,  4524,  4525,  4526,  4527,  4528,
-    4532,  4536,  4540,  4545,  4546,  4550,  4551,  4560,  4560,  4566,
-    4570,  4574,  4578,  4582,  4589,  4590,  4599,  4599,  4621,  4620,
-    4639,  4640,  4651,  4660,  4665,  4673,  4702,  4703,  4709,  4708,
-    4724,  4728,  4727,  4742,  4743,  4748,  4749,  4760,  4789,  4790,
-    4791,  4794,  4795,  4799,  4800,  4809,  4809,  4814,  4815,  4823,
-    4831,  4839,  4857,  4882,  4882,  4895,  4895,  4908,  4908,  4917,
-    4921,  4934,  4934,  4947,  4949,  4947,  4960,  4965,  4969,  4968,
-    4982,  4983,  4992,  4992,  5000,  5001,  5005,  5006,  5007,  5011,
-    5012,  5017,  5018,  5023,  5027,  5028,  5029,  5030,  5031,  5032,
-    5033,  5037,  5038,  5047,  5047,  5060,  5059,  5069,  5070,  5071,
-    5075,  5076,  5080,  5081,  5082,  5088,  5088,  5093,  5094,  5098,
-    5099,  5100,  5101,  5102,  5103,  5109,  5113,  5114,  5118,  5123,
-    5127,  5128,  5129,  5130,  5131,  5135,  5161,  5174,  5175,  5179,
-    5179,  5187,  5187,  5197,  5197,  5202,  5206,  5218,  5218,  5224,
-    5228,  5235,  5236,  5245,  5245,  5249,  5250,  5264,  5265,  5266,
-    5267,  5271,  5272,  5276,  5277,  5278,  5290,  5290,  5295,  5300,
-    5299,  5309,  5316,  5317,  5321,  5326,  5335,  5338,  5342,  5347,
-    5354,  5361,  5362,  5366,  5367,  5372,  5384,  5384,  5411,  5412,
-    5416,  5417,  5421,  5425,  5429,  5433,  5440,  5441,  5447,  5448,
-    5449,  5453,  5454,  5463,  5463,  5478,  5478,  5489,  5490,  5499,
-    5499,  5516,  5517,  5521,  5528,  5529,  5538,  5551,  5551,  5557,
-    5562,  5561,  5572,  5573,  5577,  5579,  5578,  5589,  5590,  5595,
-    5594,  5605,  5606,  5615,  5615,  5620,  5621,  5622,  5623,  5624,
-    5630,  5639,  5643,  5652,  5659,  5660,  5666,  5667,  5671,  5680,
-    5681,  5685,  5689,  5701,  5701,  5707,  5706,  5723,  5726,  5747,
-    5748,  5751,  5752,  5756,  5757,  5762,  5767,  5775,  5787,  5792,
-    5800,  5816,  5817,  5816,  5837,  5838,  5846,  5847,  5848,  5849,
-    5850,  5854,  5855,  5864,  5864,  5869,  5869,  5876,  5877,  5878,
-    5887,  5887,  5896,  5897,  5901,  5902,  5903,  5907,  5908,  5912,
-    5913,  5922,  5922,  5928,  5932,  5936,  5943,  5944,  5953,  5960,
-    5961,  5969,  5969,  5982,  5982,  5998,  5998,  6007,  6009,  6010,
-    6019,  6019,  6029,  6030,  6035,  6036,  6041,  6048,  6049,  6054,
-    6061,  6062,  6066,  6067,  6071,  6072,  6076,  6077,  6086,  6087,
-    6088,  6092,  6116,  6119,  6127,  6137,  6142,  6147,  6152,  6159,
-    6160,  6163,  6164,  6168,  6168,  6172,  6172,  6176,  6176,  6179,
-    6180,  6184,  6191,  6192,  6196,  6208,  6208,  6225,  6226,  6231,
-    6234,  6238,  6242,  6249,  6250,  6253,  6254,  6255,  6259,  6260,
-    6273,  6281,  6288,  6290,  6289,  6299,  6301,  6300,  6315,  6319,
-    6321,  6320,  6331,  6333,  6332,  6349,  6355,  6357,  6356,  6366,
-    6368,  6367,  6383,  6388,  6393,  6403,  6402,  6414,  6413,  6429,
-    6434,  6439,  6449,  6448,  6460,  6459,  6474,  6475,  6479,  6484,
-    6489,  6499,  6498,  6510,  6509,  6526,  6529,  6541,  6548,  6555,
-    6555,  6565,  6566,  6568,  6569,  6570,  6571,  6572,  6573,  6575,
-    6576,  6577,  6578,  6579,  6580,  6582,  6583,  6585,  6586,  6587,
-    6590,  6592,  6593,  6594,  6596,  6597,  6598,  6600,  6601,  6603,
-    6604,  6605,  6606,  6607,  6609,  6610,  6611,  6612,  6613,  6614,
-    6616,  6617,  6618,  6619,  6620,  6621,  6623,  6624,  6627,  6627,
-    6627,  6628,  6628,  6629,  6629,  6630,  6630,  6630,  6631,  6631,
-    6631,  6636,  6637,  6640,  6641,  6642,  6646,  6647,  6648,  6649,
-    6650,  6651,  6652,  6653,  6654,  6665,  6677,  6692,  6693,  6698,
-    6704,  6726,  6746,  6750,  6766,  6780,  6781,  6786,  6792,  6793,
-    6798,  6807,  6808,  6809,  6813,  6824,  6825,  6829,  6839,  6840,
-    6844,  6845,  6849,  6850,  6856,  6876,  6877,  6881,  6882,  6886,
-    6887,  6891,  6892,  6893,  6894,  6895,  6896,  6897,  6898,  6899,
-    6903,  6904,  6905,  6906,  6907,  6908,  6909,  6913,  6914,  6918,
-    6919,  6923,  6924,  6928,  6929,  6940,  6941,  6945,  6946,  6947,
-    6951,  6952,  6953,  6961,  6965,  6966,  6967,  6968,  6972,  6973,
-    6977,  6987,  7001,  7024,  7036,  7037,  7047,  7048,  7052,  7053,
-    7054,  7055,  7056,  7057,  7058,  7066,  7070,  7074,  7078,  7082,
-    7086,  7090,  7094,  7098,  7102,  7106,  7110,  7117,  7118,  7119,
-    7123,  7124,  7128,  7129,  7134,  7141,  7148,  7158,  7165,  7175,
-    7182,  7196,  7206,  7207,  7211,  7212,  7216,  7217,  7221,  7222,
-    7223,  7227,  7228,  7232,  7233,  7237,  7238,  7242,  7243,  7250,
-    7250,  7251,  7251,  7252,  7252,  7253,  7253,  7255,  7255,  7256,
-    7256,  7257,  7257,  7258,  7258,  7259,  7259,  7260,  7260,  7261,
-    7261,  7262,  7262,  7263,  7263,  7264,  7264,  7265,  7265,  7266,
-    7266,  7267,  7267,  7268,  7268,  7269,  7269,  7270,  7270,  7271,
-    7271,  7272,  7272,  7272,  7273,  7273,  7274,  7274,  7274,  7275,
-    7275,  7276,  7276,  7277,  7277,  7278,  7278,  7279,  7279,  7280,
-    7280,  7281,  7281,  7281,  7282,  7282,  7283,  7283,  7284,  7284,
-    7285,  7285,  7286,  7286,  7287,  7287,  7288,  7288,  7288,  7289,
-    7289,  7290,  7290,  7291,  7291,  7292,  7292,  7293,  7293,  7294,
-    7294,  7295,  7295,  7297,  7297,  7298,  7298
+    4239,  4247,  4258,  4259,  4268,  4281,  4285,  4284,  4296,  4300,
+    4299,  4310,  4311,  4320,  4320,  4324,  4325,  4329,  4341,  4341,
+    4345,  4346,  4357,  4358,  4359,  4360,  4361,  4364,  4364,  4372,
+    4372,  4378,  4385,  4386,  4389,  4389,  4396,  4409,  4422,  4422,
+    4433,  4434,  4443,  4443,  4463,  4462,  4475,  4479,  4483,  4487,
+    4491,  4495,  4499,  4504,  4508,  4515,  4516,  4517,  4521,  4522,
+    4527,  4528,  4529,  4530,  4531,  4532,  4533,  4534,  4535,  4536,
+    4540,  4544,  4548,  4553,  4554,  4558,  4559,  4568,  4568,  4574,
+    4578,  4582,  4586,  4590,  4597,  4598,  4607,  4607,  4629,  4628,
+    4647,  4648,  4659,  4668,  4673,  4681,  4710,  4711,  4717,  4716,
+    4732,  4736,  4735,  4750,  4751,  4756,  4757,  4768,  4797,  4798,
+    4799,  4802,  4803,  4807,  4808,  4817,  4817,  4822,  4823,  4831,
+    4839,  4847,  4865,  4890,  4890,  4903,  4903,  4916,  4916,  4925,
+    4929,  4942,  4942,  4955,  4957,  4955,  4968,  4973,  4977,  4976,
+    4990,  4991,  5000,  5000,  5008,  5009,  5013,  5014,  5015,  5019,
+    5020,  5025,  5026,  5031,  5035,  5036,  5037,  5038,  5039,  5040,
+    5041,  5045,  5046,  5055,  5055,  5068,  5067,  5077,  5078,  5079,
+    5083,  5084,  5088,  5089,  5090,  5096,  5096,  5101,  5102,  5106,
+    5107,  5108,  5109,  5110,  5111,  5117,  5121,  5122,  5126,  5131,
+    5135,  5136,  5137,  5138,  5139,  5143,  5169,  5182,  5183,  5187,
+    5187,  5195,  5195,  5205,  5205,  5210,  5214,  5226,  5226,  5232,
+    5236,  5243,  5244,  5253,  5253,  5257,  5258,  5272,  5273,  5274,
+    5275,  5279,  5280,  5284,  5285,  5286,  5298,  5298,  5303,  5308,
+    5307,  5317,  5324,  5325,  5329,  5334,  5343,  5346,  5350,  5355,
+    5362,  5369,  5370,  5374,  5375,  5380,  5392,  5392,  5419,  5420,
+    5424,  5425,  5429,  5433,  5437,  5441,  5448,  5449,  5455,  5456,
+    5457,  5461,  5462,  5471,  5471,  5486,  5486,  5497,  5498,  5507,
+    5507,  5524,  5525,  5529,  5536,  5537,  5546,  5559,  5559,  5565,
+    5570,  5569,  5580,  5581,  5585,  5587,  5586,  5597,  5598,  5603,
+    5602,  5613,  5614,  5623,  5623,  5628,  5629,  5630,  5631,  5632,
+    5638,  5647,  5651,  5660,  5667,  5668,  5674,  5675,  5679,  5688,
+    5689,  5693,  5697,  5709,  5709,  5715,  5714,  5731,  5734,  5755,
+    5756,  5759,  5760,  5764,  5765,  5770,  5775,  5783,  5795,  5800,
+    5808,  5824,  5825,  5824,  5845,  5846,  5854,  5855,  5856,  5857,
+    5858,  5862,  5863,  5872,  5872,  5877,  5877,  5884,  5885,  5886,
+    5895,  5895,  5904,  5905,  5909,  5910,  5911,  5915,  5916,  5920,
+    5921,  5930,  5930,  5936,  5940,  5944,  5951,  5952,  5961,  5968,
+    5969,  5977,  5977,  5990,  5990,  6006,  6006,  6015,  6017,  6018,
+    6027,  6027,  6037,  6038,  6043,  6044,  6049,  6056,  6057,  6062,
+    6069,  6070,  6074,  6075,  6079,  6080,  6084,  6085,  6094,  6095,
+    6096,  6100,  6124,  6127,  6135,  6145,  6150,  6155,  6160,  6167,
+    6168,  6171,  6172,  6176,  6176,  6180,  6180,  6184,  6184,  6187,
+    6188,  6192,  6199,  6200,  6204,  6216,  6216,  6233,  6234,  6239,
+    6242,  6246,  6250,  6257,  6258,  6261,  6262,  6263,  6267,  6268,
+    6281,  6289,  6296,  6298,  6297,  6307,  6309,  6308,  6323,  6327,
+    6329,  6328,  6339,  6341,  6340,  6357,  6363,  6365,  6364,  6374,
+    6376,  6375,  6391,  6396,  6401,  6411,  6410,  6422,  6421,  6437,
+    6442,  6447,  6457,  6456,  6468,  6467,  6482,  6483,  6487,  6492,
+    6497,  6507,  6506,  6518,  6517,  6534,  6537,  6549,  6556,  6563,
+    6563,  6573,  6574,  6576,  6577,  6578,  6579,  6580,  6581,  6583,
+    6584,  6585,  6586,  6587,  6588,  6590,  6591,  6593,  6594,  6595,
+    6598,  6600,  6601,  6602,  6604,  6605,  6606,  6608,  6609,  6611,
+    6612,  6613,  6614,  6615,  6617,  6618,  6619,  6620,  6621,  6622,
+    6624,  6625,  6626,  6627,  6628,  6629,  6631,  6632,  6635,  6635,
+    6635,  6636,  6636,  6637,  6637,  6638,  6638,  6638,  6639,  6639,
+    6639,  6644,  6645,  6648,  6649,  6650,  6654,  6655,  6656,  6657,
+    6658,  6659,  6660,  6661,  6662,  6673,  6685,  6700,  6701,  6706,
+    6712,  6734,  6754,  6758,  6774,  6788,  6789,  6794,  6800,  6801,
+    6806,  6815,  6816,  6817,  6821,  6832,  6833,  6837,  6847,  6848,
+    6852,  6853,  6857,  6858,  6864,  6884,  6885,  6889,  6890,  6894,
+    6895,  6899,  6900,  6901,  6902,  6903,  6904,  6905,  6906,  6907,
+    6911,  6912,  6913,  6914,  6915,  6916,  6917,  6921,  6922,  6926,
+    6927,  6931,  6932,  6936,  6937,  6948,  6949,  6953,  6954,  6955,
+    6959,  6960,  6961,  6969,  6973,  6974,  6975,  6976,  6980,  6981,
+    6985,  6995,  7009,  7032,  7044,  7045,  7055,  7056,  7060,  7061,
+    7062,  7063,  7064,  7065,  7066,  7074,  7078,  7082,  7086,  7090,
+    7094,  7098,  7102,  7106,  7110,  7114,  7118,  7125,  7126,  7127,
+    7131,  7132,  7136,  7137,  7142,  7149,  7156,  7166,  7173,  7183,
+    7190,  7204,  7214,  7215,  7219,  7220,  7224,  7225,  7229,  7230,
+    7231,  7235,  7236,  7240,  7241,  7245,  7246,  7250,  7251,  7258,
+    7258,  7259,  7259,  7260,  7260,  7261,  7261,  7263,  7263,  7264,
+    7264,  7265,  7265,  7266,  7266,  7267,  7267,  7268,  7268,  7269,
+    7269,  7270,  7270,  7271,  7271,  7272,  7272,  7273,  7273,  7274,
+    7274,  7275,  7275,  7276,  7276,  7277,  7277,  7278,  7278,  7279,
+    7279,  7280,  7280,  7280,  7281,  7281,  7282,  7282,  7282,  7283,
+    7283,  7284,  7284,  7285,  7285,  7286,  7286,  7287,  7287,  7288,
+    7288,  7289,  7289,  7289,  7290,  7290,  7291,  7291,  7292,  7292,
+    7293,  7293,  7294,  7294,  7295,  7295,  7296,  7296,  7296,  7297,
+    7297,  7298,  7298,  7299,  7299,  7300,  7300,  7301,  7301,  7302,
+    7302,  7303,  7303,  7305,  7305,  7306,  7306
 };
 #endif
 
@@ -9008,230 +9008,238 @@ yyreduce:
   case 753: /* call_returning: RETURNING identifier  */
 #line 4260 "parser.y"
   {
-	cb_error (_("RETURNING clause of CALL is not supported"));
-	yyval = yyvsp[0];
+	if (cb_ref (yyvsp[0]) != cb_error_node && cb_field (yyvsp[0])->storage == CB_STORAGE_LINKAGE) {
+		cb_error (_("RETURNING clause of CALL with LINKAGE SECTION item is not supported"));
+		yyval = NULL;
+	} else {
+		yyval = yyvsp[0];
+	}
   }
-#line 9015 "parser.c"
+#line 9019 "parser.c"
     break;
 
   case 754: /* call_returning: GIVING identifier  */
-#line 4265 "parser.y"
+#line 4269 "parser.y"
   {
-	cb_error (_("GIVING clause of CALL is not supported"));
-	yyval = yyvsp[0];
-  }
-#line 9024 "parser.c"
-    break;
-
-  case 755: /* call_on_exception: %empty  */
-#line 4273 "parser.y"
-  {
-	yyval = NULL;
+	if (cb_ref (yyvsp[0]) != cb_error_node && cb_field (yyvsp[0])->storage == CB_STORAGE_LINKAGE) {
+		cb_error (_("RETURNING clause of CALL with LINKAGE SECTION item is not supported"));
+		yyval = NULL;
+	} else {
+		yyval = yyvsp[0];
+	}
   }
 #line 9032 "parser.c"
     break;
 
-  case 756: /* $@41: %empty  */
-#line 4277 "parser.y"
+  case 755: /* call_on_exception: %empty  */
+#line 4281 "parser.y"
   {
-	check_unreached = 0;
+	yyval = NULL;
   }
 #line 9040 "parser.c"
     break;
 
-  case 757: /* call_on_exception: exception_or_overflow $@41 statement_list  */
-#line 4281 "parser.y"
+  case 756: /* $@41: %empty  */
+#line 4285 "parser.y"
   {
-	yyval = yyvsp[0];
+	check_unreached = 0;
   }
 #line 9048 "parser.c"
     break;
 
-  case 758: /* call_not_on_exception: %empty  */
-#line 4288 "parser.y"
+  case 757: /* call_on_exception: exception_or_overflow $@41 statement_list  */
+#line 4289 "parser.y"
   {
-	yyval = NULL;
+	yyval = yyvsp[0];
   }
 #line 9056 "parser.c"
     break;
 
-  case 759: /* $@42: %empty  */
-#line 4292 "parser.y"
+  case 758: /* call_not_on_exception: %empty  */
+#line 4296 "parser.y"
   {
-	check_unreached = 0;
+	yyval = NULL;
   }
 #line 9064 "parser.c"
     break;
 
-  case 760: /* call_not_on_exception: not_exception_or_overflow $@42 statement_list  */
-#line 4296 "parser.y"
+  case 759: /* $@42: %empty  */
+#line 4300 "parser.y"
   {
-	yyval = yyvsp[0];
+	check_unreached = 0;
   }
 #line 9072 "parser.c"
     break;
 
+  case 760: /* call_not_on_exception: not_exception_or_overflow $@42 statement_list  */
+#line 4304 "parser.y"
+  {
+	yyval = yyvsp[0];
+  }
+#line 9080 "parser.c"
+    break;
+
   case 761: /* end_call: %empty  */
-#line 4302 "parser.y"
+#line 4310 "parser.y"
                                 { terminator_warning (TERM_CALL); }
-#line 9078 "parser.c"
+#line 9086 "parser.c"
     break;
 
   case 762: /* end_call: "END-CALL"  */
-#line 4303 "parser.y"
+#line 4311 "parser.y"
                                 { terminator_clear (TERM_CALL); }
-#line 9084 "parser.c"
+#line 9092 "parser.c"
     break;
 
   case 763: /* $@43: %empty  */
-#line 4312 "parser.y"
+#line 4320 "parser.y"
                                 { BEGIN_STATEMENT ("CANCEL", 0); }
-#line 9090 "parser.c"
-    break;
-
-  case 766: /* cancel_list: cancel_list id_or_lit  */
-#line 4318 "parser.y"
-  {
-	cb_emit_cancel (yyvsp[0]);
-  }
 #line 9098 "parser.c"
     break;
 
-  case 767: /* cancel_list: ALL  */
-#line 4322 "parser.y"
+  case 766: /* cancel_list: cancel_list id_or_lit  */
+#line 4326 "parser.y"
   {
-	cb_emit_cancel_all ();
+	cb_emit_cancel (yyvsp[0]);
   }
 #line 9106 "parser.c"
     break;
 
+  case 767: /* cancel_list: ALL  */
+#line 4330 "parser.y"
+  {
+	cb_emit_cancel_all ();
+  }
+#line 9114 "parser.c"
+    break;
+
   case 768: /* $@44: %empty  */
-#line 4333 "parser.y"
+#line 4341 "parser.y"
                                 { BEGIN_STATEMENT ("CLOSE", 0); }
-#line 9112 "parser.c"
+#line 9120 "parser.c"
     break;
 
   case 771: /* close_list: close_list file_name close_option  */
-#line 4340 "parser.y"
+#line 4348 "parser.y"
   {
 	BEGIN_IMPLICIT_STATEMENT (yyvsp[-1]);
 	if (yyvsp[-1] != cb_error_node) {
 		cb_emit_close (yyvsp[-1], yyvsp[0]);
 	}
   }
-#line 9123 "parser.c"
+#line 9131 "parser.c"
     break;
 
   case 772: /* close_option: %empty  */
-#line 4349 "parser.y"
+#line 4357 "parser.y"
                                 { yyval = cb_int (COB_CLOSE_NORMAL); }
-#line 9129 "parser.c"
+#line 9137 "parser.c"
     break;
 
   case 773: /* close_option: reel_or_unit  */
-#line 4350 "parser.y"
+#line 4358 "parser.y"
                                 { yyval = cb_int (COB_CLOSE_UNIT); }
-#line 9135 "parser.c"
+#line 9143 "parser.c"
     break;
 
   case 774: /* close_option: reel_or_unit _for REMOVAL  */
-#line 4351 "parser.y"
+#line 4359 "parser.y"
                                 { yyval = cb_int (COB_CLOSE_UNIT_REMOVAL); }
-#line 9141 "parser.c"
+#line 9149 "parser.c"
     break;
 
   case 775: /* close_option: _with NO REWIND  */
-#line 4352 "parser.y"
+#line 4360 "parser.y"
                                 { yyval = cb_int (COB_CLOSE_NO_REWIND); }
-#line 9147 "parser.c"
+#line 9155 "parser.c"
     break;
 
   case 776: /* close_option: _with LOCK  */
-#line 4353 "parser.y"
+#line 4361 "parser.y"
                                 { yyval = cb_int (COB_CLOSE_LOCK); }
-#line 9153 "parser.c"
+#line 9161 "parser.c"
     break;
 
   case 779: /* $@45: %empty  */
-#line 4364 "parser.y"
+#line 4372 "parser.y"
                                 { BEGIN_STATEMENT ("COMPUTE", TERM_COMPUTE); }
-#line 9159 "parser.c"
-    break;
-
-  case 781: /* compute_body: arithmetic_x_list comp_equal expr on_size_error  */
-#line 4371 "parser.y"
-  {
-	cb_emit_arithmetic (yyvsp[-3], 0, yyvsp[-1]);
-  }
 #line 9167 "parser.c"
     break;
 
+  case 781: /* compute_body: arithmetic_x_list comp_equal expr on_size_error  */
+#line 4379 "parser.y"
+  {
+	cb_emit_arithmetic (yyvsp[-3], 0, yyvsp[-1]);
+  }
+#line 9175 "parser.c"
+    break;
+
   case 782: /* end_compute: %empty  */
-#line 4377 "parser.y"
+#line 4385 "parser.y"
                                 { terminator_warning (TERM_COMPUTE); }
-#line 9173 "parser.c"
+#line 9181 "parser.c"
     break;
 
   case 783: /* end_compute: "END-COMPUTE"  */
-#line 4378 "parser.y"
+#line 4386 "parser.y"
                                 { terminator_clear (TERM_COMPUTE); }
-#line 9179 "parser.c"
+#line 9187 "parser.c"
     break;
 
   case 786: /* commit_statement: COMMIT  */
-#line 4389 "parser.y"
+#line 4397 "parser.y"
   {
 	BEGIN_STATEMENT ("COMMIT", 0);
 	cb_emit_commit ();
   }
-#line 9188 "parser.c"
+#line 9196 "parser.c"
     break;
 
   case 787: /* continue_statement: CONTINUE  */
-#line 4402 "parser.y"
+#line 4410 "parser.y"
   {
 	BEGIN_STATEMENT ("CONTINUE", 0);
 	cb_emit_continue ();
   }
-#line 9197 "parser.c"
+#line 9205 "parser.c"
     break;
 
   case 788: /* $@46: %empty  */
-#line 4414 "parser.y"
+#line 4422 "parser.y"
                                 { BEGIN_STATEMENT ("DELETE", TERM_DELETE); }
-#line 9203 "parser.c"
+#line 9211 "parser.c"
     break;
 
   case 789: /* delete_statement: DELETE $@46 file_name _record opt_invalid_key end_delete  */
-#line 4417 "parser.y"
+#line 4425 "parser.y"
   {
 	if (yyvsp[-3] != cb_error_node) {
 		cb_emit_delete (yyvsp[-3]);
 	}
   }
-#line 9213 "parser.c"
+#line 9221 "parser.c"
     break;
 
   case 790: /* end_delete: %empty  */
-#line 4425 "parser.y"
+#line 4433 "parser.y"
                                 { terminator_warning (TERM_DELETE); }
-#line 9219 "parser.c"
+#line 9227 "parser.c"
     break;
 
   case 791: /* end_delete: "END-DELETE"  */
-#line 4426 "parser.y"
+#line 4434 "parser.y"
                                 { terminator_clear (TERM_DELETE); }
-#line 9225 "parser.c"
+#line 9233 "parser.c"
     break;
 
   case 792: /* $@47: %empty  */
-#line 4435 "parser.y"
+#line 4443 "parser.y"
                                   { BEGIN_STATEMENT ("DELETE-FILE", 0); }
-#line 9231 "parser.c"
+#line 9239 "parser.c"
     break;
 
   case 793: /* delete_file_statement: DELETE $@47 "FILE" file_name_list  */
-#line 4437 "parser.y"
+#line 4445 "parser.y"
   {
 	cb_tree l;
 	for (l = yyvsp[0]; l; l = CB_CHAIN (l)) {
@@ -9241,11 +9249,11 @@ yyreduce:
 		}
 	}
   }
-#line 9245 "parser.c"
+#line 9253 "parser.c"
     break;
 
   case 794: /* $@48: %empty  */
-#line 4455 "parser.y"
+#line 4463 "parser.y"
   {
 	BEGIN_STATEMENT ("DISPLAY", TERM_DISPLAY);
 	dispattrs = 0;
@@ -9253,277 +9261,277 @@ yyreduce:
 	bgc = NULL;
 	scroll = NULL;
   }
-#line 9257 "parser.c"
-    break;
-
-  case 796: /* display_body: id_or_lit "UPON ENVIRONMENT-NAME" on_disp_exception  */
-#line 4468 "parser.y"
-  {
-	cb_emit_env_name (yyvsp[-2]);
-  }
 #line 9265 "parser.c"
     break;
 
-  case 797: /* display_body: id_or_lit "UPON ENVIRONMENT-VALUE" on_disp_exception  */
-#line 4472 "parser.y"
+  case 796: /* display_body: id_or_lit "UPON ENVIRONMENT-NAME" on_disp_exception  */
+#line 4476 "parser.y"
   {
-	cb_emit_env_value (yyvsp[-2]);
+	cb_emit_env_name (yyvsp[-2]);
   }
 #line 9273 "parser.c"
     break;
 
-  case 798: /* display_body: id_or_lit "UPON ARGUMENT-NUMBER" on_disp_exception  */
-#line 4476 "parser.y"
+  case 797: /* display_body: id_or_lit "UPON ENVIRONMENT-VALUE" on_disp_exception  */
+#line 4480 "parser.y"
   {
-	cb_emit_arg_number (yyvsp[-2]);
+	cb_emit_env_value (yyvsp[-2]);
   }
 #line 9281 "parser.c"
     break;
 
-  case 799: /* display_body: id_or_lit "UPON COMMAND-LINE" on_disp_exception  */
-#line 4480 "parser.y"
+  case 798: /* display_body: id_or_lit "UPON ARGUMENT-NUMBER" on_disp_exception  */
+#line 4484 "parser.y"
   {
-	cb_emit_command_line (yyvsp[-2]);
+	cb_emit_arg_number (yyvsp[-2]);
   }
 #line 9289 "parser.c"
     break;
 
-  case 800: /* display_body: x_list opt_at_line_column with_clause on_disp_exception  */
-#line 4484 "parser.y"
+  case 799: /* display_body: id_or_lit "UPON COMMAND-LINE" on_disp_exception  */
+#line 4488 "parser.y"
   {
-	cb_emit_display (yyvsp[-3], cb_int0, yyvsp[-1], yyvsp[-2], fgc, bgc, scroll, dispattrs);
+	cb_emit_command_line (yyvsp[-2]);
   }
 #line 9297 "parser.c"
     break;
 
-  case 801: /* display_body: x_list opt_at_line_column UPON mnemonic_name with_clause on_disp_exception  */
-#line 4488 "parser.y"
+  case 800: /* display_body: x_list opt_at_line_column with_clause on_disp_exception  */
+#line 4492 "parser.y"
   {
-	cb_emit_display_mnemonic (yyvsp[-5], yyvsp[-2], yyvsp[-1], yyvsp[-4], fgc, bgc, scroll, dispattrs);
+	cb_emit_display (yyvsp[-3], cb_int0, yyvsp[-1], yyvsp[-2], fgc, bgc, scroll, dispattrs);
   }
 #line 9305 "parser.c"
     break;
 
+  case 801: /* display_body: x_list opt_at_line_column UPON mnemonic_name with_clause on_disp_exception  */
+#line 4496 "parser.y"
+  {
+	cb_emit_display_mnemonic (yyvsp[-5], yyvsp[-2], yyvsp[-1], yyvsp[-4], fgc, bgc, scroll, dispattrs);
+  }
+#line 9313 "parser.c"
+    break;
+
   case 802: /* display_body: x_list opt_at_line_column UPON "Identifier" with_clause on_disp_exception  */
-#line 4492 "parser.y"
+#line 4500 "parser.y"
   {
 	cb_tree word = cb_build_display_upon_direct (yyvsp[-2]);
 	cb_emit_display (yyvsp[-5], word, yyvsp[-1], yyvsp[-4], fgc, bgc, scroll, dispattrs);
   }
-#line 9314 "parser.c"
-    break;
-
-  case 803: /* display_body: x_list opt_at_line_column UPON PRINTER with_clause on_disp_exception  */
-#line 4497 "parser.y"
-  {
-	cb_emit_display (yyvsp[-5], cb_int0, yyvsp[-1], yyvsp[-4], fgc, bgc, scroll, dispattrs);
-  }
 #line 9322 "parser.c"
     break;
 
-  case 804: /* display_body: x_list opt_at_line_column UPON CRT with_clause on_disp_exception  */
-#line 4501 "parser.y"
+  case 803: /* display_body: x_list opt_at_line_column UPON PRINTER with_clause on_disp_exception  */
+#line 4505 "parser.y"
   {
 	cb_emit_display (yyvsp[-5], cb_int0, yyvsp[-1], yyvsp[-4], fgc, bgc, scroll, dispattrs);
   }
 #line 9330 "parser.c"
     break;
 
+  case 804: /* display_body: x_list opt_at_line_column UPON CRT with_clause on_disp_exception  */
+#line 4509 "parser.y"
+  {
+	cb_emit_display (yyvsp[-5], cb_int0, yyvsp[-1], yyvsp[-4], fgc, bgc, scroll, dispattrs);
+  }
+#line 9338 "parser.c"
+    break;
+
   case 805: /* with_clause: %empty  */
-#line 4507 "parser.y"
+#line 4515 "parser.y"
                                 { yyval = cb_int1; }
-#line 9336 "parser.c"
+#line 9344 "parser.c"
     break;
 
   case 806: /* with_clause: _with "NO ADVANCING"  */
-#line 4508 "parser.y"
+#line 4516 "parser.y"
                                 { yyval = cb_int0; }
-#line 9342 "parser.c"
+#line 9350 "parser.c"
     break;
 
   case 807: /* with_clause: WITH disp_attrs  */
-#line 4509 "parser.y"
+#line 4517 "parser.y"
                                 { yyval = cb_int1; }
-#line 9348 "parser.c"
+#line 9356 "parser.c"
     break;
 
   case 810: /* disp_attr: BELL  */
-#line 4519 "parser.y"
+#line 4527 "parser.y"
                 { dispattrs |= COB_SCREEN_BELL; }
-#line 9354 "parser.c"
+#line 9362 "parser.c"
     break;
 
   case 811: /* disp_attr: BLINK  */
-#line 4520 "parser.y"
+#line 4528 "parser.y"
                 { dispattrs |= COB_SCREEN_BLINK; }
-#line 9360 "parser.c"
+#line 9368 "parser.c"
     break;
 
   case 812: /* disp_attr: ERASE EOL  */
-#line 4521 "parser.y"
+#line 4529 "parser.y"
                 { dispattrs |= COB_SCREEN_ERASE_EOL; }
-#line 9366 "parser.c"
+#line 9374 "parser.c"
     break;
 
   case 813: /* disp_attr: ERASE EOS  */
-#line 4522 "parser.y"
+#line 4530 "parser.y"
                 { dispattrs |= COB_SCREEN_ERASE_EOS; }
-#line 9372 "parser.c"
+#line 9380 "parser.c"
     break;
 
   case 814: /* disp_attr: HIGHLIGHT  */
-#line 4523 "parser.y"
+#line 4531 "parser.y"
                 { dispattrs |= COB_SCREEN_HIGHLIGHT; }
-#line 9378 "parser.c"
+#line 9386 "parser.c"
     break;
 
   case 815: /* disp_attr: LOWLIGHT  */
-#line 4524 "parser.y"
+#line 4532 "parser.y"
                 { dispattrs |= COB_SCREEN_LOWLIGHT; }
-#line 9384 "parser.c"
+#line 9392 "parser.c"
     break;
 
   case 816: /* disp_attr: "REVERSE-VIDEO"  */
-#line 4525 "parser.y"
+#line 4533 "parser.y"
                 { dispattrs |= COB_SCREEN_REVERSE; }
-#line 9390 "parser.c"
+#line 9398 "parser.c"
     break;
 
   case 817: /* disp_attr: UNDERLINE  */
-#line 4526 "parser.y"
+#line 4534 "parser.y"
                 { dispattrs |= COB_SCREEN_UNDERLINE; }
-#line 9396 "parser.c"
+#line 9404 "parser.c"
     break;
 
   case 818: /* disp_attr: OVERLINE  */
-#line 4527 "parser.y"
+#line 4535 "parser.y"
                 { dispattrs |= COB_SCREEN_OVERLINE; }
-#line 9402 "parser.c"
-    break;
-
-  case 819: /* disp_attr: "FOREGROUND-COLOR" _is num_id_or_lit  */
-#line 4529 "parser.y"
-  {
-	fgc = yyvsp[0];
-  }
 #line 9410 "parser.c"
     break;
 
-  case 820: /* disp_attr: "BACKGROUND-COLOR" _is num_id_or_lit  */
-#line 4533 "parser.y"
+  case 819: /* disp_attr: "FOREGROUND-COLOR" _is num_id_or_lit  */
+#line 4537 "parser.y"
   {
-	bgc = yyvsp[0];
+	fgc = yyvsp[0];
   }
 #line 9418 "parser.c"
     break;
 
-  case 821: /* disp_attr: SCROLL UP _opt_scroll_lines  */
-#line 4537 "parser.y"
+  case 820: /* disp_attr: "BACKGROUND-COLOR" _is num_id_or_lit  */
+#line 4541 "parser.y"
   {
-	scroll = yyvsp[0];
+	bgc = yyvsp[0];
   }
 #line 9426 "parser.c"
     break;
 
+  case 821: /* disp_attr: SCROLL UP _opt_scroll_lines  */
+#line 4545 "parser.y"
+  {
+	scroll = yyvsp[0];
+  }
+#line 9434 "parser.c"
+    break;
+
   case 822: /* disp_attr: SCROLL DOWN _opt_scroll_lines  */
-#line 4541 "parser.y"
+#line 4549 "parser.y"
   {
 	dispattrs |= COB_SCREEN_SCROLL_DOWN;
 	scroll = yyvsp[0];
   }
-#line 9435 "parser.c"
+#line 9443 "parser.c"
     break;
 
   case 823: /* disp_attr: "BLANK-LINE"  */
-#line 4545 "parser.y"
+#line 4553 "parser.y"
                 { dispattrs |= COB_SCREEN_BLANK_LINE; }
-#line 9441 "parser.c"
+#line 9449 "parser.c"
     break;
 
   case 824: /* disp_attr: "BLANK-SCREEN"  */
-#line 4546 "parser.y"
+#line 4554 "parser.y"
                 { dispattrs |= COB_SCREEN_BLANK_SCREEN; }
-#line 9447 "parser.c"
+#line 9455 "parser.c"
     break;
 
   case 825: /* end_display: %empty  */
-#line 4550 "parser.y"
+#line 4558 "parser.y"
                                 { terminator_warning (TERM_DISPLAY); }
-#line 9453 "parser.c"
+#line 9461 "parser.c"
     break;
 
   case 826: /* end_display: "END-DISPLAY"  */
-#line 4551 "parser.y"
+#line 4559 "parser.y"
                                 { terminator_clear (TERM_DISPLAY); }
-#line 9459 "parser.c"
+#line 9467 "parser.c"
     break;
 
   case 827: /* $@49: %empty  */
-#line 4560 "parser.y"
+#line 4568 "parser.y"
                                 { BEGIN_STATEMENT ("DIVIDE", TERM_DIVIDE); }
-#line 9465 "parser.c"
-    break;
-
-  case 829: /* divide_body: x INTO arithmetic_x_list on_size_error  */
-#line 4567 "parser.y"
-  {
-	cb_emit_arithmetic (yyvsp[-1], '/', yyvsp[-3]);
-  }
 #line 9473 "parser.c"
     break;
 
-  case 830: /* divide_body: x INTO x GIVING arithmetic_x_list on_size_error  */
-#line 4571 "parser.y"
+  case 829: /* divide_body: x INTO arithmetic_x_list on_size_error  */
+#line 4575 "parser.y"
   {
-	cb_emit_arithmetic (yyvsp[-1], 0, cb_build_binary_op (yyvsp[-3], '/', yyvsp[-5]));
+	cb_emit_arithmetic (yyvsp[-1], '/', yyvsp[-3]);
   }
 #line 9481 "parser.c"
     break;
 
-  case 831: /* divide_body: x BY x GIVING arithmetic_x_list on_size_error  */
-#line 4575 "parser.y"
+  case 830: /* divide_body: x INTO x GIVING arithmetic_x_list on_size_error  */
+#line 4579 "parser.y"
   {
-	cb_emit_arithmetic (yyvsp[-1], 0, cb_build_binary_op (yyvsp[-5], '/', yyvsp[-3]));
+	cb_emit_arithmetic (yyvsp[-1], 0, cb_build_binary_op (yyvsp[-3], '/', yyvsp[-5]));
   }
 #line 9489 "parser.c"
     break;
 
-  case 832: /* divide_body: x INTO x GIVING arithmetic_x REMAINDER arithmetic_x on_size_error  */
-#line 4579 "parser.y"
+  case 831: /* divide_body: x BY x GIVING arithmetic_x_list on_size_error  */
+#line 4583 "parser.y"
   {
-	cb_emit_divide (yyvsp[-5], yyvsp[-7], yyvsp[-3], yyvsp[-1]);
+	cb_emit_arithmetic (yyvsp[-1], 0, cb_build_binary_op (yyvsp[-5], '/', yyvsp[-3]));
   }
 #line 9497 "parser.c"
     break;
 
-  case 833: /* divide_body: x BY x GIVING arithmetic_x REMAINDER arithmetic_x on_size_error  */
-#line 4583 "parser.y"
+  case 832: /* divide_body: x INTO x GIVING arithmetic_x REMAINDER arithmetic_x on_size_error  */
+#line 4587 "parser.y"
   {
-	cb_emit_divide (yyvsp[-7], yyvsp[-5], yyvsp[-3], yyvsp[-1]);
+	cb_emit_divide (yyvsp[-5], yyvsp[-7], yyvsp[-3], yyvsp[-1]);
   }
 #line 9505 "parser.c"
     break;
 
+  case 833: /* divide_body: x BY x GIVING arithmetic_x REMAINDER arithmetic_x on_size_error  */
+#line 4591 "parser.y"
+  {
+	cb_emit_divide (yyvsp[-7], yyvsp[-5], yyvsp[-3], yyvsp[-1]);
+  }
+#line 9513 "parser.c"
+    break;
+
   case 834: /* end_divide: %empty  */
-#line 4589 "parser.y"
+#line 4597 "parser.y"
                                 { terminator_warning (TERM_DIVIDE); }
-#line 9511 "parser.c"
+#line 9519 "parser.c"
     break;
 
   case 835: /* end_divide: "END-DIVIDE"  */
-#line 4590 "parser.y"
+#line 4598 "parser.y"
                                 { terminator_clear (TERM_DIVIDE); }
-#line 9517 "parser.c"
+#line 9525 "parser.c"
     break;
 
   case 836: /* $@50: %empty  */
-#line 4599 "parser.y"
+#line 4607 "parser.y"
                                 { BEGIN_STATEMENT ("ENTRY", 0); }
-#line 9523 "parser.c"
+#line 9531 "parser.c"
     break;
 
   case 837: /* entry_statement: ENTRY $@50 "Literal" call_using  */
-#line 4601 "parser.y"
+#line 4609 "parser.y"
   {
 	if (current_program->nested_level) {
 		cb_error (_("ENTRY is invalid in nested program"));
@@ -9535,11 +9543,11 @@ yyreduce:
 	}
 	check_unreached = 0;
   }
-#line 9539 "parser.c"
+#line 9547 "parser.c"
     break;
 
   case 838: /* $@51: %empty  */
-#line 4621 "parser.y"
+#line 4629 "parser.y"
   {
 	BEGIN_STATEMENT ("EVALUATE", TERM_EVALUATE);
 	eval_level++;
@@ -9549,37 +9557,37 @@ yyreduce:
 	eval_inc = 0;
 	eval_inc2 = 0;
   }
-#line 9553 "parser.c"
+#line 9561 "parser.c"
     break;
 
   case 839: /* evaluate_statement: EVALUATE $@51 evaluate_subject_list evaluate_condition_list end_evaluate  */
-#line 4632 "parser.y"
+#line 4640 "parser.y"
   {
 	cb_emit_evaluate (yyvsp[-2], yyvsp[-1]);
 	eval_level--;
   }
-#line 9562 "parser.c"
+#line 9570 "parser.c"
     break;
 
   case 840: /* evaluate_subject_list: evaluate_subject  */
-#line 4639 "parser.y"
+#line 4647 "parser.y"
                                 { yyval = cb_list_init (yyvsp[0]); }
-#line 9568 "parser.c"
+#line 9576 "parser.c"
     break;
 
   case 841: /* evaluate_subject_list: evaluate_subject_list _also evaluate_subject  */
-#line 4642 "parser.y"
+#line 4650 "parser.y"
   {
  	if (!cb_allow_missing_also_clause_in_evaluate && yyvsp[-1] != cb_int1) {
  		cb_error  (_("Invalid expression"));
  	}
  	yyval = cb_list_add (yyvsp[-2], yyvsp[0]);
   }
-#line 9579 "parser.c"
+#line 9587 "parser.c"
     break;
 
   case 842: /* evaluate_subject: expr  */
-#line 4652 "parser.y"
+#line 4660 "parser.y"
   {
 	yyval = yyvsp[0];
 	if (CB_REFERENCE_P (yyvsp[0])) {
@@ -9588,29 +9596,29 @@ yyreduce:
 		eval_check[eval_level][eval_inc++] = 1;
 	}
   }
-#line 9592 "parser.c"
+#line 9600 "parser.c"
     break;
 
   case 843: /* evaluate_subject: "TRUE"  */
-#line 4661 "parser.y"
+#line 4669 "parser.y"
   {
 	yyval = cb_true;
 	eval_check[eval_level][eval_inc++] = 2;
   }
-#line 9601 "parser.c"
+#line 9609 "parser.c"
     break;
 
   case 844: /* evaluate_subject: "FALSE"  */
-#line 4666 "parser.y"
+#line 4674 "parser.y"
   {
 	yyval = cb_false;
 	eval_check[eval_level][eval_inc++] = 3;
   }
-#line 9610 "parser.c"
+#line 9618 "parser.c"
     break;
 
   case 845: /* evaluate_condition_list: evaluate_case_list evaluate_other  */
-#line 4674 "parser.y"
+#line 4682 "parser.y"
   {
 	yyval = yyvsp[-1];
 	if (yyvsp[0]) {
@@ -9636,31 +9644,31 @@ yyreduce:
 		yyval = cb_list_add (yyval, yyvsp[0]);
 	}
   }
-#line 9640 "parser.c"
+#line 9648 "parser.c"
     break;
 
   case 846: /* evaluate_case_list: evaluate_case  */
-#line 4702 "parser.y"
+#line 4710 "parser.y"
                                 { yyval = cb_list_init (yyvsp[0]); }
-#line 9646 "parser.c"
+#line 9654 "parser.c"
     break;
 
   case 847: /* evaluate_case_list: evaluate_case_list evaluate_case  */
-#line 4704 "parser.y"
+#line 4712 "parser.y"
                                 { yyval = cb_list_add (yyvsp[-1], yyvsp[0]); }
-#line 9652 "parser.c"
-    break;
-
-  case 848: /* $@52: %empty  */
-#line 4709 "parser.y"
-  {
-	check_unreached = 0;
-  }
 #line 9660 "parser.c"
     break;
 
+  case 848: /* $@52: %empty  */
+#line 4717 "parser.y"
+  {
+	check_unreached = 0;
+  }
+#line 9668 "parser.c"
+    break;
+
   case 849: /* evaluate_case: evaluate_when_list $@52 statement_list  */
-#line 4713 "parser.y"
+#line 4721 "parser.y"
   {
 	if (!cb_allow_empty_imperative_statement && yyvsp[0] == NULL) {
 		cb_error (_("syntax error"));
@@ -9668,27 +9676,27 @@ yyreduce:
 	yyval = cb_cons (yyvsp[0], yyvsp[-2]);
 	eval_inc2 = 0;
   }
-#line 9672 "parser.c"
-    break;
-
-  case 850: /* evaluate_other: %empty  */
-#line 4724 "parser.y"
-  {
-	yyval = NULL;
-  }
 #line 9680 "parser.c"
     break;
 
-  case 851: /* $@53: %empty  */
-#line 4728 "parser.y"
+  case 850: /* evaluate_other: %empty  */
+#line 4732 "parser.y"
   {
-	check_unreached = 0;
+	yyval = NULL;
   }
 #line 9688 "parser.c"
     break;
 
+  case 851: /* $@53: %empty  */
+#line 4736 "parser.y"
+  {
+	check_unreached = 0;
+  }
+#line 9696 "parser.c"
+    break;
+
   case 852: /* evaluate_other: "WHEN OTHER" $@53 statement_list  */
-#line 4732 "parser.y"
+#line 4740 "parser.y"
   {
 	if (!cb_allow_empty_imperative_statement && yyvsp[0] == NULL) {
 		cb_error (_("syntax error"));
@@ -9696,40 +9704,40 @@ yyreduce:
 	yyval = cb_cons (yyvsp[0], NULL);
 	eval_inc2 = 0;
   }
-#line 9700 "parser.c"
+#line 9708 "parser.c"
     break;
 
   case 853: /* evaluate_when_list: WHEN evaluate_object_list  */
-#line 4742 "parser.y"
+#line 4750 "parser.y"
                                 { yyval = cb_list_init (yyvsp[0]); }
-#line 9706 "parser.c"
+#line 9714 "parser.c"
     break;
 
   case 854: /* evaluate_when_list: evaluate_when_list WHEN evaluate_object_list  */
-#line 4744 "parser.y"
+#line 4752 "parser.y"
                                 { yyval = cb_list_add (yyvsp[-2], yyvsp[0]); }
-#line 9712 "parser.c"
+#line 9720 "parser.c"
     break;
 
   case 855: /* evaluate_object_list: evaluate_object  */
-#line 4748 "parser.y"
+#line 4756 "parser.y"
                                 { yyval = cb_list_init (yyvsp[0]); }
-#line 9718 "parser.c"
+#line 9726 "parser.c"
     break;
 
   case 856: /* evaluate_object_list: evaluate_object_list _also evaluate_object  */
-#line 4751 "parser.y"
+#line 4759 "parser.y"
   {
  	if (!cb_allow_missing_also_clause_in_evaluate && yyvsp[-1] != cb_int1) {
  		cb_error  (_("Invalid expression"));
  	}
  	yyval = cb_list_add (yyvsp[-2], yyvsp[0]);
   }
-#line 9729 "parser.c"
+#line 9737 "parser.c"
     break;
 
   case 857: /* evaluate_object: partial_expr opt_evaluate_thru_expr  */
-#line 4761 "parser.y"
+#line 4769 "parser.y"
   {
 	cb_tree not;
 	cb_tree e1;
@@ -9758,65 +9766,65 @@ yyreduce:
 		eval_inc2++;
 	}
   }
-#line 9762 "parser.c"
+#line 9770 "parser.c"
     break;
 
   case 858: /* evaluate_object: ANY  */
-#line 4789 "parser.y"
+#line 4797 "parser.y"
                                 { yyval = cb_any; eval_inc2++; }
-#line 9768 "parser.c"
+#line 9776 "parser.c"
     break;
 
   case 859: /* evaluate_object: "TRUE"  */
-#line 4790 "parser.y"
+#line 4798 "parser.y"
                                 { yyval = cb_true; eval_inc2++; }
-#line 9774 "parser.c"
+#line 9782 "parser.c"
     break;
 
   case 860: /* evaluate_object: "FALSE"  */
-#line 4791 "parser.y"
+#line 4799 "parser.y"
                                 { yyval = cb_false; eval_inc2++; }
-#line 9780 "parser.c"
+#line 9788 "parser.c"
     break;
 
   case 861: /* opt_evaluate_thru_expr: %empty  */
-#line 4794 "parser.y"
+#line 4802 "parser.y"
                                 { yyval = NULL; }
-#line 9786 "parser.c"
+#line 9794 "parser.c"
     break;
 
   case 862: /* opt_evaluate_thru_expr: THRU expr  */
-#line 4795 "parser.y"
+#line 4803 "parser.y"
                                 { yyval = yyvsp[0]; }
-#line 9792 "parser.c"
+#line 9800 "parser.c"
     break;
 
   case 863: /* end_evaluate: %empty  */
-#line 4799 "parser.y"
+#line 4807 "parser.y"
                                 { terminator_warning (TERM_EVALUATE); }
-#line 9798 "parser.c"
+#line 9806 "parser.c"
     break;
 
   case 864: /* end_evaluate: "END-EVALUATE"  */
-#line 4800 "parser.y"
+#line 4808 "parser.y"
                                 { terminator_clear (TERM_EVALUATE); }
-#line 9804 "parser.c"
+#line 9812 "parser.c"
     break;
 
   case 865: /* $@54: %empty  */
-#line 4809 "parser.y"
+#line 4817 "parser.y"
                                 { BEGIN_STATEMENT ("EXIT", 0); }
-#line 9810 "parser.c"
+#line 9818 "parser.c"
     break;
 
   case 867: /* exit_body: %empty  */
-#line 4814 "parser.y"
+#line 4822 "parser.y"
                                 { /* nothing */ }
-#line 9816 "parser.c"
+#line 9824 "parser.c"
     break;
 
   case 868: /* exit_body: PROGRAM  */
-#line 4816 "parser.y"
+#line 4824 "parser.y"
   {
 	if (in_declaratives && use_global_ind) {
 		cb_error (_("EXIT PROGRAM is not allowed within a USE GLOBAL procedure"));
@@ -9824,11 +9832,11 @@ yyreduce:
 	check_unreached = 1;
 	cb_emit_exit (0);
   }
-#line 9828 "parser.c"
+#line 9836 "parser.c"
     break;
 
   case 869: /* exit_body: PERFORM  */
-#line 4824 "parser.y"
+#line 4832 "parser.y"
   {
 	if (!perform_stack) {
 		cb_error (_("EXIT PERFORM is only valid with inline PERFORM"));
@@ -9836,11 +9844,11 @@ yyreduce:
 		cb_emit_java_break ();
 	}
   }
-#line 9840 "parser.c"
+#line 9848 "parser.c"
     break;
 
   case 870: /* exit_body: PERFORM CYCLE  */
-#line 4832 "parser.y"
+#line 4840 "parser.y"
   {
 	if (!perform_stack) {
 		cb_error (_("EXIT PERFORM is only valid with inline PERFORM"));
@@ -9848,11 +9856,11 @@ yyreduce:
 		cb_emit_java_continue ();
 	}
   }
-#line 9852 "parser.c"
+#line 9860 "parser.c"
     break;
 
   case 871: /* exit_body: SECTION  */
-#line 4840 "parser.y"
+#line 4848 "parser.y"
   {
 	cb_tree	plabel;
 	char	name[64];
@@ -9870,11 +9878,11 @@ yyreduce:
 		cb_emit_goto (cb_list_init (current_section->exit_label_ref), NULL);
 	}
   }
-#line 9874 "parser.c"
+#line 9882 "parser.c"
     break;
 
   case 872: /* exit_body: PARAGRAPH  */
-#line 4858 "parser.y"
+#line 4866 "parser.y"
   {
 	cb_tree	plabel;
 	char	name[64];
@@ -9892,461 +9900,461 @@ yyreduce:
 		cb_emit_goto (cb_list_init (current_paragraph->exit_label_ref), NULL);
 	}
   }
-#line 9896 "parser.c"
+#line 9904 "parser.c"
     break;
 
   case 873: /* $@55: %empty  */
-#line 4882 "parser.y"
+#line 4890 "parser.y"
                                 { BEGIN_STATEMENT ("FREE", 0); }
-#line 9902 "parser.c"
-    break;
-
-  case 874: /* free_statement: FREE $@55 target_x_list  */
-#line 4884 "parser.y"
-  {
-	cb_emit_free (yyvsp[0]);
-  }
 #line 9910 "parser.c"
     break;
 
-  case 875: /* $@56: %empty  */
-#line 4895 "parser.y"
-                                { BEGIN_STATEMENT ("GENERATE", 0); }
-#line 9916 "parser.c"
+  case 874: /* free_statement: FREE $@55 target_x_list  */
+#line 4892 "parser.y"
+  {
+	cb_emit_free (yyvsp[0]);
+  }
+#line 9918 "parser.c"
     break;
 
-  case 876: /* generate_statement: GENERATE $@56 identifier  */
-#line 4897 "parser.y"
-  {
-	PENDING("GENERATE");
-  }
+  case 875: /* $@56: %empty  */
+#line 4903 "parser.y"
+                                { BEGIN_STATEMENT ("GENERATE", 0); }
 #line 9924 "parser.c"
     break;
 
-  case 877: /* $@57: %empty  */
-#line 4908 "parser.y"
-                                { BEGIN_STATEMENT ("GO TO", 0); }
-#line 9930 "parser.c"
+  case 876: /* generate_statement: GENERATE $@56 identifier  */
+#line 4905 "parser.y"
+  {
+	PENDING("GENERATE");
+  }
+#line 9932 "parser.c"
     break;
 
-  case 878: /* goto_statement: GO _to $@57 procedure_name_list goto_depending  */
-#line 4910 "parser.y"
-  {
-	cb_emit_goto (yyvsp[-1], yyvsp[0]);
-  }
+  case 877: /* $@57: %empty  */
+#line 4916 "parser.y"
+                                { BEGIN_STATEMENT ("GO TO", 0); }
 #line 9938 "parser.c"
     break;
 
+  case 878: /* goto_statement: GO _to $@57 procedure_name_list goto_depending  */
+#line 4918 "parser.y"
+  {
+	cb_emit_goto (yyvsp[-1], yyvsp[0]);
+  }
+#line 9946 "parser.c"
+    break;
+
   case 879: /* goto_depending: %empty  */
-#line 4917 "parser.y"
+#line 4925 "parser.y"
   {
 	check_unreached = 1;
 	yyval = NULL;
   }
-#line 9947 "parser.c"
+#line 9955 "parser.c"
     break;
 
   case 880: /* goto_depending: DEPENDING _on identifier  */
-#line 4922 "parser.y"
+#line 4930 "parser.y"
   {
 	check_unreached = 0;
 	yyval = yyvsp[0];
   }
-#line 9956 "parser.c"
+#line 9964 "parser.c"
     break;
 
   case 881: /* $@58: %empty  */
-#line 4934 "parser.y"
+#line 4942 "parser.y"
                                 { BEGIN_STATEMENT ("GOBACK", 0); }
-#line 9962 "parser.c"
+#line 9970 "parser.c"
     break;
 
   case 882: /* goback_statement: GOBACK $@58  */
-#line 4935 "parser.y"
+#line 4943 "parser.y"
   {
 	check_unreached = 1;
 	cb_emit_exit (1);
   }
-#line 9971 "parser.c"
+#line 9979 "parser.c"
     break;
 
   case 883: /* $@59: %empty  */
-#line 4947 "parser.y"
+#line 4955 "parser.y"
                                 { BEGIN_STATEMENT ("IF", TERM_IF); }
-#line 9977 "parser.c"
-    break;
-
-  case 884: /* $@60: %empty  */
-#line 4949 "parser.y"
-  {
-	check_unreached = 0;
-  }
 #line 9985 "parser.c"
     break;
 
+  case 884: /* $@60: %empty  */
+#line 4957 "parser.y"
+  {
+	check_unreached = 0;
+  }
+#line 9993 "parser.c"
+    break;
+
   case 885: /* if_statement: IF $@59 condition _then $@60 statement_list if_else_sentence end_if  */
-#line 4954 "parser.y"
+#line 4962 "parser.y"
   {
 	if (!cb_allow_empty_imperative_statement && yyvsp[-2] == NULL) {
 		cb_error (_("syntax error"));
 	}
 	cb_emit_if (yyvsp[-5], yyvsp[-2], yyvsp[-1]);
   }
-#line 9996 "parser.c"
-    break;
-
-  case 887: /* if_else_sentence: %empty  */
-#line 4965 "parser.y"
-  {
-	yyval = NULL;
-  }
 #line 10004 "parser.c"
     break;
 
-  case 888: /* $@61: %empty  */
-#line 4969 "parser.y"
+  case 887: /* if_else_sentence: %empty  */
+#line 4973 "parser.y"
   {
-	check_unreached = 0;
+	yyval = NULL;
   }
 #line 10012 "parser.c"
     break;
 
+  case 888: /* $@61: %empty  */
+#line 4977 "parser.y"
+  {
+	check_unreached = 0;
+  }
+#line 10020 "parser.c"
+    break;
+
   case 889: /* if_else_sentence: ELSE $@61 statement_list  */
-#line 4973 "parser.y"
+#line 4981 "parser.y"
   {
 	if (!cb_allow_empty_imperative_statement && yyvsp[0] == NULL) {
 		cb_error (_("syntax error"));
 	}
 	yyval = yyvsp[0];
   }
-#line 10023 "parser.c"
+#line 10031 "parser.c"
     break;
 
   case 890: /* end_if: %empty  */
-#line 4982 "parser.y"
+#line 4990 "parser.y"
                                 { terminator_warning (TERM_IF); }
-#line 10029 "parser.c"
+#line 10037 "parser.c"
     break;
 
   case 891: /* end_if: "END-IF"  */
-#line 4983 "parser.y"
+#line 4991 "parser.y"
                                 { terminator_clear (TERM_IF); }
-#line 10035 "parser.c"
+#line 10043 "parser.c"
     break;
 
   case 892: /* $@62: %empty  */
-#line 4992 "parser.y"
+#line 5000 "parser.y"
                                 { BEGIN_STATEMENT ("INITIALIZE", 0); }
-#line 10041 "parser.c"
-    break;
-
-  case 893: /* initialize_statement: INITIALIZE $@62 target_x_list initialize_filler initialize_value initialize_replacing initialize_default  */
-#line 4994 "parser.y"
-  {
-	cb_emit_initialize (yyvsp[-4], yyvsp[-3], yyvsp[-2], yyvsp[-1], yyvsp[0]);
-  }
 #line 10049 "parser.c"
     break;
 
+  case 893: /* initialize_statement: INITIALIZE $@62 target_x_list initialize_filler initialize_value initialize_replacing initialize_default  */
+#line 5002 "parser.y"
+  {
+	cb_emit_initialize (yyvsp[-4], yyvsp[-3], yyvsp[-2], yyvsp[-1], yyvsp[0]);
+  }
+#line 10057 "parser.c"
+    break;
+
   case 894: /* initialize_filler: %empty  */
-#line 5000 "parser.y"
+#line 5008 "parser.y"
                                 { yyval = NULL; }
-#line 10055 "parser.c"
+#line 10063 "parser.c"
     break;
 
   case 895: /* initialize_filler: _with FILLER  */
-#line 5001 "parser.y"
+#line 5009 "parser.y"
                                 { yyval = cb_true; }
-#line 10061 "parser.c"
+#line 10069 "parser.c"
     break;
 
   case 896: /* initialize_value: %empty  */
-#line 5005 "parser.y"
+#line 5013 "parser.y"
                                 { yyval = NULL; }
-#line 10067 "parser.c"
+#line 10075 "parser.c"
     break;
 
   case 897: /* initialize_value: ALL _to VALUE  */
-#line 5006 "parser.y"
+#line 5014 "parser.y"
                                 { yyval = cb_true; }
-#line 10073 "parser.c"
+#line 10081 "parser.c"
     break;
 
   case 898: /* initialize_value: initialize_category _to VALUE  */
-#line 5007 "parser.y"
+#line 5015 "parser.y"
                                 { yyval = yyvsp[-2]; }
-#line 10079 "parser.c"
+#line 10087 "parser.c"
     break;
 
   case 899: /* initialize_replacing: %empty  */
-#line 5011 "parser.y"
+#line 5019 "parser.y"
                                 { yyval = NULL; }
-#line 10085 "parser.c"
+#line 10093 "parser.c"
     break;
 
   case 900: /* initialize_replacing: REPLACING initialize_replacing_list  */
-#line 5013 "parser.y"
+#line 5021 "parser.y"
                                 { yyval = yyvsp[0]; }
-#line 10091 "parser.c"
+#line 10099 "parser.c"
     break;
 
   case 901: /* initialize_replacing_list: initialize_replacing_item  */
-#line 5017 "parser.y"
+#line 5025 "parser.y"
                                 { yyval = yyvsp[0]; }
-#line 10097 "parser.c"
+#line 10105 "parser.c"
     break;
 
   case 902: /* initialize_replacing_list: initialize_replacing_list initialize_replacing_item  */
-#line 5019 "parser.y"
+#line 5027 "parser.y"
                                 { yyval = cb_list_append (yyvsp[-1], yyvsp[0]); }
-#line 10103 "parser.c"
+#line 10111 "parser.c"
     break;
 
   case 903: /* initialize_replacing_item: initialize_category _data BY x  */
-#line 5023 "parser.y"
+#line 5031 "parser.y"
                                  { yyval = cb_build_pair (yyvsp[-3], yyvsp[0]); }
-#line 10109 "parser.c"
+#line 10117 "parser.c"
     break;
 
   case 904: /* initialize_category: ALPHABETIC  */
-#line 5027 "parser.y"
+#line 5035 "parser.y"
                         { yyval = cb_int (CB_CATEGORY_ALPHABETIC); }
-#line 10115 "parser.c"
+#line 10123 "parser.c"
     break;
 
   case 905: /* initialize_category: ALPHANUMERIC  */
-#line 5028 "parser.y"
+#line 5036 "parser.y"
                         { yyval = cb_int (CB_CATEGORY_ALPHANUMERIC); }
-#line 10121 "parser.c"
+#line 10129 "parser.c"
     break;
 
   case 906: /* initialize_category: NUMERIC  */
-#line 5029 "parser.y"
+#line 5037 "parser.y"
                         { yyval = cb_int (CB_CATEGORY_NUMERIC); }
-#line 10127 "parser.c"
+#line 10135 "parser.c"
     break;
 
   case 907: /* initialize_category: "ALPHANUMERIC-EDITED"  */
-#line 5030 "parser.y"
+#line 5038 "parser.y"
                         { yyval = cb_int (CB_CATEGORY_ALPHANUMERIC_EDITED); }
-#line 10133 "parser.c"
+#line 10141 "parser.c"
     break;
 
   case 908: /* initialize_category: "NUMERIC-EDITED"  */
-#line 5031 "parser.y"
+#line 5039 "parser.y"
                         { yyval = cb_int (CB_CATEGORY_NUMERIC_EDITED); }
-#line 10139 "parser.c"
+#line 10147 "parser.c"
     break;
 
   case 909: /* initialize_category: NATIONAL  */
-#line 5032 "parser.y"
+#line 5040 "parser.y"
                         { yyval = cb_int (CB_CATEGORY_NATIONAL); }
-#line 10145 "parser.c"
+#line 10153 "parser.c"
     break;
 
   case 910: /* initialize_category: "NATIONAL-EDITED"  */
-#line 5033 "parser.y"
+#line 5041 "parser.y"
                         { yyval = cb_int (CB_CATEGORY_NATIONAL_EDITED); }
-#line 10151 "parser.c"
+#line 10159 "parser.c"
     break;
 
   case 911: /* initialize_default: %empty  */
-#line 5037 "parser.y"
+#line 5045 "parser.y"
                                 { yyval = NULL; }
-#line 10157 "parser.c"
+#line 10165 "parser.c"
     break;
 
   case 912: /* initialize_default: DEFAULT  */
-#line 5038 "parser.y"
+#line 5046 "parser.y"
                                 { yyval = cb_true; }
-#line 10163 "parser.c"
+#line 10171 "parser.c"
     break;
 
   case 913: /* $@63: %empty  */
-#line 5047 "parser.y"
+#line 5055 "parser.y"
                                 { BEGIN_STATEMENT ("INITIATE", 0); }
-#line 10169 "parser.c"
-    break;
-
-  case 914: /* initiate_statement: INITIATE $@63 identifier_list  */
-#line 5049 "parser.y"
-  {
-	PENDING("INITIATE");
-  }
 #line 10177 "parser.c"
     break;
 
+  case 914: /* initiate_statement: INITIATE $@63 identifier_list  */
+#line 5057 "parser.y"
+  {
+	PENDING("INITIATE");
+  }
+#line 10185 "parser.c"
+    break;
+
   case 915: /* $@64: %empty  */
-#line 5060 "parser.y"
+#line 5068 "parser.y"
   {
 	BEGIN_STATEMENT ("INSPECT", 0);
 	sending_id = 0;
 	inspect_keyword = 0;
   }
-#line 10187 "parser.c"
+#line 10195 "parser.c"
     break;
 
   case 917: /* send_identifier: identifier  */
-#line 5069 "parser.y"
+#line 5077 "parser.y"
                                 { save_tree_1 = yyvsp[0]; sending_id = 0; }
-#line 10193 "parser.c"
+#line 10201 "parser.c"
     break;
 
   case 918: /* send_identifier: literal  */
-#line 5070 "parser.y"
+#line 5078 "parser.y"
                                 { save_tree_1 = yyvsp[0]; sending_id = 1; }
-#line 10199 "parser.c"
+#line 10207 "parser.c"
     break;
 
   case 919: /* send_identifier: function  */
-#line 5071 "parser.y"
+#line 5079 "parser.y"
                                 { save_tree_1 = yyvsp[0]; sending_id = 1; }
-#line 10205 "parser.c"
+#line 10213 "parser.c"
     break;
 
   case 922: /* inspect_item: inspect_tallying  */
-#line 5080 "parser.y"
+#line 5088 "parser.y"
                                 { cb_emit_inspect (save_tree_1, yyvsp[0], cb_int0, 0); }
-#line 10211 "parser.c"
+#line 10219 "parser.c"
     break;
 
   case 923: /* inspect_item: inspect_replacing  */
-#line 5081 "parser.y"
+#line 5089 "parser.y"
                                 { cb_emit_inspect (save_tree_1, yyvsp[0], cb_int1, 1); }
-#line 10217 "parser.c"
+#line 10225 "parser.c"
     break;
 
   case 924: /* inspect_item: inspect_converting  */
-#line 5082 "parser.y"
+#line 5090 "parser.y"
                                 { cb_emit_inspect (save_tree_1, yyvsp[0], cb_int0, 2); }
-#line 10223 "parser.c"
+#line 10231 "parser.c"
     break;
 
   case 925: /* $@65: %empty  */
-#line 5088 "parser.y"
+#line 5096 "parser.y"
                                 { cb_init_tarrying (); }
-#line 10229 "parser.c"
+#line 10237 "parser.c"
     break;
 
   case 926: /* inspect_tallying: TALLYING $@65 tallying_list  */
-#line 5089 "parser.y"
+#line 5097 "parser.y"
                                 { yyval = yyvsp[0]; }
-#line 10235 "parser.c"
+#line 10243 "parser.c"
     break;
 
   case 927: /* tallying_list: tallying_item  */
-#line 5093 "parser.y"
+#line 5101 "parser.y"
                                 { yyval = yyvsp[0]; }
-#line 10241 "parser.c"
+#line 10249 "parser.c"
     break;
 
   case 928: /* tallying_list: tallying_list tallying_item  */
-#line 5094 "parser.y"
+#line 5102 "parser.y"
                                 { yyval = cb_list_append (yyvsp[-1], yyvsp[0]); }
-#line 10247 "parser.c"
+#line 10255 "parser.c"
     break;
 
   case 929: /* tallying_item: simple_value FOR  */
-#line 5098 "parser.y"
+#line 5106 "parser.y"
                                 { yyval = cb_build_tarrying_data (yyvsp[-1]); }
-#line 10253 "parser.c"
+#line 10261 "parser.c"
     break;
 
   case 930: /* tallying_item: CHARACTERS inspect_region  */
-#line 5099 "parser.y"
+#line 5107 "parser.y"
                                 { yyval = cb_build_tarrying_characters (yyvsp[0]); }
-#line 10259 "parser.c"
+#line 10267 "parser.c"
     break;
 
   case 931: /* tallying_item: ALL  */
-#line 5100 "parser.y"
+#line 5108 "parser.y"
                                 { yyval = cb_build_tarrying_all (); }
-#line 10265 "parser.c"
+#line 10273 "parser.c"
     break;
 
   case 932: /* tallying_item: LEADING  */
-#line 5101 "parser.y"
+#line 5109 "parser.y"
                                 { yyval = cb_build_tarrying_leading (); }
-#line 10271 "parser.c"
+#line 10279 "parser.c"
     break;
 
   case 933: /* tallying_item: TRAILING  */
-#line 5102 "parser.y"
+#line 5110 "parser.y"
                                 { yyval = cb_build_tarrying_trailing (); }
-#line 10277 "parser.c"
+#line 10285 "parser.c"
     break;
 
   case 934: /* tallying_item: simple_value inspect_region  */
-#line 5103 "parser.y"
+#line 5111 "parser.y"
                                 { yyval = cb_build_tarrying_value (yyvsp[-1], yyvsp[0]); }
-#line 10283 "parser.c"
+#line 10291 "parser.c"
     break;
 
   case 935: /* inspect_replacing: REPLACING replacing_list  */
-#line 5109 "parser.y"
+#line 5117 "parser.y"
                                 { yyval = yyvsp[0]; inspect_keyword = 0; }
-#line 10289 "parser.c"
+#line 10297 "parser.c"
     break;
 
   case 936: /* replacing_list: replacing_item  */
-#line 5113 "parser.y"
+#line 5121 "parser.y"
                                 { yyval = yyvsp[0]; }
-#line 10295 "parser.c"
+#line 10303 "parser.c"
     break;
 
   case 937: /* replacing_list: replacing_list replacing_item  */
-#line 5114 "parser.y"
+#line 5122 "parser.y"
                                 { yyval = cb_list_append (yyvsp[-1], yyvsp[0]); }
-#line 10301 "parser.c"
+#line 10309 "parser.c"
     break;
 
   case 938: /* replacing_item: CHARACTERS BY simple_value inspect_region  */
-#line 5119 "parser.y"
+#line 5127 "parser.y"
   {
 	yyval = cb_build_replacing_characters (yyvsp[-1], yyvsp[0], save_tree_1);
 	inspect_keyword = 0;
   }
-#line 10310 "parser.c"
+#line 10318 "parser.c"
     break;
 
   case 939: /* replacing_item: rep_keyword replacing_region  */
-#line 5123 "parser.y"
+#line 5131 "parser.y"
                                         { yyval = yyvsp[0]; }
-#line 10316 "parser.c"
+#line 10324 "parser.c"
     break;
 
   case 940: /* rep_keyword: %empty  */
-#line 5127 "parser.y"
+#line 5135 "parser.y"
                                 { /* Nothing */ }
-#line 10322 "parser.c"
+#line 10330 "parser.c"
     break;
 
   case 941: /* rep_keyword: ALL  */
-#line 5128 "parser.y"
+#line 5136 "parser.y"
                                 { inspect_keyword = 1; }
-#line 10328 "parser.c"
+#line 10336 "parser.c"
     break;
 
   case 942: /* rep_keyword: LEADING  */
-#line 5129 "parser.y"
+#line 5137 "parser.y"
                                 { inspect_keyword = 2; }
-#line 10334 "parser.c"
+#line 10342 "parser.c"
     break;
 
   case 943: /* rep_keyword: FIRST  */
-#line 5130 "parser.y"
+#line 5138 "parser.y"
                                 { inspect_keyword = 3; }
-#line 10340 "parser.c"
+#line 10348 "parser.c"
     break;
 
   case 944: /* rep_keyword: TRAILING  */
-#line 5131 "parser.y"
+#line 5139 "parser.y"
                                 { inspect_keyword = 4; }
-#line 10346 "parser.c"
+#line 10354 "parser.c"
     break;
 
   case 945: /* replacing_region: simple_value BY simple_all_value inspect_region  */
-#line 5136 "parser.y"
+#line 5144 "parser.y"
   {
 	switch (inspect_keyword) {
 		case 1:
@@ -10367,11 +10375,11 @@ yyreduce:
 			break;
 	}
   }
-#line 10371 "parser.c"
+#line 10379 "parser.c"
     break;
 
   case 946: /* inspect_converting: CONVERTING simple_value TO simple_all_value inspect_region  */
-#line 5162 "parser.y"
+#line 5170 "parser.y"
   {
 	if (cb_validate_inspect (save_tree_1, yyvsp[-3], yyvsp[-1]) < 0 ) {
 		yyval = cb_error_node;
@@ -10379,91 +10387,91 @@ yyreduce:
 		yyval = cb_build_converting (yyvsp[-3], yyvsp[-1], yyvsp[0]);
 	}
   }
-#line 10383 "parser.c"
+#line 10391 "parser.c"
     break;
 
   case 947: /* inspect_region: %empty  */
-#line 5174 "parser.y"
+#line 5182 "parser.y"
                                 { yyval = cb_build_inspect_region_start (); }
-#line 10389 "parser.c"
+#line 10397 "parser.c"
     break;
 
   case 948: /* inspect_region: inspect_region before_or_after _initial x  */
-#line 5176 "parser.y"
+#line 5184 "parser.y"
                                 { yyval = cb_build_inspect_region (yyvsp[-3], yyvsp[-2], yyvsp[0]); }
-#line 10395 "parser.c"
+#line 10403 "parser.c"
     break;
 
   case 951: /* $@66: %empty  */
-#line 5187 "parser.y"
+#line 5195 "parser.y"
                                 { BEGIN_STATEMENT ("MERGE", 0); }
-#line 10401 "parser.c"
+#line 10409 "parser.c"
     break;
 
   case 953: /* $@67: %empty  */
-#line 5197 "parser.y"
+#line 5205 "parser.y"
                                 { BEGIN_STATEMENT ("MOVE", 0); }
-#line 10407 "parser.c"
-    break;
-
-  case 955: /* move_body: x TO target_x_list  */
-#line 5203 "parser.y"
-  {
-	cb_emit_move (yyvsp[-2], yyvsp[0]);
-  }
 #line 10415 "parser.c"
     break;
 
-  case 956: /* move_body: CORRESPONDING x TO target_x_list  */
-#line 5207 "parser.y"
+  case 955: /* move_body: x TO target_x_list  */
+#line 5211 "parser.y"
   {
-	cb_emit_move_corresponding (yyvsp[-2], yyvsp[0]);
+	cb_emit_move (yyvsp[-2], yyvsp[0]);
   }
 #line 10423 "parser.c"
     break;
 
-  case 957: /* $@68: %empty  */
-#line 5218 "parser.y"
-                                { BEGIN_STATEMENT ("MULTIPLY", TERM_MULTIPLY); }
-#line 10429 "parser.c"
+  case 956: /* move_body: CORRESPONDING x TO target_x_list  */
+#line 5215 "parser.y"
+  {
+	cb_emit_move_corresponding (yyvsp[-2], yyvsp[0]);
+  }
+#line 10431 "parser.c"
     break;
 
-  case 959: /* multiply_body: x BY arithmetic_x_list on_size_error  */
-#line 5225 "parser.y"
-  {
-	cb_emit_arithmetic (yyvsp[-1], '*', yyvsp[-3]);
-  }
+  case 957: /* $@68: %empty  */
+#line 5226 "parser.y"
+                                { BEGIN_STATEMENT ("MULTIPLY", TERM_MULTIPLY); }
 #line 10437 "parser.c"
     break;
 
-  case 960: /* multiply_body: x BY x GIVING arithmetic_x_list on_size_error  */
-#line 5229 "parser.y"
+  case 959: /* multiply_body: x BY arithmetic_x_list on_size_error  */
+#line 5233 "parser.y"
   {
-	cb_emit_arithmetic (yyvsp[-1], 0, cb_build_binary_op (yyvsp[-5], '*', yyvsp[-3]));
+	cb_emit_arithmetic (yyvsp[-1], '*', yyvsp[-3]);
   }
 #line 10445 "parser.c"
     break;
 
+  case 960: /* multiply_body: x BY x GIVING arithmetic_x_list on_size_error  */
+#line 5237 "parser.y"
+  {
+	cb_emit_arithmetic (yyvsp[-1], 0, cb_build_binary_op (yyvsp[-5], '*', yyvsp[-3]));
+  }
+#line 10453 "parser.c"
+    break;
+
   case 961: /* end_multiply: %empty  */
-#line 5235 "parser.y"
+#line 5243 "parser.y"
                                 { terminator_warning (TERM_MULTIPLY); }
-#line 10451 "parser.c"
+#line 10459 "parser.c"
     break;
 
   case 962: /* end_multiply: "END-MULTIPLY"  */
-#line 5236 "parser.y"
+#line 5244 "parser.y"
                                 { terminator_clear (TERM_MULTIPLY); }
-#line 10457 "parser.c"
+#line 10465 "parser.c"
     break;
 
   case 963: /* $@69: %empty  */
-#line 5245 "parser.y"
+#line 5253 "parser.y"
                                 { BEGIN_STATEMENT ("OPEN", 0); }
-#line 10463 "parser.c"
+#line 10471 "parser.c"
     break;
 
   case 966: /* open_list: open_list open_mode open_sharing file_name_list open_option  */
-#line 5252 "parser.y"
+#line 5260 "parser.y"
   {
 	cb_tree l;
 	for (l = yyvsp[-1]; l; l = CB_CHAIN (l)) {
@@ -10473,217 +10481,217 @@ yyreduce:
 		}
 	}
   }
-#line 10477 "parser.c"
+#line 10485 "parser.c"
     break;
 
   case 967: /* open_mode: INPUT  */
-#line 5264 "parser.y"
+#line 5272 "parser.y"
                                 { yyval = cb_int (COB_OPEN_INPUT); }
-#line 10483 "parser.c"
+#line 10491 "parser.c"
     break;
 
   case 968: /* open_mode: OUTPUT  */
-#line 5265 "parser.y"
+#line 5273 "parser.y"
                                 { yyval = cb_int (COB_OPEN_OUTPUT); }
-#line 10489 "parser.c"
+#line 10497 "parser.c"
     break;
 
   case 969: /* open_mode: "I-O"  */
-#line 5266 "parser.y"
+#line 5274 "parser.y"
                                 { yyval = cb_int (COB_OPEN_I_O); }
-#line 10495 "parser.c"
+#line 10503 "parser.c"
     break;
 
   case 970: /* open_mode: EXTEND  */
-#line 5267 "parser.y"
+#line 5275 "parser.y"
                                 { yyval = cb_int (COB_OPEN_EXTEND); }
-#line 10501 "parser.c"
+#line 10509 "parser.c"
     break;
 
   case 971: /* open_sharing: %empty  */
-#line 5271 "parser.y"
+#line 5279 "parser.y"
                                 { yyval = NULL; }
-#line 10507 "parser.c"
+#line 10515 "parser.c"
     break;
 
   case 972: /* open_sharing: SHARING _with sharing_option  */
-#line 5272 "parser.y"
+#line 5280 "parser.y"
                                 { yyval = yyvsp[0]; }
-#line 10513 "parser.c"
+#line 10521 "parser.c"
     break;
 
   case 973: /* open_option: %empty  */
-#line 5276 "parser.y"
+#line 5284 "parser.y"
                                 { yyval = NULL; }
-#line 10519 "parser.c"
+#line 10527 "parser.c"
     break;
 
   case 974: /* open_option: _with NO REWIND  */
-#line 5277 "parser.y"
+#line 5285 "parser.y"
                                 { yyval = NULL; }
-#line 10525 "parser.c"
+#line 10533 "parser.c"
     break;
 
   case 975: /* open_option: _with LOCK  */
-#line 5278 "parser.y"
+#line 5286 "parser.y"
                                 { PENDING ("OPEN ... WITH LOCK"); }
-#line 10531 "parser.c"
+#line 10539 "parser.c"
     break;
 
   case 976: /* $@70: %empty  */
-#line 5290 "parser.y"
+#line 5298 "parser.y"
                                 { BEGIN_STATEMENT ("PERFORM", TERM_PERFORM); }
-#line 10537 "parser.c"
-    break;
-
-  case 978: /* perform_body: perform_procedure perform_option  */
-#line 5296 "parser.y"
-  {
-	cb_emit_perform (yyvsp[0], yyvsp[-1]);
-  }
 #line 10545 "parser.c"
     break;
 
+  case 978: /* perform_body: perform_procedure perform_option  */
+#line 5304 "parser.y"
+  {
+	cb_emit_perform (yyvsp[0], yyvsp[-1]);
+  }
+#line 10553 "parser.c"
+    break;
+
   case 979: /* $@71: %empty  */
-#line 5300 "parser.y"
+#line 5308 "parser.y"
   {
 	perform_stack = cb_cons (yyvsp[0], perform_stack);
 	check_unreached = 0;
   }
-#line 10554 "parser.c"
+#line 10562 "parser.c"
     break;
 
   case 980: /* perform_body: perform_option $@71 statement_list end_perform  */
-#line 5305 "parser.y"
+#line 5313 "parser.y"
   {
 	perform_stack = CB_CHAIN (perform_stack);
 	cb_emit_perform (yyvsp[-3], yyvsp[-1]);
   }
-#line 10563 "parser.c"
-    break;
-
-  case 981: /* perform_body: perform_option "END-PERFORM"  */
-#line 5310 "parser.y"
-  {
-	cb_emit_perform (yyvsp[-1], NULL);
-  }
 #line 10571 "parser.c"
     break;
 
+  case 981: /* perform_body: perform_option "END-PERFORM"  */
+#line 5318 "parser.y"
+  {
+	cb_emit_perform (yyvsp[-1], NULL);
+  }
+#line 10579 "parser.c"
+    break;
+
   case 982: /* end_perform: %empty  */
-#line 5316 "parser.y"
+#line 5324 "parser.y"
                                 { terminator_error (); }
-#line 10577 "parser.c"
+#line 10585 "parser.c"
     break;
 
   case 983: /* end_perform: "END-PERFORM"  */
-#line 5317 "parser.y"
+#line 5325 "parser.y"
                                 { terminator_clear (TERM_PERFORM); }
-#line 10583 "parser.c"
+#line 10591 "parser.c"
     break;
 
   case 984: /* perform_procedure: procedure_name  */
-#line 5322 "parser.y"
+#line 5330 "parser.y"
   {
 	CB_REFERENCE (yyvsp[0])->length = cb_true; /* return from $1 */
 	yyval = cb_build_pair (yyvsp[0], yyvsp[0]);
   }
-#line 10592 "parser.c"
+#line 10600 "parser.c"
     break;
 
   case 985: /* perform_procedure: procedure_name THRU procedure_name  */
-#line 5327 "parser.y"
+#line 5335 "parser.y"
   {
 	CB_REFERENCE (yyvsp[0])->length = cb_true; /* return from $3 */
 	yyval = cb_build_pair (yyvsp[-2], yyvsp[0]);
   }
-#line 10601 "parser.c"
-    break;
-
-  case 986: /* perform_option: %empty  */
-#line 5335 "parser.y"
-  {
-	yyval = cb_build_perform_once (NULL);
-  }
 #line 10609 "parser.c"
     break;
 
-  case 987: /* perform_option: FOREVER  */
-#line 5339 "parser.y"
+  case 986: /* perform_option: %empty  */
+#line 5343 "parser.y"
   {
-	yyval = cb_build_perform_forever (NULL);
+	yyval = cb_build_perform_once (NULL);
   }
 #line 10617 "parser.c"
     break;
 
+  case 987: /* perform_option: FOREVER  */
+#line 5347 "parser.y"
+  {
+	yyval = cb_build_perform_forever (NULL);
+  }
+#line 10625 "parser.c"
+    break;
+
   case 988: /* perform_option: id_or_lit_or_func TIMES  */
-#line 5343 "parser.y"
+#line 5351 "parser.y"
   {
 	yyval = cb_build_perform_times (yyvsp[-1]);
 	current_program->loop_counter++;
   }
-#line 10626 "parser.c"
+#line 10634 "parser.c"
     break;
 
   case 989: /* perform_option: perform_test UNTIL condition  */
-#line 5348 "parser.y"
+#line 5356 "parser.y"
   {
 	cb_tree varying;
 
 	varying = cb_list_init (cb_build_perform_varying (NULL, NULL, NULL, yyvsp[0]));
 	yyval = cb_build_perform_until (yyvsp[-2], varying);
   }
-#line 10637 "parser.c"
-    break;
-
-  case 990: /* perform_option: perform_test VARYING perform_varying_list  */
-#line 5355 "parser.y"
-  {
-	yyval = cb_build_perform_until (yyvsp[-2], yyvsp[0]);
-  }
 #line 10645 "parser.c"
     break;
 
+  case 990: /* perform_option: perform_test VARYING perform_varying_list  */
+#line 5363 "parser.y"
+  {
+	yyval = cb_build_perform_until (yyvsp[-2], yyvsp[0]);
+  }
+#line 10653 "parser.c"
+    break;
+
   case 991: /* perform_test: %empty  */
-#line 5361 "parser.y"
+#line 5369 "parser.y"
                                 { yyval = CB_BEFORE; }
-#line 10651 "parser.c"
+#line 10659 "parser.c"
     break;
 
   case 992: /* perform_test: _with TEST before_or_after  */
-#line 5362 "parser.y"
+#line 5370 "parser.y"
                                 { yyval = yyvsp[0]; }
-#line 10657 "parser.c"
+#line 10665 "parser.c"
     break;
 
   case 993: /* perform_varying_list: perform_varying  */
-#line 5366 "parser.y"
+#line 5374 "parser.y"
                                 { yyval = cb_list_init (yyvsp[0]); }
-#line 10663 "parser.c"
+#line 10671 "parser.c"
     break;
 
   case 994: /* perform_varying_list: perform_varying_list AFTER perform_varying  */
-#line 5368 "parser.y"
+#line 5376 "parser.y"
                                 { yyval = cb_list_add (yyvsp[-2], yyvsp[0]); }
-#line 10669 "parser.c"
-    break;
-
-  case 995: /* perform_varying: identifier FROM x BY x UNTIL condition  */
-#line 5373 "parser.y"
-  {
-	yyval = cb_build_perform_varying (yyvsp[-6], yyvsp[-4], yyvsp[-2], yyvsp[0]);
-  }
 #line 10677 "parser.c"
     break;
 
+  case 995: /* perform_varying: identifier FROM x BY x UNTIL condition  */
+#line 5381 "parser.y"
+  {
+	yyval = cb_build_perform_varying (yyvsp[-6], yyvsp[-4], yyvsp[-2], yyvsp[0]);
+  }
+#line 10685 "parser.c"
+    break;
+
   case 996: /* $@72: %empty  */
-#line 5384 "parser.y"
+#line 5392 "parser.y"
                                 { BEGIN_STATEMENT ("READ", TERM_READ); }
-#line 10683 "parser.c"
+#line 10691 "parser.c"
     break;
 
   case 997: /* read_statement: READ $@72 file_name flag_next _record read_into with_lock read_key read_handler end_read  */
-#line 5387 "parser.y"
+#line 5395 "parser.y"
   {
 	if (yyvsp[-7] != cb_error_node) {
 		if (cb_use_invalidkey_handler_on_status34 &&
@@ -10705,145 +10713,145 @@ yyreduce:
 		}
 	}
   }
-#line 10709 "parser.c"
+#line 10717 "parser.c"
     break;
 
   case 998: /* read_into: %empty  */
-#line 5411 "parser.y"
+#line 5419 "parser.y"
                                 { yyval = NULL; }
-#line 10715 "parser.c"
+#line 10723 "parser.c"
     break;
 
   case 999: /* read_into: INTO identifier  */
-#line 5412 "parser.y"
+#line 5420 "parser.y"
                                 { yyval = yyvsp[0]; }
-#line 10721 "parser.c"
+#line 10729 "parser.c"
     break;
 
   case 1000: /* with_lock: %empty  */
-#line 5416 "parser.y"
+#line 5424 "parser.y"
                                 { yyval = NULL; }
-#line 10727 "parser.c"
-    break;
-
-  case 1001: /* with_lock: IGNORING LOCK  */
-#line 5418 "parser.y"
-  {
-	yyval = cb_int3;
-  }
 #line 10735 "parser.c"
     break;
 
-  case 1002: /* with_lock: _with LOCK  */
-#line 5422 "parser.y"
+  case 1001: /* with_lock: IGNORING LOCK  */
+#line 5426 "parser.y"
   {
-	yyval = cb_int1;
+	yyval = cb_int3;
   }
 #line 10743 "parser.c"
     break;
 
-  case 1003: /* with_lock: _with NO LOCK  */
-#line 5426 "parser.y"
+  case 1002: /* with_lock: _with LOCK  */
+#line 5430 "parser.y"
   {
-	yyval = cb_int2;
+	yyval = cb_int1;
   }
 #line 10751 "parser.c"
     break;
 
-  case 1004: /* with_lock: _with IGNORE LOCK  */
-#line 5430 "parser.y"
+  case 1003: /* with_lock: _with NO LOCK  */
+#line 5434 "parser.y"
   {
-	yyval = cb_int3;
+	yyval = cb_int2;
   }
 #line 10759 "parser.c"
     break;
 
-  case 1005: /* with_lock: _with WAIT  */
-#line 5434 "parser.y"
+  case 1004: /* with_lock: _with IGNORE LOCK  */
+#line 5438 "parser.y"
   {
-	yyval = cb_int4;
+	yyval = cb_int3;
   }
 #line 10767 "parser.c"
     break;
 
-  case 1006: /* read_key: %empty  */
-#line 5440 "parser.y"
-                                { yyval = NULL; }
-#line 10773 "parser.c"
-    break;
-
-  case 1007: /* read_key: KEY _is identifier_list  */
+  case 1005: /* with_lock: _with WAIT  */
 #line 5442 "parser.y"
   {
-	yyval = yyvsp[0];
+	yyval = cb_int4;
   }
+#line 10775 "parser.c"
+    break;
+
+  case 1006: /* read_key: %empty  */
+#line 5448 "parser.y"
+                                { yyval = NULL; }
 #line 10781 "parser.c"
     break;
 
+  case 1007: /* read_key: KEY _is identifier_list  */
+#line 5450 "parser.y"
+  {
+	yyval = yyvsp[0];
+  }
+#line 10789 "parser.c"
+    break;
+
   case 1011: /* end_read: %empty  */
-#line 5453 "parser.y"
+#line 5461 "parser.y"
                                 { terminator_warning (TERM_READ); }
-#line 10787 "parser.c"
+#line 10795 "parser.c"
     break;
 
   case 1012: /* end_read: "END-READ"  */
-#line 5454 "parser.y"
+#line 5462 "parser.y"
                                 { terminator_clear (TERM_READ); }
-#line 10793 "parser.c"
+#line 10801 "parser.c"
     break;
 
   case 1013: /* $@73: %empty  */
-#line 5463 "parser.y"
+#line 5471 "parser.y"
                                 { BEGIN_STATEMENT ("RELEASE", 0); }
-#line 10799 "parser.c"
+#line 10807 "parser.c"
     break;
 
   case 1014: /* release_statement: RELEASE $@73 record_name write_from  */
-#line 5465 "parser.y"
+#line 5473 "parser.y"
   {
 	if (yyvsp[-1] != cb_error_node) {
 		cb_emit_release (yyvsp[-1], yyvsp[0]);
 	}
   }
-#line 10809 "parser.c"
+#line 10817 "parser.c"
     break;
 
   case 1015: /* $@74: %empty  */
-#line 5478 "parser.y"
+#line 5486 "parser.y"
                                 { BEGIN_STATEMENT ("RETURN", TERM_RETURN); }
-#line 10815 "parser.c"
+#line 10823 "parser.c"
     break;
 
   case 1016: /* return_statement: RETURN $@74 file_name _record read_into at_end end_return  */
-#line 5481 "parser.y"
+#line 5489 "parser.y"
   {
 	if (yyvsp[-4] != cb_error_node) {
 		cb_emit_return (yyvsp[-4], yyvsp[-2]);
 	}
   }
-#line 10825 "parser.c"
+#line 10833 "parser.c"
     break;
 
   case 1017: /* end_return: %empty  */
-#line 5489 "parser.y"
+#line 5497 "parser.y"
                                 { terminator_warning (TERM_RETURN); }
-#line 10831 "parser.c"
+#line 10839 "parser.c"
     break;
 
   case 1018: /* end_return: "END-RETURN"  */
-#line 5490 "parser.y"
+#line 5498 "parser.y"
                                 { terminator_clear (TERM_RETURN); }
-#line 10837 "parser.c"
+#line 10845 "parser.c"
     break;
 
   case 1019: /* $@75: %empty  */
-#line 5499 "parser.y"
+#line 5507 "parser.y"
                                 { BEGIN_STATEMENT ("REWRITE", TERM_REWRITE); }
-#line 10843 "parser.c"
+#line 10851 "parser.c"
     break;
 
   case 1020: /* rewrite_statement: REWRITE $@75 record_name write_from write_lock opt_invalid_key end_rewrite  */
-#line 5502 "parser.y"
+#line 5510 "parser.y"
   {
 	if (yyvsp[-4] != cb_error_node) {
 		if (cb_use_invalidkey_handler_on_status34 &&
@@ -10855,238 +10863,238 @@ yyreduce:
 		cb_emit_rewrite (yyvsp[-4], yyvsp[-3], yyvsp[-2]);
 	}
   }
-#line 10859 "parser.c"
+#line 10867 "parser.c"
     break;
 
   case 1021: /* write_lock: %empty  */
-#line 5516 "parser.y"
+#line 5524 "parser.y"
                                 { yyval = NULL; }
-#line 10865 "parser.c"
-    break;
-
-  case 1022: /* write_lock: _with LOCK  */
-#line 5518 "parser.y"
-  {
-	yyval = cb_int1;
-  }
 #line 10873 "parser.c"
     break;
 
-  case 1023: /* write_lock: _with NO LOCK  */
-#line 5522 "parser.y"
+  case 1022: /* write_lock: _with LOCK  */
+#line 5526 "parser.y"
   {
-	yyval = cb_int2;
+	yyval = cb_int1;
   }
 #line 10881 "parser.c"
     break;
 
+  case 1023: /* write_lock: _with NO LOCK  */
+#line 5530 "parser.y"
+  {
+	yyval = cb_int2;
+  }
+#line 10889 "parser.c"
+    break;
+
   case 1024: /* end_rewrite: %empty  */
-#line 5528 "parser.y"
+#line 5536 "parser.y"
                                 { terminator_warning (TERM_REWRITE); }
-#line 10887 "parser.c"
+#line 10895 "parser.c"
     break;
 
   case 1025: /* end_rewrite: "END-REWRITE"  */
-#line 5529 "parser.y"
+#line 5537 "parser.y"
                                 { terminator_clear (TERM_REWRITE); }
-#line 10893 "parser.c"
+#line 10901 "parser.c"
     break;
 
   case 1026: /* rollback_statement: ROLLBACK  */
-#line 5539 "parser.y"
+#line 5547 "parser.y"
   {
 	BEGIN_STATEMENT ("ROLLBACK", 0);
 	cb_emit_rollback ();
   }
-#line 10902 "parser.c"
+#line 10910 "parser.c"
     break;
 
   case 1027: /* $@76: %empty  */
-#line 5551 "parser.y"
+#line 5559 "parser.y"
                                 { BEGIN_STATEMENT ("SEARCH", TERM_SEARCH); }
-#line 10908 "parser.c"
-    break;
-
-  case 1029: /* search_body: table_name search_varying search_at_end search_whens  */
-#line 5558 "parser.y"
-  {
-	cb_emit_search (yyvsp[-3], yyvsp[-2], yyvsp[-1], yyvsp[0]);
-  }
 #line 10916 "parser.c"
     break;
 
-  case 1030: /* $@77: %empty  */
-#line 5562 "parser.y"
+  case 1029: /* search_body: table_name search_varying search_at_end search_whens  */
+#line 5566 "parser.y"
   {
-	check_unreached = 0;
+	cb_emit_search (yyvsp[-3], yyvsp[-2], yyvsp[-1], yyvsp[0]);
   }
 #line 10924 "parser.c"
     break;
 
-  case 1031: /* search_body: ALL table_name search_at_end WHEN expr $@77 statement_list  */
-#line 5566 "parser.y"
+  case 1030: /* $@77: %empty  */
+#line 5570 "parser.y"
   {
-	cb_emit_search_all (yyvsp[-5], yyvsp[-4], yyvsp[-2], yyvsp[0]);
+	check_unreached = 0;
   }
 #line 10932 "parser.c"
     break;
 
+  case 1031: /* search_body: ALL table_name search_at_end WHEN expr $@77 statement_list  */
+#line 5574 "parser.y"
+  {
+	cb_emit_search_all (yyvsp[-5], yyvsp[-4], yyvsp[-2], yyvsp[0]);
+  }
+#line 10940 "parser.c"
+    break;
+
   case 1032: /* search_varying: %empty  */
-#line 5572 "parser.y"
+#line 5580 "parser.y"
                                 { yyval = NULL; }
-#line 10938 "parser.c"
+#line 10946 "parser.c"
     break;
 
   case 1033: /* search_varying: VARYING identifier  */
-#line 5573 "parser.y"
+#line 5581 "parser.y"
                                 { yyval = yyvsp[0]; }
-#line 10944 "parser.c"
+#line 10952 "parser.c"
     break;
 
   case 1034: /* search_at_end: %empty  */
-#line 5577 "parser.y"
+#line 5585 "parser.y"
                                 { yyval = NULL; }
-#line 10950 "parser.c"
-    break;
-
-  case 1035: /* $@78: %empty  */
-#line 5579 "parser.y"
-  {
-	check_unreached = 0;
-  }
 #line 10958 "parser.c"
     break;
 
-  case 1036: /* search_at_end: _at END $@78 statement_list  */
-#line 5583 "parser.y"
+  case 1035: /* $@78: %empty  */
+#line 5587 "parser.y"
   {
-	yyval = yyvsp[0];
+	check_unreached = 0;
   }
 #line 10966 "parser.c"
     break;
 
+  case 1036: /* search_at_end: _at END $@78 statement_list  */
+#line 5591 "parser.y"
+  {
+	yyval = yyvsp[0];
+  }
+#line 10974 "parser.c"
+    break;
+
   case 1037: /* search_whens: search_when  */
-#line 5589 "parser.y"
+#line 5597 "parser.y"
                                 { yyval = yyvsp[0]; }
-#line 10972 "parser.c"
+#line 10980 "parser.c"
     break;
 
   case 1038: /* search_whens: search_when search_whens  */
-#line 5590 "parser.y"
+#line 5598 "parser.y"
                                 { yyval = yyvsp[-1]; CB_IF (yyvsp[-1])->stmt2 = yyvsp[0]; }
-#line 10978 "parser.c"
-    break;
-
-  case 1039: /* $@79: %empty  */
-#line 5595 "parser.y"
-  {
-	check_unreached = 0;
-  }
 #line 10986 "parser.c"
     break;
 
-  case 1040: /* search_when: WHEN condition $@79 statement_list  */
-#line 5599 "parser.y"
+  case 1039: /* $@79: %empty  */
+#line 5603 "parser.y"
   {
-	yyval = cb_build_if (yyvsp[-2], yyvsp[0], NULL);
+	check_unreached = 0;
   }
 #line 10994 "parser.c"
     break;
 
+  case 1040: /* search_when: WHEN condition $@79 statement_list  */
+#line 5607 "parser.y"
+  {
+	yyval = cb_build_if (yyvsp[-2], yyvsp[0], NULL);
+  }
+#line 11002 "parser.c"
+    break;
+
   case 1041: /* end_search: %empty  */
-#line 5605 "parser.y"
+#line 5613 "parser.y"
                                 { terminator_warning (TERM_SEARCH); }
-#line 11000 "parser.c"
+#line 11008 "parser.c"
     break;
 
   case 1042: /* end_search: "END-SEARCH"  */
-#line 5606 "parser.y"
+#line 5614 "parser.y"
                                 { terminator_clear (TERM_SEARCH); }
-#line 11006 "parser.c"
+#line 11014 "parser.c"
     break;
 
   case 1043: /* $@80: %empty  */
-#line 5615 "parser.y"
+#line 5623 "parser.y"
                                 { BEGIN_STATEMENT ("SET", 0); }
-#line 11012 "parser.c"
-    break;
-
-  case 1050: /* set_environment: ENVIRONMENT simple_value TO simple_value  */
-#line 5631 "parser.y"
-  {
-	cb_emit_setenv (yyvsp[-2], yyvsp[0]);
-  }
 #line 11020 "parser.c"
     break;
 
-  case 1051: /* set_to: target_x_list TO ENTRY alnum_or_id  */
-#line 5640 "parser.y"
+  case 1050: /* set_environment: ENVIRONMENT simple_value TO simple_value  */
+#line 5639 "parser.y"
   {
-	cb_emit_set_to (yyvsp[-3], cb_build_ppointer (yyvsp[0]));
+	cb_emit_setenv (yyvsp[-2], yyvsp[0]);
   }
 #line 11028 "parser.c"
     break;
 
-  case 1052: /* set_to: target_x_list TO x  */
-#line 5644 "parser.y"
+  case 1051: /* set_to: target_x_list TO ENTRY alnum_or_id  */
+#line 5648 "parser.y"
   {
-	cb_emit_set_to (yyvsp[-2], yyvsp[0]);
+	cb_emit_set_to (yyvsp[-3], cb_build_ppointer (yyvsp[0]));
   }
 #line 11036 "parser.c"
     break;
 
-  case 1053: /* set_up_down: target_x_list up_or_down BY x  */
-#line 5653 "parser.y"
+  case 1052: /* set_to: target_x_list TO x  */
+#line 5652 "parser.y"
   {
-	cb_emit_set_up_down (yyvsp[-3], yyvsp[-2], yyvsp[0]);
+	cb_emit_set_to (yyvsp[-2], yyvsp[0]);
   }
 #line 11044 "parser.c"
     break;
 
+  case 1053: /* set_up_down: target_x_list up_or_down BY x  */
+#line 5661 "parser.y"
+  {
+	cb_emit_set_up_down (yyvsp[-3], yyvsp[-2], yyvsp[0]);
+  }
+#line 11052 "parser.c"
+    break;
+
   case 1054: /* up_or_down: UP  */
-#line 5659 "parser.y"
+#line 5667 "parser.y"
                                 { yyval = cb_int0; }
-#line 11050 "parser.c"
+#line 11058 "parser.c"
     break;
 
   case 1055: /* up_or_down: DOWN  */
-#line 5660 "parser.y"
+#line 5668 "parser.y"
                                 { yyval = cb_int1; }
-#line 11056 "parser.c"
-    break;
-
-  case 1058: /* set_to_on_off: mnemonic_name_list TO on_or_off  */
-#line 5672 "parser.y"
-  {
-	cb_emit_set_on_off (yyvsp[-2], yyvsp[0]);
-  }
 #line 11064 "parser.c"
     break;
 
-  case 1061: /* set_to_true_false: target_x_list TO "TRUE"  */
-#line 5686 "parser.y"
+  case 1058: /* set_to_on_off: mnemonic_name_list TO on_or_off  */
+#line 5680 "parser.y"
   {
-	cb_emit_set_true (yyvsp[-2]);
+	cb_emit_set_on_off (yyvsp[-2], yyvsp[0]);
   }
 #line 11072 "parser.c"
     break;
 
-  case 1062: /* set_to_true_false: target_x_list TO "FALSE"  */
-#line 5690 "parser.y"
+  case 1061: /* set_to_true_false: target_x_list TO "TRUE"  */
+#line 5694 "parser.y"
   {
-	cb_emit_set_false (yyvsp[-2]);
+	cb_emit_set_true (yyvsp[-2]);
   }
 #line 11080 "parser.c"
     break;
 
+  case 1062: /* set_to_true_false: target_x_list TO "FALSE"  */
+#line 5698 "parser.y"
+  {
+	cb_emit_set_false (yyvsp[-2]);
+  }
+#line 11088 "parser.c"
+    break;
+
   case 1063: /* $@81: %empty  */
-#line 5701 "parser.y"
+#line 5709 "parser.y"
                                 { BEGIN_STATEMENT ("SORT", 0); }
-#line 11086 "parser.c"
+#line 11094 "parser.c"
     break;
 
   case 1065: /* $@82: %empty  */
-#line 5707 "parser.y"
+#line 5715 "parser.y"
   {
 	cb_emit_sort_init (yyvsp[-3], yyvsp[-2], yyvsp[0]);
 	if (CB_FILE_P (cb_ref (yyvsp[-3])) && yyvsp[-2] == NULL) {
@@ -11095,27 +11103,27 @@ yyreduce:
 	/* used in sort_input/sort_output */
 	save_tree_1 = yyvsp[-3];
   }
-#line 11099 "parser.c"
-    break;
-
-  case 1066: /* sort_body: qualified_word sort_key_list sort_duplicates sort_collating $@82 sort_input sort_output  */
-#line 5716 "parser.y"
-  {
-	cb_emit_sort_finish (yyvsp[-6]);
-  }
 #line 11107 "parser.c"
     break;
 
-  case 1067: /* sort_key_list: %empty  */
-#line 5723 "parser.y"
+  case 1066: /* sort_body: qualified_word sort_key_list sort_duplicates sort_collating $@82 sort_input sort_output  */
+#line 5724 "parser.y"
   {
-	yyval = NULL;
+	cb_emit_sort_finish (yyvsp[-6]);
   }
 #line 11115 "parser.c"
     break;
 
+  case 1067: /* sort_key_list: %empty  */
+#line 5731 "parser.y"
+  {
+	yyval = NULL;
+  }
+#line 11123 "parser.c"
+    break;
+
   case 1068: /* sort_key_list: sort_key_list _on ascending_or_descending _key _is opt_key_list  */
-#line 5728 "parser.y"
+#line 5736 "parser.y"
   {
 	cb_tree l;
 
@@ -11132,51 +11140,51 @@ yyreduce:
 		yyval = cb_list_append (yyvsp[-5], yyvsp[0]);
 	}
   }
-#line 11136 "parser.c"
+#line 11144 "parser.c"
     break;
 
   case 1069: /* opt_key_list: %empty  */
-#line 5747 "parser.y"
+#line 5755 "parser.y"
                                 { yyval = NULL; }
-#line 11142 "parser.c"
+#line 11150 "parser.c"
     break;
 
   case 1070: /* opt_key_list: opt_key_list qualified_word  */
-#line 5748 "parser.y"
+#line 5756 "parser.y"
                                 { yyval = cb_list_add (yyvsp[-1], yyvsp[0]); }
-#line 11148 "parser.c"
+#line 11156 "parser.c"
     break;
 
   case 1072: /* sort_duplicates: with_dups _in_order  */
-#line 5752 "parser.y"
+#line 5760 "parser.y"
                                 { /* nothing */ }
-#line 11154 "parser.c"
+#line 11162 "parser.c"
     break;
 
   case 1073: /* sort_collating: %empty  */
-#line 5756 "parser.y"
+#line 5764 "parser.y"
                                         { yyval = cb_null; }
-#line 11160 "parser.c"
+#line 11168 "parser.c"
     break;
 
   case 1074: /* sort_collating: coll_sequence _is reference  */
-#line 5757 "parser.y"
+#line 5765 "parser.y"
                                         { yyval = cb_ref (yyvsp[0]); }
-#line 11166 "parser.c"
+#line 11174 "parser.c"
     break;
 
   case 1075: /* sort_input: %empty  */
-#line 5762 "parser.y"
+#line 5770 "parser.y"
   {
 	if (CB_FILE_P (cb_ref (save_tree_1))) {
 		cb_error (_("File sort requires USING or INPUT PROCEDURE"));
 	}
   }
-#line 11176 "parser.c"
+#line 11184 "parser.c"
     break;
 
   case 1076: /* sort_input: USING file_name_list  */
-#line 5768 "parser.y"
+#line 5776 "parser.y"
   {
 	if (!CB_FILE_P (cb_ref (save_tree_1))) {
 		cb_error (_("USING invalid with table SORT"));
@@ -11184,11 +11192,11 @@ yyreduce:
 		cb_emit_sort_using (save_tree_1, yyvsp[0]);
 	}
   }
-#line 11188 "parser.c"
+#line 11196 "parser.c"
     break;
 
   case 1077: /* sort_input: INPUT PROCEDURE _is perform_procedure  */
-#line 5776 "parser.y"
+#line 5784 "parser.y"
   {
 	if (!CB_FILE_P (cb_ref (save_tree_1))) {
 		cb_error (_("INPUT PROCEDURE invalid with table SORT"));
@@ -11196,21 +11204,21 @@ yyreduce:
 		cb_emit_sort_input (yyvsp[0], save_tree_1);
 	}
   }
-#line 11200 "parser.c"
+#line 11208 "parser.c"
     break;
 
   case 1078: /* sort_output: %empty  */
-#line 5787 "parser.y"
+#line 5795 "parser.y"
   {
 	if (CB_FILE_P (cb_ref (save_tree_1))) {
 		cb_error (_("File sort requires GIVING or OUTPUT PROCEDURE"));
 	}
   }
-#line 11210 "parser.c"
+#line 11218 "parser.c"
     break;
 
   case 1079: /* sort_output: GIVING file_name_list  */
-#line 5793 "parser.y"
+#line 5801 "parser.y"
   {
 	if (!CB_FILE_P (cb_ref (save_tree_1))) {
 		cb_error (_("GIVING invalid with table SORT"));
@@ -11218,11 +11226,11 @@ yyreduce:
 		cb_emit_sort_giving (save_tree_1, yyvsp[0]);
 	}
   }
-#line 11222 "parser.c"
+#line 11230 "parser.c"
     break;
 
   case 1080: /* sort_output: OUTPUT PROCEDURE _is perform_procedure  */
-#line 5801 "parser.y"
+#line 5809 "parser.y"
   {
 	if (!CB_FILE_P (cb_ref (save_tree_1))) {
 		cb_error (_("OUTPUT PROCEDURE invalid with table SORT"));
@@ -11230,23 +11238,23 @@ yyreduce:
 		cb_emit_sort_output (yyvsp[0], save_tree_1);
 	}
   }
-#line 11234 "parser.c"
+#line 11242 "parser.c"
     break;
 
   case 1081: /* $@83: %empty  */
-#line 5816 "parser.y"
+#line 5824 "parser.y"
                                 { BEGIN_STATEMENT ("START", TERM_START); }
-#line 11240 "parser.c"
+#line 11248 "parser.c"
     break;
 
   case 1082: /* @84: %empty  */
-#line 5817 "parser.y"
+#line 5825 "parser.y"
                                 { yyval = cb_int (COB_EQ); }
-#line 11246 "parser.c"
+#line 11254 "parser.c"
     break;
 
   case 1083: /* start_statement: START $@83 file_name @84 start_key opt_invalid_key end_start  */
-#line 5820 "parser.y"
+#line 5828 "parser.y"
   {
 	if (CB_FILE_P (cb_ref (yyvsp[-4]))) {
 		if (CB_FILE (cb_ref (yyvsp[-4]))->organization != COB_ORG_INDEXED &&
@@ -11261,394 +11269,394 @@ yyreduce:
 		yyval = cb_error_node;
 	}
   }
-#line 11265 "parser.c"
+#line 11273 "parser.c"
     break;
 
   case 1084: /* start_key: %empty  */
-#line 5837 "parser.y"
+#line 5845 "parser.y"
                                 { yyval = NULL; }
-#line 11271 "parser.c"
+#line 11279 "parser.c"
     break;
 
   case 1085: /* start_key: KEY _is start_op identifier_list  */
-#line 5839 "parser.y"
+#line 5847 "parser.y"
   {
 	yyvsp[-4] = yyvsp[-1];
 	yyval = yyvsp[0];
   }
-#line 11280 "parser.c"
+#line 11288 "parser.c"
     break;
 
   case 1086: /* start_op: flag_not eq  */
-#line 5846 "parser.y"
+#line 5854 "parser.y"
                         { yyval = cb_int ((yyvsp[-1] == cb_int1) ? COB_NE : COB_EQ); }
-#line 11286 "parser.c"
+#line 11294 "parser.c"
     break;
 
   case 1087: /* start_op: flag_not gt  */
-#line 5847 "parser.y"
+#line 5855 "parser.y"
                         { yyval = cb_int ((yyvsp[-1] == cb_int1) ? COB_LE : COB_GT); }
-#line 11292 "parser.c"
+#line 11300 "parser.c"
     break;
 
   case 1088: /* start_op: flag_not lt  */
-#line 5848 "parser.y"
+#line 5856 "parser.y"
                         { yyval = cb_int ((yyvsp[-1] == cb_int1) ? COB_GE : COB_LT); }
-#line 11298 "parser.c"
+#line 11306 "parser.c"
     break;
 
   case 1089: /* start_op: flag_not ge  */
-#line 5849 "parser.y"
+#line 5857 "parser.y"
                         { yyval = cb_int ((yyvsp[-1] == cb_int1) ? COB_LT : COB_GE); }
-#line 11304 "parser.c"
+#line 11312 "parser.c"
     break;
 
   case 1090: /* start_op: flag_not le  */
-#line 5850 "parser.y"
+#line 5858 "parser.y"
                         { yyval = cb_int ((yyvsp[-1] == cb_int1) ? COB_GT : COB_LE); }
-#line 11310 "parser.c"
+#line 11318 "parser.c"
     break;
 
   case 1091: /* end_start: %empty  */
-#line 5854 "parser.y"
+#line 5862 "parser.y"
                                 { terminator_warning (TERM_START); }
-#line 11316 "parser.c"
+#line 11324 "parser.c"
     break;
 
   case 1092: /* end_start: "END-START"  */
-#line 5855 "parser.y"
+#line 5863 "parser.y"
                                 { terminator_clear (TERM_START); }
-#line 11322 "parser.c"
+#line 11330 "parser.c"
     break;
 
   case 1093: /* $@85: %empty  */
-#line 5864 "parser.y"
+#line 5872 "parser.y"
                                 { BEGIN_STATEMENT ("STOP", 0); }
-#line 11328 "parser.c"
-    break;
-
-  case 1094: /* stop_statement: STOP RUN $@85 stop_returning  */
-#line 5866 "parser.y"
-  {
-	cb_emit_stop_run (yyvsp[0]);
-  }
 #line 11336 "parser.c"
     break;
 
-  case 1095: /* $@86: %empty  */
-#line 5869 "parser.y"
-                                { BEGIN_STATEMENT ("STOP", 0); }
-#line 11342 "parser.c"
+  case 1094: /* stop_statement: STOP RUN $@85 stop_returning  */
+#line 5874 "parser.y"
+  {
+	cb_emit_stop_run (yyvsp[0]);
+  }
+#line 11344 "parser.c"
     break;
 
-  case 1096: /* stop_statement: STOP "Literal" $@86  */
-#line 5870 "parser.y"
-  {
-	cb_verify (cb_stop_literal_statement, "STOP literal");
-  }
+  case 1095: /* $@86: %empty  */
+#line 5877 "parser.y"
+                                { BEGIN_STATEMENT ("STOP", 0); }
 #line 11350 "parser.c"
     break;
 
+  case 1096: /* stop_statement: STOP "Literal" $@86  */
+#line 5878 "parser.y"
+  {
+	cb_verify (cb_stop_literal_statement, "STOP literal");
+  }
+#line 11358 "parser.c"
+    break;
+
   case 1097: /* stop_returning: %empty  */
-#line 5876 "parser.y"
+#line 5884 "parser.y"
                         { yyval = current_program->cb_return_code; }
-#line 11356 "parser.c"
+#line 11364 "parser.c"
     break;
 
   case 1098: /* stop_returning: RETURNING x  */
-#line 5877 "parser.y"
+#line 5885 "parser.y"
                         { yyval = yyvsp[0]; }
-#line 11362 "parser.c"
+#line 11370 "parser.c"
     break;
 
   case 1099: /* stop_returning: GIVING x  */
-#line 5878 "parser.y"
+#line 5886 "parser.y"
                         { yyval = yyvsp[0]; }
-#line 11368 "parser.c"
+#line 11376 "parser.c"
     break;
 
   case 1100: /* $@87: %empty  */
-#line 5887 "parser.y"
+#line 5895 "parser.y"
                                 { BEGIN_STATEMENT ("STRING", TERM_STRING); }
-#line 11374 "parser.c"
-    break;
-
-  case 1101: /* string_statement: STRING $@87 string_item_list INTO identifier opt_with_pointer on_overflow end_string  */
-#line 5890 "parser.y"
-  {
-	cb_emit_string (yyvsp[-5], yyvsp[-3], yyvsp[-2]);
-  }
 #line 11382 "parser.c"
     break;
 
+  case 1101: /* string_statement: STRING $@87 string_item_list INTO identifier opt_with_pointer on_overflow end_string  */
+#line 5898 "parser.y"
+  {
+	cb_emit_string (yyvsp[-5], yyvsp[-3], yyvsp[-2]);
+  }
+#line 11390 "parser.c"
+    break;
+
   case 1102: /* string_item_list: string_item  */
-#line 5896 "parser.y"
+#line 5904 "parser.y"
                                 { yyval = cb_list_init (yyvsp[0]); }
-#line 11388 "parser.c"
+#line 11396 "parser.c"
     break;
 
   case 1103: /* string_item_list: string_item_list string_item  */
-#line 5897 "parser.y"
+#line 5905 "parser.y"
                                 { yyval = cb_list_add (yyvsp[-1], yyvsp[0]); }
-#line 11394 "parser.c"
+#line 11402 "parser.c"
     break;
 
   case 1104: /* string_item: x  */
-#line 5901 "parser.y"
+#line 5909 "parser.y"
                                 { yyval = yyvsp[0]; }
-#line 11400 "parser.c"
+#line 11408 "parser.c"
     break;
 
   case 1105: /* string_item: DELIMITED _by SIZE  */
-#line 5902 "parser.y"
+#line 5910 "parser.y"
                                 { yyval = cb_build_pair (cb_int0, NULL); }
-#line 11406 "parser.c"
+#line 11414 "parser.c"
     break;
 
   case 1106: /* string_item: DELIMITED _by x  */
-#line 5903 "parser.y"
+#line 5911 "parser.y"
                                 { yyval = cb_build_pair (yyvsp[0], NULL); }
-#line 11412 "parser.c"
+#line 11420 "parser.c"
     break;
 
   case 1107: /* opt_with_pointer: %empty  */
-#line 5907 "parser.y"
+#line 5915 "parser.y"
                                 { yyval = cb_int0; }
-#line 11418 "parser.c"
+#line 11426 "parser.c"
     break;
 
   case 1108: /* opt_with_pointer: _with POINTER identifier  */
-#line 5908 "parser.y"
+#line 5916 "parser.y"
                                 { yyval = yyvsp[0]; }
-#line 11424 "parser.c"
+#line 11432 "parser.c"
     break;
 
   case 1109: /* end_string: %empty  */
-#line 5912 "parser.y"
+#line 5920 "parser.y"
                                 { terminator_warning (TERM_STRING); }
-#line 11430 "parser.c"
+#line 11438 "parser.c"
     break;
 
   case 1110: /* end_string: "END-STRING"  */
-#line 5913 "parser.y"
+#line 5921 "parser.y"
                                 { terminator_clear (TERM_STRING); }
-#line 11436 "parser.c"
+#line 11444 "parser.c"
     break;
 
   case 1111: /* $@88: %empty  */
-#line 5922 "parser.y"
+#line 5930 "parser.y"
                                 { BEGIN_STATEMENT ("SUBTRACT", TERM_SUBTRACT); }
-#line 11442 "parser.c"
-    break;
-
-  case 1113: /* subtract_body: x_list FROM arithmetic_x_list on_size_error  */
-#line 5929 "parser.y"
-  {
-	cb_emit_arithmetic (yyvsp[-1], '-', cb_build_binary_list (yyvsp[-3], '+'));
-  }
 #line 11450 "parser.c"
     break;
 
-  case 1114: /* subtract_body: x_list FROM x GIVING arithmetic_x_list on_size_error  */
-#line 5933 "parser.y"
+  case 1113: /* subtract_body: x_list FROM arithmetic_x_list on_size_error  */
+#line 5937 "parser.y"
   {
-	cb_emit_arithmetic (yyvsp[-1], 0, cb_build_binary_list (cb_cons (yyvsp[-3], yyvsp[-5]), '-'));
+	cb_emit_arithmetic (yyvsp[-1], '-', cb_build_binary_list (yyvsp[-3], '+'));
   }
 #line 11458 "parser.c"
     break;
 
-  case 1115: /* subtract_body: CORRESPONDING identifier FROM identifier flag_rounded on_size_error  */
-#line 5937 "parser.y"
+  case 1114: /* subtract_body: x_list FROM x GIVING arithmetic_x_list on_size_error  */
+#line 5941 "parser.y"
   {
-	cb_emit_corresponding (cb_build_sub, yyvsp[-2], yyvsp[-4], yyvsp[-1]);
+	cb_emit_arithmetic (yyvsp[-1], 0, cb_build_binary_list (cb_cons (yyvsp[-3], yyvsp[-5]), '-'));
   }
 #line 11466 "parser.c"
     break;
 
+  case 1115: /* subtract_body: CORRESPONDING identifier FROM identifier flag_rounded on_size_error  */
+#line 5945 "parser.y"
+  {
+	cb_emit_corresponding (cb_build_sub, yyvsp[-2], yyvsp[-4], yyvsp[-1]);
+  }
+#line 11474 "parser.c"
+    break;
+
   case 1116: /* end_subtract: %empty  */
-#line 5943 "parser.y"
+#line 5951 "parser.y"
                                 { terminator_warning (TERM_SUBTRACT); }
-#line 11472 "parser.c"
+#line 11480 "parser.c"
     break;
 
   case 1117: /* end_subtract: "END-SUBTRACT"  */
-#line 5944 "parser.y"
+#line 5952 "parser.y"
                                 { terminator_clear (TERM_SUBTRACT); }
-#line 11478 "parser.c"
+#line 11486 "parser.c"
     break;
 
   case 1118: /* suppress_statement: SUPPRESS _printing  */
-#line 5954 "parser.y"
+#line 5962 "parser.y"
   {
 	BEGIN_STATEMENT ("SUPPRESS", 0);
 	PENDING("SUPPRESS");
   }
-#line 11487 "parser.c"
+#line 11495 "parser.c"
     break;
 
   case 1121: /* $@89: %empty  */
-#line 5969 "parser.y"
+#line 5977 "parser.y"
                                 { BEGIN_STATEMENT ("TERMINATE", 0); }
-#line 11493 "parser.c"
-    break;
-
-  case 1122: /* terminate_statement: TERMINATE $@89 identifier_list  */
-#line 5971 "parser.y"
-  {
-	PENDING("TERMINATE");
-  }
 #line 11501 "parser.c"
     break;
 
+  case 1122: /* terminate_statement: TERMINATE $@89 identifier_list  */
+#line 5979 "parser.y"
+  {
+	PENDING("TERMINATE");
+  }
+#line 11509 "parser.c"
+    break;
+
   case 1123: /* $@90: %empty  */
-#line 5982 "parser.y"
+#line 5990 "parser.y"
                                 { BEGIN_STATEMENT ("TRANSFORM", 0); }
-#line 11507 "parser.c"
+#line 11515 "parser.c"
     break;
 
   case 1124: /* transform_statement: TRANSFORM $@90 identifier FROM simple_value TO simple_all_value  */
-#line 5984 "parser.y"
+#line 5992 "parser.y"
   {
 	cb_tree		x;
 
 	x = cb_build_converting (yyvsp[-2], yyvsp[0], cb_build_inspect_region_start ());
 	cb_emit_inspect (yyvsp[-4], x, cb_int0, 2);
   }
-#line 11518 "parser.c"
+#line 11526 "parser.c"
     break;
 
   case 1125: /* $@91: %empty  */
-#line 5998 "parser.y"
+#line 6006 "parser.y"
                                 { BEGIN_STATEMENT ("UNLOCK", 0); }
-#line 11524 "parser.c"
+#line 11532 "parser.c"
     break;
 
   case 1126: /* unlock_statement: UNLOCK $@91 file_name opt_record  */
-#line 6000 "parser.y"
+#line 6008 "parser.y"
   {
 	if (yyvsp[-1] != cb_error_node) {
 		cb_emit_unlock (yyvsp[-1]);
 	}
   }
-#line 11534 "parser.c"
+#line 11542 "parser.c"
     break;
 
   case 1130: /* $@92: %empty  */
-#line 6019 "parser.y"
+#line 6027 "parser.y"
                                 { BEGIN_STATEMENT ("UNSTRING", TERM_UNSTRING); }
-#line 11540 "parser.c"
-    break;
-
-  case 1131: /* unstring_statement: UNSTRING $@92 identifier unstring_delimited unstring_into opt_with_pointer unstring_tallying on_overflow end_unstring  */
-#line 6023 "parser.y"
-  {
-	cb_emit_unstring (yyvsp[-6], yyvsp[-5], yyvsp[-4], yyvsp[-3], yyvsp[-2]);
-  }
 #line 11548 "parser.c"
     break;
 
+  case 1131: /* unstring_statement: UNSTRING $@92 identifier unstring_delimited unstring_into opt_with_pointer unstring_tallying on_overflow end_unstring  */
+#line 6031 "parser.y"
+  {
+	cb_emit_unstring (yyvsp[-6], yyvsp[-5], yyvsp[-4], yyvsp[-3], yyvsp[-2]);
+  }
+#line 11556 "parser.c"
+    break;
+
   case 1132: /* unstring_delimited: %empty  */
-#line 6029 "parser.y"
+#line 6037 "parser.y"
                                 { yyval = NULL; }
-#line 11554 "parser.c"
+#line 11562 "parser.c"
     break;
 
   case 1133: /* unstring_delimited: DELIMITED _by unstring_delimited_list  */
-#line 6031 "parser.y"
+#line 6039 "parser.y"
                                 { yyval = yyvsp[0]; }
-#line 11560 "parser.c"
+#line 11568 "parser.c"
     break;
 
   case 1134: /* unstring_delimited_list: unstring_delimited_item  */
-#line 6035 "parser.y"
+#line 6043 "parser.y"
                                 { yyval = cb_list_init (yyvsp[0]); }
-#line 11566 "parser.c"
+#line 11574 "parser.c"
     break;
 
   case 1135: /* unstring_delimited_list: unstring_delimited_list OR unstring_delimited_item  */
-#line 6037 "parser.y"
+#line 6045 "parser.y"
                                 { yyval = cb_list_add (yyvsp[-2], yyvsp[0]); }
-#line 11572 "parser.c"
-    break;
-
-  case 1136: /* unstring_delimited_item: flag_all simple_value  */
-#line 6042 "parser.y"
-  {
-	yyval = cb_build_unstring_delimited (yyvsp[-1], yyvsp[0]);
-  }
 #line 11580 "parser.c"
     break;
 
+  case 1136: /* unstring_delimited_item: flag_all simple_value  */
+#line 6050 "parser.y"
+  {
+	yyval = cb_build_unstring_delimited (yyvsp[-1], yyvsp[0]);
+  }
+#line 11588 "parser.c"
+    break;
+
   case 1137: /* unstring_into: INTO unstring_into_item  */
-#line 6048 "parser.y"
+#line 6056 "parser.y"
                                 { yyval = cb_list_init (yyvsp[0]); }
-#line 11586 "parser.c"
+#line 11594 "parser.c"
     break;
 
   case 1138: /* unstring_into: unstring_into unstring_into_item  */
-#line 6050 "parser.y"
+#line 6058 "parser.y"
                                 { yyval = cb_list_add (yyvsp[-1], yyvsp[0]); }
-#line 11592 "parser.c"
-    break;
-
-  case 1139: /* unstring_into_item: identifier unstring_into_delimiter unstring_into_count  */
-#line 6055 "parser.y"
-  {
-	yyval = cb_build_unstring_into (yyvsp[-2], yyvsp[-1], yyvsp[0]);
-  }
 #line 11600 "parser.c"
     break;
 
+  case 1139: /* unstring_into_item: identifier unstring_into_delimiter unstring_into_count  */
+#line 6063 "parser.y"
+  {
+	yyval = cb_build_unstring_into (yyvsp[-2], yyvsp[-1], yyvsp[0]);
+  }
+#line 11608 "parser.c"
+    break;
+
   case 1140: /* unstring_into_delimiter: %empty  */
-#line 6061 "parser.y"
+#line 6069 "parser.y"
                                 { yyval = NULL; }
-#line 11606 "parser.c"
+#line 11614 "parser.c"
     break;
 
   case 1141: /* unstring_into_delimiter: DELIMITER _in identifier  */
-#line 6062 "parser.y"
+#line 6070 "parser.y"
                                 { yyval = yyvsp[0]; }
-#line 11612 "parser.c"
+#line 11620 "parser.c"
     break;
 
   case 1142: /* unstring_into_count: %empty  */
-#line 6066 "parser.y"
+#line 6074 "parser.y"
                                 { yyval = NULL; }
-#line 11618 "parser.c"
+#line 11626 "parser.c"
     break;
 
   case 1143: /* unstring_into_count: COUNT _in identifier  */
-#line 6067 "parser.y"
+#line 6075 "parser.y"
                                 { yyval = yyvsp[0]; }
-#line 11624 "parser.c"
+#line 11632 "parser.c"
     break;
 
   case 1144: /* unstring_tallying: %empty  */
-#line 6071 "parser.y"
+#line 6079 "parser.y"
                                 { yyval = NULL; }
-#line 11630 "parser.c"
+#line 11638 "parser.c"
     break;
 
   case 1145: /* unstring_tallying: TALLYING _in identifier  */
-#line 6072 "parser.y"
+#line 6080 "parser.y"
                                 { yyval = yyvsp[0]; }
-#line 11636 "parser.c"
+#line 11644 "parser.c"
     break;
 
   case 1146: /* end_unstring: %empty  */
-#line 6076 "parser.y"
+#line 6084 "parser.y"
                                 { terminator_warning (TERM_UNSTRING); }
-#line 11642 "parser.c"
+#line 11650 "parser.c"
     break;
 
   case 1147: /* end_unstring: "END-UNSTRING"  */
-#line 6077 "parser.y"
+#line 6085 "parser.y"
                                 { terminator_clear (TERM_UNSTRING); }
-#line 11648 "parser.c"
+#line 11656 "parser.c"
     break;
 
   case 1151: /* use_exception: USE use_global _after _standard exception_or_error _procedure _on use_exception_target  */
-#line 6095 "parser.y"
+#line 6103 "parser.y"
   {
 	if (!in_declaratives) {
 		cb_error (_("USE statement must be within DECLARATIVES"));
@@ -11666,28 +11674,28 @@ yyreduce:
 		}
 	}
   }
-#line 11670 "parser.c"
-    break;
-
-  case 1152: /* use_global: %empty  */
-#line 6116 "parser.y"
-  {
-	use_global_ind = 0;
-  }
 #line 11678 "parser.c"
     break;
 
+  case 1152: /* use_global: %empty  */
+#line 6124 "parser.y"
+  {
+	use_global_ind = 0;
+  }
+#line 11686 "parser.c"
+    break;
+
   case 1153: /* use_global: GLOBAL  */
-#line 6120 "parser.y"
+#line 6128 "parser.y"
   {
 	use_global_ind = 1;
 	current_program->flag_global_use = 1;
   }
-#line 11687 "parser.c"
+#line 11695 "parser.c"
     break;
 
   case 1154: /* use_exception_target: file_name_list  */
-#line 6128 "parser.y"
+#line 6136 "parser.y"
   {
 	cb_tree		l;
 
@@ -11697,69 +11705,69 @@ yyreduce:
 		}
 	}
   }
-#line 11701 "parser.c"
+#line 11709 "parser.c"
     break;
 
   case 1155: /* use_exception_target: INPUT  */
-#line 6138 "parser.y"
+#line 6146 "parser.y"
   {
 	current_program->global_handler[COB_OPEN_INPUT].handler_label = current_section;
 	current_program->global_handler[COB_OPEN_INPUT].handler_prog = current_program;
   }
-#line 11710 "parser.c"
+#line 11718 "parser.c"
     break;
 
   case 1156: /* use_exception_target: OUTPUT  */
-#line 6143 "parser.y"
+#line 6151 "parser.y"
   {
 	current_program->global_handler[COB_OPEN_OUTPUT].handler_label = current_section;
 	current_program->global_handler[COB_OPEN_OUTPUT].handler_prog = current_program;
   }
-#line 11719 "parser.c"
+#line 11727 "parser.c"
     break;
 
   case 1157: /* use_exception_target: "I-O"  */
-#line 6148 "parser.y"
+#line 6156 "parser.y"
   {
 	current_program->global_handler[COB_OPEN_I_O].handler_label = current_section;
 	current_program->global_handler[COB_OPEN_I_O].handler_prog = current_program;
   }
-#line 11728 "parser.c"
+#line 11736 "parser.c"
     break;
 
   case 1158: /* use_exception_target: EXTEND  */
-#line 6153 "parser.y"
+#line 6161 "parser.y"
   {
 	current_program->global_handler[COB_OPEN_EXTEND].handler_label = current_section;
 	current_program->global_handler[COB_OPEN_EXTEND].handler_prog = current_program;
   }
-#line 11737 "parser.c"
-    break;
-
-  case 1171: /* use_debugging: USE _for DEBUGGING _on use_debugging_target  */
-#line 6185 "parser.y"
-  {
-	PENDING ("USE FOR DEBUGGING");
-  }
 #line 11745 "parser.c"
     break;
 
-  case 1174: /* use_reporting: USE use_global BEFORE REPORTING identifier  */
-#line 6197 "parser.y"
+  case 1171: /* use_debugging: USE _for DEBUGGING _on use_debugging_target  */
+#line 6193 "parser.y"
   {
-	PENDING ("USE BEFORE REPORTING");
+	PENDING ("USE FOR DEBUGGING");
   }
 #line 11753 "parser.c"
     break;
 
+  case 1174: /* use_reporting: USE use_global BEFORE REPORTING identifier  */
+#line 6205 "parser.y"
+  {
+	PENDING ("USE BEFORE REPORTING");
+  }
+#line 11761 "parser.c"
+    break;
+
   case 1175: /* $@93: %empty  */
-#line 6208 "parser.y"
+#line 6216 "parser.y"
                                 { BEGIN_STATEMENT ("WRITE", TERM_WRITE); }
-#line 11759 "parser.c"
+#line 11767 "parser.c"
     break;
 
   case 1176: /* write_statement: WRITE $@93 record_name write_from write_lock write_option write_handler end_write  */
-#line 6211 "parser.y"
+#line 6219 "parser.y"
   {
 	if (yyvsp[-5] != cb_error_node) {
 		if (cb_use_invalidkey_handler_on_status34 &&
@@ -11771,759 +11779,759 @@ yyreduce:
 		cb_emit_write (yyvsp[-5], yyvsp[-4], yyvsp[-2], yyvsp[-3]);
 	}
   }
-#line 11775 "parser.c"
+#line 11783 "parser.c"
     break;
 
   case 1177: /* write_from: %empty  */
-#line 6225 "parser.y"
+#line 6233 "parser.y"
                                 { yyval = NULL; }
-#line 11781 "parser.c"
+#line 11789 "parser.c"
     break;
 
   case 1178: /* write_from: FROM id_or_lit  */
-#line 6226 "parser.y"
+#line 6234 "parser.y"
                                 { yyval = yyvsp[0]; }
-#line 11787 "parser.c"
-    break;
-
-  case 1179: /* write_option: %empty  */
-#line 6231 "parser.y"
-  {
-	yyval = cb_int0;
-  }
 #line 11795 "parser.c"
     break;
 
-  case 1180: /* write_option: before_or_after _advancing num_id_or_lit _line_or_lines  */
-#line 6235 "parser.y"
+  case 1179: /* write_option: %empty  */
+#line 6239 "parser.y"
   {
-	yyval = cb_build_write_advancing_lines (yyvsp[-3], yyvsp[-1]);
+	yyval = cb_int0;
   }
 #line 11803 "parser.c"
     break;
 
-  case 1181: /* write_option: before_or_after _advancing mnemonic_name  */
-#line 6239 "parser.y"
+  case 1180: /* write_option: before_or_after _advancing num_id_or_lit _line_or_lines  */
+#line 6243 "parser.y"
   {
-	yyval = cb_build_write_advancing_mnemonic (yyvsp[-2], yyvsp[0]);
+	yyval = cb_build_write_advancing_lines (yyvsp[-3], yyvsp[-1]);
   }
 #line 11811 "parser.c"
     break;
 
-  case 1182: /* write_option: before_or_after _advancing PAGE  */
-#line 6243 "parser.y"
+  case 1181: /* write_option: before_or_after _advancing mnemonic_name  */
+#line 6247 "parser.y"
   {
-	yyval = cb_build_write_advancing_page (yyvsp[-2]);
+	yyval = cb_build_write_advancing_mnemonic (yyvsp[-2], yyvsp[0]);
   }
 #line 11819 "parser.c"
     break;
 
+  case 1182: /* write_option: before_or_after _advancing PAGE  */
+#line 6251 "parser.y"
+  {
+	yyval = cb_build_write_advancing_page (yyvsp[-2]);
+  }
+#line 11827 "parser.c"
+    break;
+
   case 1183: /* before_or_after: BEFORE  */
-#line 6249 "parser.y"
+#line 6257 "parser.y"
                                 { yyval = CB_BEFORE; }
-#line 11825 "parser.c"
+#line 11833 "parser.c"
     break;
 
   case 1184: /* before_or_after: AFTER  */
-#line 6250 "parser.y"
+#line 6258 "parser.y"
                                 { yyval = CB_AFTER; }
-#line 11831 "parser.c"
+#line 11839 "parser.c"
     break;
 
   case 1188: /* end_write: %empty  */
-#line 6259 "parser.y"
+#line 6267 "parser.y"
                                 { terminator_warning (TERM_WRITE); }
-#line 11837 "parser.c"
+#line 11845 "parser.c"
     break;
 
   case 1189: /* end_write: "END-WRITE"  */
-#line 6260 "parser.y"
+#line 6268 "parser.y"
                                 { terminator_clear (TERM_WRITE); }
-#line 11843 "parser.c"
-    break;
-
-  case 1190: /* on_accp_exception: opt_on_exception opt_not_on_exception  */
-#line 6275 "parser.y"
-  {
-	current_statement->handler_id = COB_EC_IMP_ACCEPT;
-  }
 #line 11851 "parser.c"
     break;
 
-  case 1191: /* on_disp_exception: opt_on_exception opt_not_on_exception  */
+  case 1190: /* on_accp_exception: opt_on_exception opt_not_on_exception  */
 #line 6283 "parser.y"
   {
-	current_statement->handler_id = COB_EC_IMP_DISPLAY;
+	current_statement->handler_id = COB_EC_IMP_ACCEPT;
   }
 #line 11859 "parser.c"
     break;
 
-  case 1193: /* $@94: %empty  */
-#line 6290 "parser.y"
+  case 1191: /* on_disp_exception: opt_on_exception opt_not_on_exception  */
+#line 6291 "parser.y"
   {
-	check_unreached = 0;
+	current_statement->handler_id = COB_EC_IMP_DISPLAY;
   }
 #line 11867 "parser.c"
     break;
 
-  case 1194: /* opt_on_exception: EXCEPTION $@94 statement_list  */
-#line 6294 "parser.y"
+  case 1193: /* $@94: %empty  */
+#line 6298 "parser.y"
   {
-	current_statement->handler1 = yyvsp[0];
+	check_unreached = 0;
   }
 #line 11875 "parser.c"
     break;
 
-  case 1196: /* $@95: %empty  */
-#line 6301 "parser.y"
+  case 1194: /* opt_on_exception: EXCEPTION $@94 statement_list  */
+#line 6302 "parser.y"
   {
-	check_unreached = 0;
+	current_statement->handler1 = yyvsp[0];
   }
 #line 11883 "parser.c"
     break;
 
-  case 1197: /* opt_not_on_exception: "NOT EXCEPTION" $@95 statement_list  */
-#line 6305 "parser.y"
+  case 1196: /* $@95: %empty  */
+#line 6309 "parser.y"
   {
-	current_statement->handler2 = yyvsp[0];
+	check_unreached = 0;
   }
 #line 11891 "parser.c"
     break;
 
+  case 1197: /* opt_not_on_exception: "NOT EXCEPTION" $@95 statement_list  */
+#line 6313 "parser.y"
+  {
+	current_statement->handler2 = yyvsp[0];
+  }
+#line 11899 "parser.c"
+    break;
+
   case 1200: /* $@96: %empty  */
-#line 6321 "parser.y"
+#line 6329 "parser.y"
   {
 	check_unreached = 0;
 	current_statement->handler_id = COB_EC_SIZE;
-  }
-#line 11900 "parser.c"
-    break;
-
-  case 1201: /* opt_on_size_error: "SIZE ERROR" $@96 statement_list  */
-#line 6326 "parser.y"
-  {
-	current_statement->handler1 = yyvsp[0];
   }
 #line 11908 "parser.c"
     break;
 
+  case 1201: /* opt_on_size_error: "SIZE ERROR" $@96 statement_list  */
+#line 6334 "parser.y"
+  {
+	current_statement->handler1 = yyvsp[0];
+  }
+#line 11916 "parser.c"
+    break;
+
   case 1203: /* $@97: %empty  */
-#line 6333 "parser.y"
+#line 6341 "parser.y"
   {
 	check_unreached = 0;
 	current_statement->handler_id = COB_EC_SIZE;
   }
-#line 11917 "parser.c"
-    break;
-
-  case 1204: /* opt_not_on_size_error: "NOT SIZE ERROR" $@97 statement_list  */
-#line 6338 "parser.y"
-  {
-	current_statement->handler2 = yyvsp[0];
-  }
 #line 11925 "parser.c"
     break;
 
-  case 1205: /* on_overflow: opt_on_overflow opt_not_on_overflow  */
-#line 6350 "parser.y"
+  case 1204: /* opt_not_on_size_error: "NOT SIZE ERROR" $@97 statement_list  */
+#line 6346 "parser.y"
   {
-	current_statement->handler_id = COB_EC_OVERFLOW;
+	current_statement->handler2 = yyvsp[0];
   }
 #line 11933 "parser.c"
     break;
 
-  case 1207: /* $@98: %empty  */
-#line 6357 "parser.y"
+  case 1205: /* on_overflow: opt_on_overflow opt_not_on_overflow  */
+#line 6358 "parser.y"
   {
-	check_unreached = 0;
+	current_statement->handler_id = COB_EC_OVERFLOW;
   }
 #line 11941 "parser.c"
     break;
 
-  case 1208: /* opt_on_overflow: OVERFLOW $@98 statement_list  */
-#line 6361 "parser.y"
+  case 1207: /* $@98: %empty  */
+#line 6365 "parser.y"
   {
-	current_statement->handler1 = yyvsp[0];
+	check_unreached = 0;
   }
 #line 11949 "parser.c"
     break;
 
-  case 1210: /* $@99: %empty  */
-#line 6368 "parser.y"
+  case 1208: /* opt_on_overflow: OVERFLOW $@98 statement_list  */
+#line 6369 "parser.y"
   {
-	check_unreached = 0;
+	current_statement->handler1 = yyvsp[0];
   }
 #line 11957 "parser.c"
     break;
 
-  case 1211: /* opt_not_on_overflow: "NOT OVERFLOW" $@99 statement_list  */
-#line 6372 "parser.y"
+  case 1210: /* $@99: %empty  */
+#line 6376 "parser.y"
   {
-	current_statement->handler2 = yyvsp[0];
+	check_unreached = 0;
   }
 #line 11965 "parser.c"
     break;
 
+  case 1211: /* opt_not_on_overflow: "NOT OVERFLOW" $@99 statement_list  */
+#line 6380 "parser.y"
+  {
+	current_statement->handler2 = yyvsp[0];
+  }
+#line 11973 "parser.c"
+    break;
+
   case 1212: /* at_end: at_end_sentence  */
-#line 6384 "parser.y"
+#line 6392 "parser.y"
   {
 	current_statement->handler_id = COB_EC_I_O_AT_END;
 	current_statement->handler1 = yyvsp[0];
   }
-#line 11974 "parser.c"
+#line 11982 "parser.c"
     break;
 
   case 1213: /* at_end: not_at_end_sentence  */
-#line 6389 "parser.y"
+#line 6397 "parser.y"
   {
 	current_statement->handler_id = COB_EC_I_O_AT_END;
 	current_statement->handler2 = yyvsp[0];
   }
-#line 11983 "parser.c"
+#line 11991 "parser.c"
     break;
 
   case 1214: /* at_end: at_end_sentence not_at_end_sentence  */
-#line 6394 "parser.y"
+#line 6402 "parser.y"
   {
 	current_statement->handler_id = COB_EC_I_O_AT_END;
 	current_statement->handler1 = yyvsp[-1];
 	current_statement->handler2 = yyvsp[0];
-  }
-#line 11993 "parser.c"
-    break;
-
-  case 1215: /* $@100: %empty  */
-#line 6403 "parser.y"
-  {
-	check_unreached = 0;
   }
 #line 12001 "parser.c"
     break;
 
-  case 1216: /* at_end_sentence: END $@100 statement_list  */
-#line 6407 "parser.y"
+  case 1215: /* $@100: %empty  */
+#line 6411 "parser.y"
   {
-	yyval = yyvsp[0];
+	check_unreached = 0;
   }
 #line 12009 "parser.c"
     break;
 
-  case 1217: /* $@101: %empty  */
-#line 6414 "parser.y"
+  case 1216: /* at_end_sentence: END $@100 statement_list  */
+#line 6415 "parser.y"
   {
-	check_unreached = 0;
+	yyval = yyvsp[0];
   }
 #line 12017 "parser.c"
     break;
 
-  case 1218: /* not_at_end_sentence: "NOT END" $@101 statement_list  */
-#line 6418 "parser.y"
+  case 1217: /* $@101: %empty  */
+#line 6422 "parser.y"
   {
-	yyval = yyvsp[0];
+	check_unreached = 0;
   }
 #line 12025 "parser.c"
     break;
 
+  case 1218: /* not_at_end_sentence: "NOT END" $@101 statement_list  */
+#line 6426 "parser.y"
+  {
+	yyval = yyvsp[0];
+  }
+#line 12033 "parser.c"
+    break;
+
   case 1219: /* at_eop: at_eop_sentence  */
-#line 6430 "parser.y"
+#line 6438 "parser.y"
   {
 	current_statement->handler_id = COB_EC_I_O_EOP;
 	current_statement->handler1 = yyvsp[0];
   }
-#line 12034 "parser.c"
+#line 12042 "parser.c"
     break;
 
   case 1220: /* at_eop: not_at_eop_sentence  */
-#line 6435 "parser.y"
+#line 6443 "parser.y"
   {
 	current_statement->handler_id = COB_EC_I_O_EOP;
 	current_statement->handler2 = yyvsp[0];
   }
-#line 12043 "parser.c"
+#line 12051 "parser.c"
     break;
 
   case 1221: /* at_eop: at_eop_sentence not_at_eop_sentence  */
-#line 6440 "parser.y"
+#line 6448 "parser.y"
   {
 	current_statement->handler_id = COB_EC_I_O_EOP;
 	current_statement->handler1 = yyvsp[-1];
 	current_statement->handler2 = yyvsp[0];
-  }
-#line 12053 "parser.c"
-    break;
-
-  case 1222: /* $@102: %empty  */
-#line 6449 "parser.y"
-  {
-	check_unreached = 0;
   }
 #line 12061 "parser.c"
     break;
 
-  case 1223: /* at_eop_sentence: EOP $@102 statement_list  */
-#line 6453 "parser.y"
+  case 1222: /* $@102: %empty  */
+#line 6457 "parser.y"
   {
-	yyval = yyvsp[0];
+	check_unreached = 0;
   }
 #line 12069 "parser.c"
     break;
 
-  case 1224: /* $@103: %empty  */
-#line 6460 "parser.y"
+  case 1223: /* at_eop_sentence: EOP $@102 statement_list  */
+#line 6461 "parser.y"
   {
-	check_unreached = 0;
+	yyval = yyvsp[0];
   }
 #line 12077 "parser.c"
     break;
 
-  case 1225: /* not_at_eop_sentence: "NOT EOP" $@103 statement_list  */
-#line 6464 "parser.y"
+  case 1224: /* $@103: %empty  */
+#line 6468 "parser.y"
   {
-	yyval = yyvsp[0];
+	check_unreached = 0;
   }
 #line 12085 "parser.c"
     break;
 
+  case 1225: /* not_at_eop_sentence: "NOT EOP" $@103 statement_list  */
+#line 6472 "parser.y"
+  {
+	yyval = yyvsp[0];
+  }
+#line 12093 "parser.c"
+    break;
+
   case 1228: /* invalid_key: invalid_key_sentence  */
-#line 6480 "parser.y"
+#line 6488 "parser.y"
   {
 	current_statement->handler_id = COB_EC_I_O_INVALID_KEY;
 	current_statement->handler1 = yyvsp[0];
   }
-#line 12094 "parser.c"
+#line 12102 "parser.c"
     break;
 
   case 1229: /* invalid_key: not_invalid_key_sentence  */
-#line 6485 "parser.y"
+#line 6493 "parser.y"
   {
 	current_statement->handler_id = COB_EC_I_O_INVALID_KEY;
 	current_statement->handler2 = yyvsp[0];
   }
-#line 12103 "parser.c"
+#line 12111 "parser.c"
     break;
 
   case 1230: /* invalid_key: invalid_key_sentence not_invalid_key_sentence  */
-#line 6490 "parser.y"
+#line 6498 "parser.y"
   {
 	current_statement->handler_id = COB_EC_I_O_INVALID_KEY;
 	current_statement->handler1 = yyvsp[-1];
 	current_statement->handler2 = yyvsp[0];
   }
-#line 12113 "parser.c"
-    break;
-
-  case 1231: /* $@104: %empty  */
-#line 6499 "parser.y"
-  {
-	check_unreached = 0;
-  }
 #line 12121 "parser.c"
     break;
 
-  case 1232: /* invalid_key_sentence: "INVALID KEY" $@104 statement_list  */
-#line 6503 "parser.y"
+  case 1231: /* $@104: %empty  */
+#line 6507 "parser.y"
   {
-	yyval = yyvsp[0];
+	check_unreached = 0;
   }
 #line 12129 "parser.c"
     break;
 
-  case 1233: /* $@105: %empty  */
-#line 6510 "parser.y"
+  case 1232: /* invalid_key_sentence: "INVALID KEY" $@104 statement_list  */
+#line 6511 "parser.y"
   {
-	check_unreached = 0;
+	yyval = yyvsp[0];
   }
 #line 12137 "parser.c"
     break;
 
-  case 1234: /* not_invalid_key_sentence: "NOT INVALID KEY" $@105 statement_list  */
-#line 6514 "parser.y"
+  case 1233: /* $@105: %empty  */
+#line 6518 "parser.y"
   {
-	yyval = yyvsp[0];
+	check_unreached = 0;
   }
 #line 12145 "parser.c"
     break;
 
-  case 1235: /* _opt_scroll_lines: %empty  */
-#line 6526 "parser.y"
+  case 1234: /* not_invalid_key_sentence: "NOT INVALID KEY" $@105 statement_list  */
+#line 6522 "parser.y"
   {
-	yyval = cb_one;
+	yyval = yyvsp[0];
   }
 #line 12153 "parser.c"
     break;
 
-  case 1236: /* _opt_scroll_lines: _by num_id_or_lit _line_or_lines  */
-#line 6530 "parser.y"
+  case 1235: /* _opt_scroll_lines: %empty  */
+#line 6534 "parser.y"
   {
-	yyval = yyvsp[-1];
+	yyval = cb_one;
   }
 #line 12161 "parser.c"
     break;
 
-  case 1237: /* condition: expr  */
-#line 6542 "parser.y"
+  case 1236: /* _opt_scroll_lines: _by num_id_or_lit _line_or_lines  */
+#line 6538 "parser.y"
   {
-	yyval = cb_build_cond (yyvsp[0]);
+	yyval = yyvsp[-1];
   }
 #line 12169 "parser.c"
     break;
 
-  case 1238: /* expr: partial_expr  */
-#line 6549 "parser.y"
+  case 1237: /* condition: expr  */
+#line 6550 "parser.y"
   {
-	yyval = cb_build_expr (yyvsp[0]);
+	yyval = cb_build_cond (yyvsp[0]);
   }
 #line 12177 "parser.c"
     break;
 
-  case 1239: /* $@106: %empty  */
-#line 6555 "parser.y"
+  case 1238: /* expr: partial_expr  */
+#line 6557 "parser.y"
   {
-	current_expr = NULL;
+	yyval = cb_build_expr (yyvsp[0]);
   }
 #line 12185 "parser.c"
     break;
 
-  case 1240: /* partial_expr: $@106 expr_tokens  */
-#line 6559 "parser.y"
+  case 1239: /* $@106: %empty  */
+#line 6563 "parser.y"
   {
-	yyval = cb_list_reverse (current_expr);
+	current_expr = NULL;
   }
 #line 12193 "parser.c"
     break;
 
+  case 1240: /* partial_expr: $@106 expr_tokens  */
+#line 6567 "parser.y"
+  {
+	yyval = cb_list_reverse (current_expr);
+  }
+#line 12201 "parser.c"
+    break;
+
   case 1241: /* expr_tokens: expr_token x  */
-#line 6565 "parser.y"
+#line 6573 "parser.y"
                         { push_expr ('x', yyvsp[0]); }
-#line 12199 "parser.c"
+#line 12207 "parser.c"
     break;
 
   case 1242: /* expr_tokens: expr_tokens ')'  */
-#line 6566 "parser.y"
+#line 6574 "parser.y"
                         { push_expr (')', NULL); }
-#line 12205 "parser.c"
+#line 12213 "parser.c"
     break;
 
   case 1243: /* expr_tokens: expr_token OMITTED  */
-#line 6568 "parser.y"
+#line 6576 "parser.y"
                                 { push_expr ('O', NULL); }
-#line 12211 "parser.c"
+#line 12219 "parser.c"
     break;
 
   case 1244: /* expr_tokens: expr_token NUMERIC  */
-#line 6569 "parser.y"
+#line 6577 "parser.y"
                                 { push_expr ('9', NULL); }
-#line 12217 "parser.c"
+#line 12225 "parser.c"
     break;
 
   case 1245: /* expr_tokens: expr_token ALPHABETIC  */
-#line 6570 "parser.y"
+#line 6578 "parser.y"
                                 { push_expr ('A', NULL); }
-#line 12223 "parser.c"
+#line 12231 "parser.c"
     break;
 
   case 1246: /* expr_tokens: expr_token "ALPHABETIC-LOWER"  */
-#line 6571 "parser.y"
+#line 6579 "parser.y"
                                 { push_expr ('L', NULL); }
-#line 12229 "parser.c"
+#line 12237 "parser.c"
     break;
 
   case 1247: /* expr_tokens: expr_token "ALPHABETIC-UPPER"  */
-#line 6572 "parser.y"
+#line 6580 "parser.y"
                                 { push_expr ('U', NULL); }
-#line 12235 "parser.c"
+#line 12243 "parser.c"
     break;
 
   case 1248: /* expr_tokens: expr_token CLASS_NAME  */
-#line 6573 "parser.y"
+#line 6581 "parser.y"
                                 { push_expr ('x', yyvsp[0]); }
-#line 12241 "parser.c"
+#line 12249 "parser.c"
     break;
 
   case 1249: /* expr_tokens: expr_tokens OMITTED  */
-#line 6575 "parser.y"
+#line 6583 "parser.y"
                                         { push_expr ('O', NULL); }
-#line 12247 "parser.c"
+#line 12255 "parser.c"
     break;
 
   case 1250: /* expr_tokens: expr_tokens NUMERIC  */
-#line 6576 "parser.y"
+#line 6584 "parser.y"
                                         { push_expr ('9', NULL); }
-#line 12253 "parser.c"
+#line 12261 "parser.c"
     break;
 
   case 1251: /* expr_tokens: expr_tokens ALPHABETIC  */
-#line 6577 "parser.y"
+#line 6585 "parser.y"
                                         { push_expr ('A', NULL); }
-#line 12259 "parser.c"
+#line 12267 "parser.c"
     break;
 
   case 1252: /* expr_tokens: expr_tokens "ALPHABETIC-LOWER"  */
-#line 6578 "parser.y"
+#line 6586 "parser.y"
                                         { push_expr ('L', NULL); }
-#line 12265 "parser.c"
+#line 12273 "parser.c"
     break;
 
   case 1253: /* expr_tokens: expr_tokens "ALPHABETIC-UPPER"  */
-#line 6579 "parser.y"
+#line 6587 "parser.y"
                                         { push_expr ('U', NULL); }
-#line 12271 "parser.c"
+#line 12279 "parser.c"
     break;
 
   case 1254: /* expr_tokens: expr_tokens CLASS_NAME  */
-#line 6580 "parser.y"
+#line 6588 "parser.y"
                                         { push_expr ('x', yyvsp[0]); }
-#line 12277 "parser.c"
+#line 12285 "parser.c"
     break;
 
   case 1255: /* expr_tokens: expr_token POSITIVE  */
-#line 6582 "parser.y"
+#line 6590 "parser.y"
                         { push_expr ('P', NULL); }
-#line 12283 "parser.c"
+#line 12291 "parser.c"
     break;
 
   case 1256: /* expr_tokens: expr_token NEGATIVE  */
-#line 6583 "parser.y"
+#line 6591 "parser.y"
                         { push_expr ('N', NULL); }
-#line 12289 "parser.c"
+#line 12297 "parser.c"
     break;
 
   case 1257: /* expr_tokens: expr_tokens POSITIVE  */
-#line 6585 "parser.y"
+#line 6593 "parser.y"
                         { push_expr ('P', NULL); }
-#line 12295 "parser.c"
+#line 12303 "parser.c"
     break;
 
   case 1258: /* expr_tokens: expr_tokens NEGATIVE  */
-#line 6586 "parser.y"
+#line 6594 "parser.y"
                         { push_expr ('N', NULL); }
-#line 12301 "parser.c"
+#line 12309 "parser.c"
     break;
 
   case 1259: /* expr_tokens: expr_tokens ZERO  */
-#line 6587 "parser.y"
+#line 6595 "parser.y"
                         { push_expr ('x', cb_zero); }
-#line 12307 "parser.c"
+#line 12315 "parser.c"
     break;
 
   case 1263: /* expr_token: expr_token '('  */
-#line 6594 "parser.y"
+#line 6602 "parser.y"
                         { push_expr ('(', NULL); }
-#line 12313 "parser.c"
+#line 12321 "parser.c"
     break;
 
   case 1264: /* expr_token: expr_token '+'  */
-#line 6596 "parser.y"
+#line 6604 "parser.y"
                         { push_expr ('+', NULL); }
-#line 12319 "parser.c"
+#line 12327 "parser.c"
     break;
 
   case 1265: /* expr_token: expr_token '-'  */
-#line 6597 "parser.y"
+#line 6605 "parser.y"
                         { push_expr ('-', NULL); }
-#line 12325 "parser.c"
+#line 12333 "parser.c"
     break;
 
   case 1266: /* expr_token: expr_token '^'  */
-#line 6598 "parser.y"
+#line 6606 "parser.y"
                         { push_expr ('^', NULL); }
-#line 12331 "parser.c"
+#line 12339 "parser.c"
     break;
 
   case 1267: /* expr_token: expr_token NOT  */
-#line 6600 "parser.y"
+#line 6608 "parser.y"
                         { push_expr ('!', NULL); }
-#line 12337 "parser.c"
+#line 12345 "parser.c"
     break;
 
   case 1268: /* expr_token: expr_tokens NOT  */
-#line 6601 "parser.y"
+#line 6609 "parser.y"
                         { push_expr ('!', NULL); }
-#line 12343 "parser.c"
+#line 12351 "parser.c"
     break;
 
   case 1269: /* expr_token: expr_tokens '+'  */
-#line 6603 "parser.y"
+#line 6611 "parser.y"
                         { push_expr ('+', NULL); }
-#line 12349 "parser.c"
+#line 12357 "parser.c"
     break;
 
   case 1270: /* expr_token: expr_tokens '-'  */
-#line 6604 "parser.y"
+#line 6612 "parser.y"
                         { push_expr ('-', NULL); }
-#line 12355 "parser.c"
+#line 12363 "parser.c"
     break;
 
   case 1271: /* expr_token: expr_tokens '*'  */
-#line 6605 "parser.y"
+#line 6613 "parser.y"
                         { push_expr ('*', NULL); }
-#line 12361 "parser.c"
+#line 12369 "parser.c"
     break;
 
   case 1272: /* expr_token: expr_tokens '/'  */
-#line 6606 "parser.y"
+#line 6614 "parser.y"
                         { push_expr ('/', NULL); }
-#line 12367 "parser.c"
+#line 12375 "parser.c"
     break;
 
   case 1273: /* expr_token: expr_tokens '^'  */
-#line 6607 "parser.y"
+#line 6615 "parser.y"
                         { push_expr ('^', NULL); }
-#line 12373 "parser.c"
+#line 12381 "parser.c"
     break;
 
   case 1274: /* expr_token: expr_tokens eq  */
-#line 6609 "parser.y"
+#line 6617 "parser.y"
                         { push_expr ('=', NULL); }
-#line 12379 "parser.c"
+#line 12387 "parser.c"
     break;
 
   case 1275: /* expr_token: expr_tokens gt  */
-#line 6610 "parser.y"
+#line 6618 "parser.y"
                         { push_expr ('>', NULL); }
-#line 12385 "parser.c"
+#line 12393 "parser.c"
     break;
 
   case 1276: /* expr_token: expr_tokens lt  */
-#line 6611 "parser.y"
+#line 6619 "parser.y"
                         { push_expr ('<', NULL); }
-#line 12391 "parser.c"
+#line 12399 "parser.c"
     break;
 
   case 1277: /* expr_token: expr_tokens ge  */
-#line 6612 "parser.y"
+#line 6620 "parser.y"
                         { push_expr (']', NULL); }
-#line 12397 "parser.c"
+#line 12405 "parser.c"
     break;
 
   case 1278: /* expr_token: expr_tokens le  */
-#line 6613 "parser.y"
+#line 6621 "parser.y"
                         { push_expr ('[', NULL); }
-#line 12403 "parser.c"
+#line 12411 "parser.c"
     break;
 
   case 1279: /* expr_token: expr_tokens NE  */
-#line 6614 "parser.y"
+#line 6622 "parser.y"
                         { push_expr ('~', NULL); }
-#line 12409 "parser.c"
+#line 12417 "parser.c"
     break;
 
   case 1280: /* expr_token: expr_token eq  */
-#line 6616 "parser.y"
+#line 6624 "parser.y"
                         { push_expr ('=', NULL); }
-#line 12415 "parser.c"
+#line 12423 "parser.c"
     break;
 
   case 1281: /* expr_token: expr_token gt  */
-#line 6617 "parser.y"
+#line 6625 "parser.y"
                         { push_expr ('>', NULL); }
-#line 12421 "parser.c"
+#line 12429 "parser.c"
     break;
 
   case 1282: /* expr_token: expr_token lt  */
-#line 6618 "parser.y"
+#line 6626 "parser.y"
                         { push_expr ('<', NULL); }
-#line 12427 "parser.c"
+#line 12435 "parser.c"
     break;
 
   case 1283: /* expr_token: expr_token ge  */
-#line 6619 "parser.y"
+#line 6627 "parser.y"
                         { push_expr (']', NULL); }
-#line 12433 "parser.c"
+#line 12441 "parser.c"
     break;
 
   case 1284: /* expr_token: expr_token le  */
-#line 6620 "parser.y"
+#line 6628 "parser.y"
                         { push_expr ('[', NULL); }
-#line 12439 "parser.c"
+#line 12447 "parser.c"
     break;
 
   case 1285: /* expr_token: expr_token NE  */
-#line 6621 "parser.y"
+#line 6629 "parser.y"
                         { push_expr ('~', NULL); }
-#line 12445 "parser.c"
+#line 12453 "parser.c"
     break;
 
   case 1286: /* expr_token: expr_tokens AND  */
-#line 6623 "parser.y"
+#line 6631 "parser.y"
                         { push_expr ('&', NULL); }
-#line 12451 "parser.c"
+#line 12459 "parser.c"
     break;
 
   case 1287: /* expr_token: expr_tokens OR  */
-#line 6624 "parser.y"
+#line 6632 "parser.y"
                         { push_expr ('|', NULL); }
-#line 12457 "parser.c"
+#line 12465 "parser.c"
     break;
 
   case 1301: /* exp_list: exp  */
-#line 6636 "parser.y"
+#line 6644 "parser.y"
                                 { yyval = cb_list_init (yyvsp[0]); }
-#line 12463 "parser.c"
+#line 12471 "parser.c"
     break;
 
   case 1302: /* exp_list: exp_list e_sep exp  */
-#line 6637 "parser.y"
+#line 6645 "parser.y"
                                 { yyval = cb_list_add (yyvsp[-2], yyvsp[0]); }
-#line 12469 "parser.c"
+#line 12477 "parser.c"
     break;
 
   case 1306: /* exp: arith_x  */
-#line 6646 "parser.y"
+#line 6654 "parser.y"
                                 { yyval = yyvsp[0]; }
-#line 12475 "parser.c"
+#line 12483 "parser.c"
     break;
 
   case 1307: /* exp: exp '+' exp  */
-#line 6647 "parser.y"
+#line 6655 "parser.y"
                                 { yyval = cb_build_binary_op (yyvsp[-2], '+', yyvsp[0]); }
-#line 12481 "parser.c"
+#line 12489 "parser.c"
     break;
 
   case 1308: /* exp: exp '-' exp  */
-#line 6648 "parser.y"
+#line 6656 "parser.y"
                                 { yyval = cb_build_binary_op (yyvsp[-2], '-', yyvsp[0]); }
-#line 12487 "parser.c"
+#line 12495 "parser.c"
     break;
 
   case 1309: /* exp: exp '*' exp  */
-#line 6649 "parser.y"
+#line 6657 "parser.y"
                                 { yyval = cb_build_binary_op (yyvsp[-2], '*', yyvsp[0]); }
-#line 12493 "parser.c"
+#line 12501 "parser.c"
     break;
 
   case 1310: /* exp: exp '/' exp  */
-#line 6650 "parser.y"
+#line 6658 "parser.y"
                                 { yyval = cb_build_binary_op (yyvsp[-2], '/', yyvsp[0]); }
-#line 12499 "parser.c"
+#line 12507 "parser.c"
     break;
 
   case 1311: /* exp: '+' exp  */
-#line 6651 "parser.y"
+#line 6659 "parser.y"
                                 { yyval = yyvsp[0]; }
-#line 12505 "parser.c"
+#line 12513 "parser.c"
     break;
 
   case 1312: /* exp: '-' exp  */
-#line 6652 "parser.y"
+#line 6660 "parser.y"
                                 { yyval = cb_build_binary_op (cb_zero, '-', yyvsp[0]); }
-#line 12511 "parser.c"
+#line 12519 "parser.c"
     break;
 
   case 1313: /* exp: exp '^' exp  */
-#line 6653 "parser.y"
+#line 6661 "parser.y"
                                 { yyval = cb_build_binary_op (yyvsp[-2], '^', yyvsp[0]); }
-#line 12517 "parser.c"
+#line 12525 "parser.c"
     break;
 
   case 1314: /* exp: '(' exp ')'  */
-#line 6654 "parser.y"
+#line 6662 "parser.y"
                                 { yyval = yyvsp[-1]; }
-#line 12523 "parser.c"
+#line 12531 "parser.c"
     break;
 
   case 1315: /* linage_counter: "LINAGE-COUNTER"  */
-#line 6666 "parser.y"
+#line 6674 "parser.y"
   {
 	if (current_linage > 1) {
 		cb_error (_("LINAGE-COUNTER must be qualified here"));
@@ -12535,11 +12543,11 @@ yyreduce:
 		yyval = linage_file->linage_ctr;
 	}
   }
-#line 12539 "parser.c"
+#line 12547 "parser.c"
     break;
 
   case 1316: /* linage_counter: "LINAGE-COUNTER" in_of "Identifier"  */
-#line 6678 "parser.y"
+#line 6686 "parser.y"
   {
 	if (CB_FILE_P (cb_ref (yyvsp[0]))) {
 		yyval = CB_FILE (cb_ref (yyvsp[0]))->linage_ctr;
@@ -12548,29 +12556,29 @@ yyreduce:
 		yyval = cb_error_node;
 	}
   }
-#line 12552 "parser.c"
+#line 12560 "parser.c"
     break;
 
   case 1317: /* arithmetic_x_list: arithmetic_x  */
-#line 6692 "parser.y"
+#line 6700 "parser.y"
                                 { yyval = yyvsp[0]; }
-#line 12558 "parser.c"
+#line 12566 "parser.c"
     break;
 
   case 1318: /* arithmetic_x_list: arithmetic_x_list arithmetic_x  */
-#line 6694 "parser.y"
+#line 6702 "parser.y"
                                 { yyval = cb_list_append (yyvsp[-1], yyvsp[0]); }
-#line 12564 "parser.c"
+#line 12572 "parser.c"
     break;
 
   case 1319: /* arithmetic_x: x flag_rounded  */
-#line 6698 "parser.y"
+#line 6706 "parser.y"
                                 { yyval = cb_build_pair (yyvsp[0], yyvsp[-1]); }
-#line 12570 "parser.c"
+#line 12578 "parser.c"
     break;
 
   case 1320: /* record_name: qualified_word  */
-#line 6705 "parser.y"
+#line 6713 "parser.y"
   {
 	cb_tree x;
 	cb_tree r;
@@ -12587,11 +12595,11 @@ yyreduce:
 	}
 	yyval = x;
   }
-#line 12591 "parser.c"
+#line 12599 "parser.c"
     break;
 
   case 1321: /* table_name: qualified_word  */
-#line 6727 "parser.y"
+#line 6735 "parser.y"
   {
 	cb_tree x;
 
@@ -12606,19 +12614,19 @@ yyreduce:
 		yyval = yyvsp[0];
 	}
   }
-#line 12610 "parser.c"
-    break;
-
-  case 1322: /* file_name_list: file_name  */
-#line 6747 "parser.y"
-  {
-	yyval = cb_list_init (yyvsp[0]);
-  }
 #line 12618 "parser.c"
     break;
 
+  case 1322: /* file_name_list: file_name  */
+#line 6755 "parser.y"
+  {
+	yyval = cb_list_init (yyvsp[0]);
+  }
+#line 12626 "parser.c"
+    break;
+
   case 1323: /* file_name_list: file_name_list file_name  */
-#line 6751 "parser.y"
+#line 6759 "parser.y"
   {
 	cb_tree		l;
 
@@ -12631,11 +12639,11 @@ yyreduce:
 		yyval = cb_list_add (yyvsp[-1], yyvsp[0]);
 	}
   }
-#line 12635 "parser.c"
+#line 12643 "parser.c"
     break;
 
   case 1324: /* file_name: "Identifier"  */
-#line 6767 "parser.y"
+#line 6775 "parser.y"
   {
 	if (CB_FILE_P (cb_ref (yyvsp[0]))) {
 		yyval = yyvsp[0];
@@ -12644,106 +12652,106 @@ yyreduce:
 		yyval = cb_error_node;
 	}
   }
-#line 12648 "parser.c"
+#line 12656 "parser.c"
     break;
 
   case 1325: /* mnemonic_name_list: mnemonic_name  */
-#line 6780 "parser.y"
+#line 6788 "parser.y"
                                 { yyval = cb_list_init (yyvsp[0]); }
-#line 12654 "parser.c"
+#line 12662 "parser.c"
     break;
 
   case 1326: /* mnemonic_name_list: mnemonic_name_list mnemonic_name  */
-#line 6782 "parser.y"
+#line 6790 "parser.y"
                                 { yyval = cb_list_add (yyvsp[-1], yyvsp[0]); }
-#line 12660 "parser.c"
+#line 12668 "parser.c"
     break;
 
   case 1327: /* mnemonic_name: "MNEMONIC NAME"  */
-#line 6786 "parser.y"
+#line 6794 "parser.y"
                                 { yyval = yyvsp[0]; }
-#line 12666 "parser.c"
+#line 12674 "parser.c"
     break;
 
   case 1328: /* procedure_name_list: %empty  */
-#line 6792 "parser.y"
+#line 6800 "parser.y"
                                 { yyval = NULL; }
-#line 12672 "parser.c"
+#line 12680 "parser.c"
     break;
 
   case 1329: /* procedure_name_list: procedure_name_list procedure_name  */
-#line 6794 "parser.y"
+#line 6802 "parser.y"
                                 { yyval = cb_list_add (yyvsp[-1], yyvsp[0]); }
-#line 12678 "parser.c"
+#line 12686 "parser.c"
     break;
 
   case 1330: /* procedure_name: label  */
-#line 6799 "parser.y"
+#line 6807 "parser.y"
   {
 	yyval = yyvsp[0];
 	CB_REFERENCE (yyval)->offset = CB_TREE (current_section);
 	current_program->label_list = cb_cons (yyval, current_program->label_list);
   }
-#line 12688 "parser.c"
+#line 12696 "parser.c"
     break;
 
   case 1334: /* integer_label: "Literal"  */
-#line 6814 "parser.y"
+#line 6822 "parser.y"
   {
 	yyval = cb_build_reference ((char *)(CB_LITERAL (yyvsp[0])->data));
 	yyval->source_file = yyvsp[0]->source_file;
 	yyval->source_line = yyvsp[0]->source_line;
   }
-#line 12698 "parser.c"
+#line 12706 "parser.c"
     break;
 
   case 1335: /* reference_list: reference  */
-#line 6824 "parser.y"
+#line 6832 "parser.y"
                                 { yyval = cb_list_init (yyvsp[0]); }
-#line 12704 "parser.c"
+#line 12712 "parser.c"
     break;
 
   case 1336: /* reference_list: reference_list reference  */
-#line 6825 "parser.y"
+#line 6833 "parser.y"
                                 { yyval = cb_list_add (yyvsp[-1], yyvsp[0]); }
-#line 12710 "parser.c"
+#line 12718 "parser.c"
     break;
 
   case 1337: /* reference: qualified_word  */
-#line 6830 "parser.y"
+#line 6838 "parser.y"
   {
 	yyval = yyvsp[0];
 	current_program->reference_list = cb_cons (yyval, current_program->reference_list);
   }
-#line 12719 "parser.c"
+#line 12727 "parser.c"
     break;
 
   case 1338: /* no_reference_list: qualified_word  */
-#line 6839 "parser.y"
+#line 6847 "parser.y"
                                         { yyval = cb_list_init (yyvsp[0]); }
-#line 12725 "parser.c"
+#line 12733 "parser.c"
     break;
 
   case 1339: /* no_reference_list: no_reference_list qualified_word  */
-#line 6840 "parser.y"
+#line 6848 "parser.y"
                                         { yyval = cb_list_add (yyvsp[-1], yyvsp[0]); }
-#line 12731 "parser.c"
+#line 12739 "parser.c"
     break;
 
   case 1340: /* opt_reference: %empty  */
-#line 6844 "parser.y"
+#line 6852 "parser.y"
                                 { yyval = NULL; }
-#line 12737 "parser.c"
+#line 12745 "parser.c"
     break;
 
   case 1341: /* opt_reference: reference  */
-#line 6845 "parser.y"
+#line 6853 "parser.y"
                                 { yyval = yyvsp[0]; }
-#line 12743 "parser.c"
+#line 12751 "parser.c"
     break;
 
   case 1344: /* undefined_word: "Identifier"  */
-#line 6857 "parser.y"
+#line 6865 "parser.y"
   {
 	yyval = yyvsp[0];
 	if (CB_REFERENCE (yyval)->word->count > 0) {
@@ -12751,160 +12759,160 @@ yyreduce:
 		yyval = cb_error_node;
 	}
   }
-#line 12755 "parser.c"
+#line 12763 "parser.c"
     break;
 
   case 1345: /* target_x_list: target_x  */
-#line 6876 "parser.y"
+#line 6884 "parser.y"
                                 { yyval = cb_list_init (yyvsp[0]); }
-#line 12761 "parser.c"
+#line 12769 "parser.c"
     break;
 
   case 1346: /* target_x_list: target_x_list target_x  */
-#line 6877 "parser.y"
+#line 6885 "parser.y"
                                 { yyval = cb_list_add (yyvsp[-1], yyvsp[0]); }
-#line 12767 "parser.c"
+#line 12775 "parser.c"
     break;
 
   case 1348: /* target_x: ADDRESS _of identifier_1  */
-#line 6882 "parser.y"
+#line 6890 "parser.y"
                                 { yyval = cb_build_address (yyvsp[0]); }
-#line 12773 "parser.c"
+#line 12781 "parser.c"
     break;
 
   case 1349: /* x_list: x  */
-#line 6886 "parser.y"
+#line 6894 "parser.y"
                                 { yyval = cb_list_init (yyvsp[0]); }
-#line 12779 "parser.c"
+#line 12787 "parser.c"
     break;
 
   case 1350: /* x_list: x_list x  */
-#line 6887 "parser.y"
+#line 6895 "parser.y"
                                 { yyval = cb_list_add (yyvsp[-1], yyvsp[0]); }
-#line 12785 "parser.c"
+#line 12793 "parser.c"
     break;
 
   case 1352: /* x: LENGTH _of identifier_1  */
-#line 6892 "parser.y"
+#line 6900 "parser.y"
                                                 { yyval = cb_build_length (yyvsp[0]); }
-#line 12791 "parser.c"
+#line 12799 "parser.c"
     break;
 
   case 1353: /* x: LENGTH _of basic_literal  */
-#line 6893 "parser.y"
+#line 6901 "parser.y"
                                                 { yyval = cb_build_length (yyvsp[0]); }
-#line 12797 "parser.c"
+#line 12805 "parser.c"
     break;
 
   case 1354: /* x: LENGTH _of function  */
-#line 6894 "parser.y"
+#line 6902 "parser.y"
                                                 { yyval = cb_build_length (yyvsp[0]); }
-#line 12803 "parser.c"
+#line 12811 "parser.c"
     break;
 
   case 1355: /* x: ADDRESS _of prog_or_entry alnum_or_id  */
-#line 6895 "parser.y"
+#line 6903 "parser.y"
                                                 { yyval = cb_build_ppointer (yyvsp[0]); }
-#line 12809 "parser.c"
+#line 12817 "parser.c"
     break;
 
   case 1356: /* x: ADDRESS _of identifier_1  */
-#line 6896 "parser.y"
+#line 6904 "parser.y"
                                                 { yyval = cb_build_address (yyvsp[0]); }
-#line 12815 "parser.c"
+#line 12823 "parser.c"
     break;
 
   case 1361: /* arith_x: LENGTH _of identifier_1  */
-#line 6904 "parser.y"
+#line 6912 "parser.y"
                                                 { yyval = cb_build_length (yyvsp[0]); }
-#line 12821 "parser.c"
+#line 12829 "parser.c"
     break;
 
   case 1362: /* arith_x: LENGTH _of basic_literal  */
-#line 6905 "parser.y"
+#line 6913 "parser.y"
                                                 { yyval = cb_build_length (yyvsp[0]); }
-#line 12827 "parser.c"
+#line 12835 "parser.c"
     break;
 
   case 1363: /* arith_x: LENGTH _of function  */
-#line 6906 "parser.y"
+#line 6914 "parser.y"
                                                 { yyval = cb_build_length (yyvsp[0]); }
-#line 12833 "parser.c"
+#line 12841 "parser.c"
     break;
 
   case 1369: /* alnum_or_id: identifier_1  */
-#line 6918 "parser.y"
+#line 6926 "parser.y"
                         { yyval = yyvsp[0]; }
-#line 12839 "parser.c"
+#line 12847 "parser.c"
     break;
 
   case 1370: /* alnum_or_id: "Literal"  */
-#line 6919 "parser.y"
+#line 6927 "parser.y"
                         { yyval = yyvsp[0]; }
-#line 12845 "parser.c"
+#line 12853 "parser.c"
     break;
 
   case 1382: /* num_id_or_lit: ZERO  */
-#line 6953 "parser.y"
+#line 6961 "parser.y"
                                 { yyval = cb_zero; }
-#line 12851 "parser.c"
+#line 12859 "parser.c"
     break;
 
   case 1383: /* identifier: identifier_1  */
-#line 6961 "parser.y"
+#line 6969 "parser.y"
                                 { yyval = cb_build_identifier (yyvsp[0]); }
-#line 12857 "parser.c"
+#line 12865 "parser.c"
     break;
 
   case 1384: /* identifier_1: qualified_word  */
-#line 6965 "parser.y"
+#line 6973 "parser.y"
                                 { yyval = yyvsp[0]; }
-#line 12863 "parser.c"
+#line 12871 "parser.c"
     break;
 
   case 1385: /* identifier_1: qualified_word subref  */
-#line 6966 "parser.y"
+#line 6974 "parser.y"
                                 { yyval = yyvsp[-1]; }
-#line 12869 "parser.c"
+#line 12877 "parser.c"
     break;
 
   case 1386: /* identifier_1: qualified_word refmod  */
-#line 6967 "parser.y"
+#line 6975 "parser.y"
                                 { yyval = yyvsp[-1]; }
-#line 12875 "parser.c"
+#line 12883 "parser.c"
     break;
 
   case 1387: /* identifier_1: qualified_word subref refmod  */
-#line 6968 "parser.y"
+#line 6976 "parser.y"
                                 { yyval = yyvsp[-2]; }
-#line 12881 "parser.c"
+#line 12889 "parser.c"
     break;
 
   case 1388: /* qualified_word: "Identifier"  */
-#line 6972 "parser.y"
+#line 6980 "parser.y"
                                 { yyval = yyvsp[0]; }
-#line 12887 "parser.c"
+#line 12895 "parser.c"
     break;
 
   case 1389: /* qualified_word: "Identifier" in_of qualified_word  */
-#line 6973 "parser.y"
+#line 6981 "parser.y"
                                 { yyval = yyvsp[-2]; CB_REFERENCE (yyvsp[-2])->chain = yyvsp[0]; }
-#line 12893 "parser.c"
+#line 12901 "parser.c"
     break;
 
   case 1390: /* subref: '(' exp_list ')'  */
-#line 6978 "parser.y"
+#line 6986 "parser.y"
   {
 	if (cb_ref (yyvsp[-3]) != cb_error_node) {
 		yyval = yyvsp[-3];
 		CB_REFERENCE (yyvsp[-3])->subs = cb_list_reverse (yyvsp[-1]);
 	}
   }
-#line 12904 "parser.c"
+#line 12912 "parser.c"
     break;
 
   case 1391: /* refmod: '(' exp ':' ')'  */
-#line 6988 "parser.y"
+#line 6996 "parser.y"
   {
 	if (cb_ref (yyvsp[-4]) != cb_error_node) {
 		CB_REFERENCE (yyvsp[-4])->value = CB_TREE (cb_field (yyvsp[-4]));
@@ -12918,11 +12926,11 @@ yyreduce:
 		CB_REFERENCE (yyvsp[-4])->offset = yyvsp[-2];
 	}
   }
-#line 12922 "parser.c"
+#line 12930 "parser.c"
     break;
 
   case 1392: /* refmod: '(' exp ':' exp ')'  */
-#line 7002 "parser.y"
+#line 7010 "parser.y"
   {
 	if (cb_ref (yyvsp[-5]) != cb_error_node) {
 		CB_REFERENCE (yyvsp[-5])->value = CB_TREE (cb_field (yyvsp[-5]));
@@ -12938,11 +12946,11 @@ yyreduce:
 		CB_REFERENCE (yyvsp[-5])->length = yyvsp[-1];
 	}
   }
-#line 12942 "parser.c"
+#line 12950 "parser.c"
     break;
 
   case 1393: /* integer: "Literal"  */
-#line 7025 "parser.y"
+#line 7033 "parser.y"
   {
 	if (cb_tree_category (yyvsp[0]) != CB_CATEGORY_NUMERIC) {
 		cb_error (_("Integer value expected"));
@@ -12951,437 +12959,437 @@ yyreduce:
 	}
 	yyval = yyvsp[0];
   }
-#line 12955 "parser.c"
+#line 12963 "parser.c"
     break;
 
   case 1394: /* literal: basic_literal  */
-#line 7036 "parser.y"
+#line 7044 "parser.y"
                                 { yyval = yyvsp[0]; }
-#line 12961 "parser.c"
+#line 12969 "parser.c"
     break;
 
   case 1395: /* literal: ALL basic_value  */
-#line 7038 "parser.y"
+#line 7046 "parser.y"
   {
 	yyval = yyvsp[0];
 	if (CB_LITERAL_P (yyvsp[0])) {
 		CB_LITERAL (yyvsp[0])->all = 1;
 	}
   }
-#line 12972 "parser.c"
+#line 12980 "parser.c"
     break;
 
   case 1396: /* basic_literal: basic_value  */
-#line 7047 "parser.y"
+#line 7055 "parser.y"
                                 { yyval = yyvsp[0]; }
-#line 12978 "parser.c"
+#line 12986 "parser.c"
     break;
 
   case 1397: /* basic_literal: basic_literal '&' basic_value  */
-#line 7048 "parser.y"
+#line 7056 "parser.y"
                                 { yyval = cb_concat_literals (yyvsp[-2], yyvsp[0]); }
-#line 12984 "parser.c"
+#line 12992 "parser.c"
     break;
 
   case 1398: /* basic_value: "Literal"  */
-#line 7052 "parser.y"
+#line 7060 "parser.y"
                                 { yyval = yyvsp[0]; }
-#line 12990 "parser.c"
+#line 12998 "parser.c"
     break;
 
   case 1399: /* basic_value: SPACE  */
-#line 7053 "parser.y"
+#line 7061 "parser.y"
                                 { yyval = cb_space; }
-#line 12996 "parser.c"
+#line 13004 "parser.c"
     break;
 
   case 1400: /* basic_value: ZERO  */
-#line 7054 "parser.y"
+#line 7062 "parser.y"
                                 { yyval = cb_zero; }
-#line 13002 "parser.c"
+#line 13010 "parser.c"
     break;
 
   case 1401: /* basic_value: QUOTE  */
-#line 7055 "parser.y"
+#line 7063 "parser.y"
                                 { yyval = cb_quote; }
-#line 13008 "parser.c"
+#line 13016 "parser.c"
     break;
 
   case 1402: /* basic_value: "HIGH-VALUE"  */
-#line 7056 "parser.y"
+#line 7064 "parser.y"
                                 { yyval = cb_high; }
-#line 13014 "parser.c"
+#line 13022 "parser.c"
     break;
 
   case 1403: /* basic_value: "LOW-VALUE"  */
-#line 7057 "parser.y"
+#line 7065 "parser.y"
                                 { yyval = cb_low; }
-#line 13020 "parser.c"
+#line 13028 "parser.c"
     break;
 
   case 1404: /* basic_value: "NULL"  */
-#line 7058 "parser.y"
+#line 7066 "parser.y"
                                 { yyval = cb_null; }
-#line 13026 "parser.c"
-    break;
-
-  case 1405: /* function: "FUNCTION CURRENT-DATE" func_refmod  */
-#line 7067 "parser.y"
-  {
-	yyval = cb_build_intrinsic (yyvsp[-1], NULL, yyvsp[0]);
-  }
 #line 13034 "parser.c"
     break;
 
-  case 1406: /* function: "FUNCTION WHEN-COMPILED" func_refmod  */
-#line 7071 "parser.y"
+  case 1405: /* function: "FUNCTION CURRENT-DATE" func_refmod  */
+#line 7075 "parser.y"
   {
 	yyval = cb_build_intrinsic (yyvsp[-1], NULL, yyvsp[0]);
   }
 #line 13042 "parser.c"
     break;
 
-  case 1407: /* function: "FUNCTION UPPER-CASE" '(' exp ')' func_refmod  */
-#line 7075 "parser.y"
+  case 1406: /* function: "FUNCTION WHEN-COMPILED" func_refmod  */
+#line 7079 "parser.y"
   {
-	yyval = cb_build_intrinsic (yyvsp[-4], cb_list_init (yyvsp[-2]), yyvsp[0]);
+	yyval = cb_build_intrinsic (yyvsp[-1], NULL, yyvsp[0]);
   }
 #line 13050 "parser.c"
     break;
 
-  case 1408: /* function: "FUNCTION LOWER-CASE" '(' exp ')' func_refmod  */
-#line 7079 "parser.y"
+  case 1407: /* function: "FUNCTION UPPER-CASE" '(' exp ')' func_refmod  */
+#line 7083 "parser.y"
   {
 	yyval = cb_build_intrinsic (yyvsp[-4], cb_list_init (yyvsp[-2]), yyvsp[0]);
   }
 #line 13058 "parser.c"
     break;
 
-  case 1409: /* function: "FUNCTION REVERSE" '(' exp ')' func_refmod  */
-#line 7083 "parser.y"
+  case 1408: /* function: "FUNCTION LOWER-CASE" '(' exp ')' func_refmod  */
+#line 7087 "parser.y"
   {
 	yyval = cb_build_intrinsic (yyvsp[-4], cb_list_init (yyvsp[-2]), yyvsp[0]);
   }
 #line 13066 "parser.c"
     break;
 
-  case 1410: /* function: "FUNCTION CONCATENATE" '(' exp_list ')' func_refmod  */
-#line 7087 "parser.y"
+  case 1409: /* function: "FUNCTION REVERSE" '(' exp ')' func_refmod  */
+#line 7091 "parser.y"
   {
-	yyval = cb_build_intrinsic (yyvsp[-4], yyvsp[-2], yyvsp[0]);
+	yyval = cb_build_intrinsic (yyvsp[-4], cb_list_init (yyvsp[-2]), yyvsp[0]);
   }
 #line 13074 "parser.c"
     break;
 
-  case 1411: /* function: "FUNCTION SUBSTITUTE" '(' exp_list ')' func_refmod  */
-#line 7091 "parser.y"
+  case 1410: /* function: "FUNCTION CONCATENATE" '(' exp_list ')' func_refmod  */
+#line 7095 "parser.y"
   {
 	yyval = cb_build_intrinsic (yyvsp[-4], yyvsp[-2], yyvsp[0]);
   }
 #line 13082 "parser.c"
     break;
 
-  case 1412: /* function: "FUNCTION SUBSTITUTE-CASE" '(' exp_list ')' func_refmod  */
-#line 7095 "parser.y"
+  case 1411: /* function: "FUNCTION SUBSTITUTE" '(' exp_list ')' func_refmod  */
+#line 7099 "parser.y"
   {
 	yyval = cb_build_intrinsic (yyvsp[-4], yyvsp[-2], yyvsp[0]);
   }
 #line 13090 "parser.c"
     break;
 
-  case 1413: /* function: "FUNCTION TRIM" '(' trim_args ')' func_refmod  */
-#line 7099 "parser.y"
+  case 1412: /* function: "FUNCTION SUBSTITUTE-CASE" '(' exp_list ')' func_refmod  */
+#line 7103 "parser.y"
   {
 	yyval = cb_build_intrinsic (yyvsp[-4], yyvsp[-2], yyvsp[0]);
   }
 #line 13098 "parser.c"
     break;
 
-  case 1414: /* function: "FUNCTION NUMVALC" '(' numvalc_args ')'  */
-#line 7103 "parser.y"
-  {
-	yyval = cb_build_intrinsic (yyvsp[-3], yyvsp[-1], NULL);
-  }
-#line 13106 "parser.c"
-    break;
-
-  case 1415: /* function: "FUNCTION LOCALE" '(' locale_dt_args ')' func_refmod  */
+  case 1413: /* function: "FUNCTION TRIM" '(' trim_args ')' func_refmod  */
 #line 7107 "parser.y"
   {
 	yyval = cb_build_intrinsic (yyvsp[-4], yyvsp[-2], yyvsp[0]);
   }
+#line 13106 "parser.c"
+    break;
+
+  case 1414: /* function: "FUNCTION NUMVALC" '(' numvalc_args ')'  */
+#line 7111 "parser.y"
+  {
+	yyval = cb_build_intrinsic (yyvsp[-3], yyvsp[-1], NULL);
+  }
 #line 13114 "parser.c"
     break;
 
-  case 1416: /* function: "FUNCTION" func_args  */
-#line 7111 "parser.y"
+  case 1415: /* function: "FUNCTION LOCALE" '(' locale_dt_args ')' func_refmod  */
+#line 7115 "parser.y"
   {
-	yyval = cb_build_intrinsic (yyvsp[-1], yyvsp[0], NULL);
+	yyval = cb_build_intrinsic (yyvsp[-4], yyvsp[-2], yyvsp[0]);
   }
 #line 13122 "parser.c"
     break;
 
+  case 1416: /* function: "FUNCTION" func_args  */
+#line 7119 "parser.y"
+  {
+	yyval = cb_build_intrinsic (yyvsp[-1], yyvsp[0], NULL);
+  }
+#line 13130 "parser.c"
+    break;
+
   case 1417: /* func_refmod: %empty  */
-#line 7117 "parser.y"
+#line 7125 "parser.y"
                                 { yyval = NULL; }
-#line 13128 "parser.c"
+#line 13136 "parser.c"
     break;
 
   case 1418: /* func_refmod: '(' exp ':' ')'  */
-#line 7118 "parser.y"
+#line 7126 "parser.y"
                                 { yyval = cb_build_pair (yyvsp[-2], NULL); }
-#line 13134 "parser.c"
+#line 13142 "parser.c"
     break;
 
   case 1419: /* func_refmod: '(' exp ':' exp ')'  */
-#line 7119 "parser.y"
+#line 7127 "parser.y"
                                 { yyval = cb_build_pair (yyvsp[-3], yyvsp[-1]); }
-#line 13140 "parser.c"
+#line 13148 "parser.c"
     break;
 
   case 1420: /* func_args: %empty  */
-#line 7123 "parser.y"
+#line 7131 "parser.y"
                                 { yyval = NULL; }
-#line 13146 "parser.c"
+#line 13154 "parser.c"
     break;
 
   case 1421: /* func_args: '(' list_func_args ')'  */
-#line 7124 "parser.y"
+#line 7132 "parser.y"
                                 { yyval = yyvsp[-1]; }
-#line 13152 "parser.c"
+#line 13160 "parser.c"
     break;
 
   case 1422: /* list_func_args: %empty  */
-#line 7128 "parser.y"
+#line 7136 "parser.y"
                                 { yyval = NULL; }
-#line 13158 "parser.c"
+#line 13166 "parser.c"
     break;
 
   case 1423: /* list_func_args: exp_list  */
-#line 7129 "parser.y"
+#line 7137 "parser.y"
                                 { yyval = yyvsp[0]; }
-#line 13164 "parser.c"
+#line 13172 "parser.c"
     break;
 
   case 1424: /* trim_args: exp  */
-#line 7135 "parser.y"
+#line 7143 "parser.y"
   {
 	cb_tree	x;
 
 	x = cb_list_init (yyvsp[0]);
 	yyval = cb_list_add (x, cb_int0);
   }
-#line 13175 "parser.c"
+#line 13183 "parser.c"
     break;
 
   case 1425: /* trim_args: exp e_sep LEADING  */
-#line 7142 "parser.y"
+#line 7150 "parser.y"
   {
 	cb_tree	x;
 
 	x = cb_list_init (yyvsp[-2]);
 	yyval = cb_list_add (x, cb_int1);
   }
-#line 13186 "parser.c"
+#line 13194 "parser.c"
     break;
 
   case 1426: /* trim_args: exp e_sep TRAILING  */
-#line 7149 "parser.y"
+#line 7157 "parser.y"
   {
 	cb_tree	x;
 
 	x = cb_list_init (yyvsp[-2]);
 	yyval = cb_list_add (x, cb_int2);
   }
-#line 13197 "parser.c"
+#line 13205 "parser.c"
     break;
 
   case 1427: /* numvalc_args: exp  */
-#line 7159 "parser.y"
+#line 7167 "parser.y"
   {
 	cb_tree	x;
 
 	x = cb_list_init (yyvsp[0]);
 	yyval = cb_list_add (x, cb_null);
   }
-#line 13208 "parser.c"
+#line 13216 "parser.c"
     break;
 
   case 1428: /* numvalc_args: exp e_sep exp  */
-#line 7166 "parser.y"
+#line 7174 "parser.y"
   {
 	cb_tree	x;
 
 	x = cb_list_init (yyvsp[-2]);
 	yyval = cb_list_add (x, yyvsp[0]);
   }
-#line 13219 "parser.c"
+#line 13227 "parser.c"
     break;
 
   case 1429: /* locale_dt_args: exp  */
-#line 7176 "parser.y"
+#line 7184 "parser.y"
   {
 	cb_tree	x;
 
 	x = cb_list_init (yyvsp[0]);
 	yyval = cb_list_add (x, cb_null);
   }
-#line 13230 "parser.c"
+#line 13238 "parser.c"
     break;
 
   case 1430: /* locale_dt_args: exp e_sep reference  */
-#line 7183 "parser.y"
+#line 7191 "parser.y"
   {
 	cb_tree	x;
 
 	x = cb_list_init (yyvsp[-2]);
 	yyval = cb_list_add (x, cb_ref (yyvsp[0]));
   }
-#line 13241 "parser.c"
-    break;
-
-  case 1431: /* not_const_word: %empty  */
-#line 7196 "parser.y"
-  {
-	non_const_word = 1;
-  }
 #line 13249 "parser.c"
     break;
 
+  case 1431: /* not_const_word: %empty  */
+#line 7204 "parser.y"
+  {
+	non_const_word = 1;
+  }
+#line 13257 "parser.c"
+    break;
+
   case 1432: /* flag_all: %empty  */
-#line 7206 "parser.y"
+#line 7214 "parser.y"
                                 { yyval = cb_int0; }
-#line 13255 "parser.c"
+#line 13263 "parser.c"
     break;
 
   case 1433: /* flag_all: ALL  */
-#line 7207 "parser.y"
+#line 7215 "parser.y"
                                 { yyval = cb_int1; }
-#line 13261 "parser.c"
+#line 13269 "parser.c"
     break;
 
   case 1434: /* flag_duplicates: %empty  */
-#line 7211 "parser.y"
+#line 7219 "parser.y"
                                 { yyval = cb_int0; }
-#line 13267 "parser.c"
+#line 13275 "parser.c"
     break;
 
   case 1435: /* flag_duplicates: with_dups  */
-#line 7212 "parser.y"
+#line 7220 "parser.y"
                                 { yyval = cb_int1; }
-#line 13273 "parser.c"
+#line 13281 "parser.c"
     break;
 
   case 1436: /* flag_initialized: %empty  */
-#line 7216 "parser.y"
+#line 7224 "parser.y"
                                 { yyval = NULL; }
-#line 13279 "parser.c"
+#line 13287 "parser.c"
     break;
 
   case 1437: /* flag_initialized: INITIALIZED  */
-#line 7217 "parser.y"
+#line 7225 "parser.y"
                                 { yyval = cb_int1; }
-#line 13285 "parser.c"
+#line 13293 "parser.c"
     break;
 
   case 1438: /* flag_next: %empty  */
-#line 7221 "parser.y"
+#line 7229 "parser.y"
                                 { yyval = cb_int0; }
-#line 13291 "parser.c"
+#line 13299 "parser.c"
     break;
 
   case 1439: /* flag_next: NEXT  */
-#line 7222 "parser.y"
+#line 7230 "parser.y"
                                 { yyval = cb_int1; }
-#line 13297 "parser.c"
+#line 13305 "parser.c"
     break;
 
   case 1440: /* flag_next: PREVIOUS  */
-#line 7223 "parser.y"
+#line 7231 "parser.y"
                                 { yyval = cb_int2; }
-#line 13303 "parser.c"
+#line 13311 "parser.c"
     break;
 
   case 1441: /* flag_not: %empty  */
-#line 7227 "parser.y"
+#line 7235 "parser.y"
                                 { yyval = cb_int0; }
-#line 13309 "parser.c"
+#line 13317 "parser.c"
     break;
 
   case 1442: /* flag_not: NOT  */
-#line 7228 "parser.y"
+#line 7236 "parser.y"
                                 { yyval = cb_int1; }
-#line 13315 "parser.c"
+#line 13323 "parser.c"
     break;
 
   case 1443: /* flag_optional: %empty  */
-#line 7232 "parser.y"
+#line 7240 "parser.y"
                                 { yyval = cb_int0; }
-#line 13321 "parser.c"
+#line 13329 "parser.c"
     break;
 
   case 1444: /* flag_optional: OPTIONAL  */
-#line 7233 "parser.y"
+#line 7241 "parser.y"
                                 { yyval = cb_int1; }
-#line 13327 "parser.c"
+#line 13335 "parser.c"
     break;
 
   case 1445: /* flag_rounded: %empty  */
-#line 7237 "parser.y"
+#line 7245 "parser.y"
                                 { yyval = cb_int0; }
-#line 13333 "parser.c"
+#line 13341 "parser.c"
     break;
 
   case 1446: /* flag_rounded: ROUNDED  */
-#line 7238 "parser.y"
+#line 7246 "parser.y"
                                 { yyval = cb_int1; }
-#line 13339 "parser.c"
+#line 13347 "parser.c"
     break;
 
   case 1447: /* flag_separate: %empty  */
-#line 7242 "parser.y"
+#line 7250 "parser.y"
                                 { yyval = cb_int0; }
-#line 13345 "parser.c"
+#line 13353 "parser.c"
     break;
 
   case 1448: /* flag_separate: SEPARATE _character  */
-#line 7243 "parser.y"
+#line 7251 "parser.y"
                                 { yyval = cb_int1; }
-#line 13351 "parser.c"
+#line 13359 "parser.c"
     break;
 
   case 1460: /* _also: ALSO  */
-#line 7256 "parser.y"
+#line 7264 "parser.y"
                        { yyval = cb_int1; }
-#line 13357 "parser.c"
+#line 13365 "parser.c"
     break;
 
   case 1489: /* _is: %empty  */
-#line 7271 "parser.y"
+#line 7279 "parser.y"
                 { yyval = NULL; }
-#line 13363 "parser.c"
+#line 13371 "parser.c"
     break;
 
   case 1490: /* _is: IS  */
-#line 7271 "parser.y"
+#line 7279 "parser.y"
                                     { yyval = cb_int1; }
-#line 13369 "parser.c"
+#line 13377 "parser.c"
     break;
 
   case 1501: /* _literal: %empty  */
-#line 7276 "parser.y"
+#line 7284 "parser.y"
                 { yyval = NULL; }
-#line 13375 "parser.c"
+#line 13383 "parser.c"
     break;
 
   case 1502: /* _literal: "Literal"  */
-#line 7276 "parser.y"
+#line 7284 "parser.y"
                                          { yyval = yyvsp[0]; }
-#line 13381 "parser.c"
+#line 13389 "parser.c"
     break;
 
 
-#line 13385 "parser.c"
+#line 13393 "parser.c"
 
       default: break;
     }
@@ -13575,5 +13583,5 @@ yyreturn:
   return yyresult;
 }
 
-#line 7301 "parser.y"
+#line 7309 "parser.y"
 

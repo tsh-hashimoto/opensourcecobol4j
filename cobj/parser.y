@@ -4256,15 +4256,23 @@ call_type:
 
 call_returning:
   /* empty */			{ $$ = NULL; }
-| RETURNING identifier 
+| RETURNING identifier
   {
-	cb_error (_("RETURNING clause of CALL is not supported"));
-	$$ = $2;
+	if (cb_ref ($2) != cb_error_node && cb_field ($2)->storage == CB_STORAGE_LINKAGE) {
+		cb_error (_("RETURNING clause of CALL with LINKAGE SECTION item is not supported"));
+		$$ = NULL;
+	} else {
+		$$ = $2;
+	}
   }
 | GIVING identifier
   {
-	cb_error (_("GIVING clause of CALL is not supported"));
-	$$ = $2;
+	if (cb_ref ($2) != cb_error_node && cb_field ($2)->storage == CB_STORAGE_LINKAGE) {
+		cb_error (_("RETURNING clause of CALL with LINKAGE SECTION item is not supported"));
+		$$ = NULL;
+	} else {
+		$$ = $2;
+	}
   }
 ;
 
